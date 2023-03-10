@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class frmYemekCesidiRaporu : Form
+    public partial class frmFoodVariertyReport : Form
     {
-        public frmYemekCesidiRaporu()
+        public frmFoodVariertyReport()
         {
             InitializeComponent();
         }

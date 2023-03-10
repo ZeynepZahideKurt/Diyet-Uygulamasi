@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class frmKiyasRaporu : Form
+    public partial class frmAdminMotivationNotes : Form
     {
-        public frmKiyasRaporu()
+        public frmAdminMotivationNotes()
         {
             InitializeComponent();
         }
