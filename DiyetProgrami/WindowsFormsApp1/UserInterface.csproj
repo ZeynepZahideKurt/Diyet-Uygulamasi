@@ -52,6 +52,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAdminHealthyTips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminHealthyTips.Designer.cs">
+      <DependentUpon>frmAdminHealthyTips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminMain.Designer.cs">
+      <DependentUpon>frmAdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminMotivationNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminMotivationNotes.Designer.cs">
+      <DependentUpon>frmAdminMotivationNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminReport.Designer.cs">
+      <DependentUpon>frmAdminReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAdminReports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +102,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAdminHealthyTips.resx">
+      <DependentUpon>frmAdminHealthyTips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminMain.resx">
+      <DependentUpon>frmAdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminMotivationNotes.resx">
+      <DependentUpon>frmAdminMotivationNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminReport.resx">
+      <DependentUpon>frmAdminReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAdminReports.resx">
       <DependentUpon>frmAdminReports.cs</DependentUpon>
     </EmbeddedResource>
