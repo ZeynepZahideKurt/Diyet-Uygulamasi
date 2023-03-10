@@ -32,7 +32,6 @@
             this.cbSizeCm = new System.Windows.Forms.ComboBox();
             this.cbGender = new System.Windows.Forms.ComboBox();
             this.cbSizeM = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,13 +51,16 @@
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSave.Location = new System.Drawing.Point(338, 858);
+            this.btnSave.Location = new System.Drawing.Point(345, 940);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(332, 80);
             this.btnSave.TabIndex = 52;
@@ -68,7 +70,7 @@
             // cbSizeCm
             // 
             this.cbSizeCm.FormattingEnabled = true;
-            this.cbSizeCm.Location = new System.Drawing.Point(569, 660);
+            this.cbSizeCm.Location = new System.Drawing.Point(576, 742);
             this.cbSizeCm.Name = "cbSizeCm";
             this.cbSizeCm.Size = new System.Drawing.Size(77, 28);
             this.cbSizeCm.TabIndex = 51;
@@ -76,7 +78,7 @@
             // cbGender
             // 
             this.cbGender.FormattingEnabled = true;
-            this.cbGender.Location = new System.Drawing.Point(454, 722);
+            this.cbGender.Location = new System.Drawing.Point(461, 804);
             this.cbGender.Name = "cbGender";
             this.cbGender.Size = new System.Drawing.Size(192, 28);
             this.cbGender.TabIndex = 50;
@@ -84,26 +86,16 @@
             // cbSizeM
             // 
             this.cbSizeM.FormattingEnabled = true;
-            this.cbSizeM.Location = new System.Drawing.Point(454, 661);
+            this.cbSizeM.Location = new System.Drawing.Point(461, 743);
             this.cbSizeM.Name = "cbSizeM";
             this.cbSizeM.Size = new System.Drawing.Size(56, 28);
             this.cbSizeM.TabIndex = 49;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.a;
-            this.pictureBox1.Location = new System.Drawing.Point(408, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 214);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 48;
-            this.pictureBox1.TabStop = false;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(317, 783);
+            this.label9.Location = new System.Drawing.Point(324, 865);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(51, 25);
             this.label9.TabIndex = 46;
@@ -113,7 +105,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(303, 721);
+            this.label8.Location = new System.Drawing.Point(310, 803);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(88, 25);
             this.label8.TabIndex = 45;
@@ -133,7 +125,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(529, 663);
+            this.label10.Location = new System.Drawing.Point(536, 745);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(17, 25);
             this.label10.TabIndex = 43;
@@ -143,7 +135,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(686, 786);
+            this.label12.Location = new System.Drawing.Point(693, 868);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(37, 25);
             this.label12.TabIndex = 42;
@@ -153,7 +145,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(686, 664);
+            this.label11.Location = new System.Drawing.Point(693, 746);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(38, 25);
             this.label11.TabIndex = 47;
@@ -163,7 +155,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(317, 664);
+            this.label7.Location = new System.Drawing.Point(324, 746);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 25);
             this.label7.TabIndex = 41;
@@ -222,7 +214,7 @@
             // txtKilo
             // 
             this.txtKilo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKilo.Location = new System.Drawing.Point(454, 783);
+            this.txtKilo.Location = new System.Drawing.Point(461, 865);
             this.txtKilo.Name = "txtKilo";
             this.txtKilo.Size = new System.Drawing.Size(192, 30);
             this.txtKilo.TabIndex = 34;
@@ -275,12 +267,41 @@
             this.txtName.Size = new System.Drawing.Size(620, 30);
             this.txtName.TabIndex = 29;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.a;
+            this.pictureBox1.Location = new System.Drawing.Point(408, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(205, 214);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 48;
+            this.pictureBox1.TabStop = false;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(239, 659);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(620, 33);
+            this.progressBar1.TabIndex = 54;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Location = new System.Drawing.Point(89, 671);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(72, 25);
+            this.label13.TabIndex = 53;
+            this.label13.Text = "Zorluk:";
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(968, 966);
+            this.ClientSize = new System.Drawing.Size(968, 1097);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.cbSizeCm);
             this.Controls.Add(this.cbGender);
@@ -339,5 +360,7 @@
         private System.Windows.Forms.TextBox txtSurname;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label13;
     }
 }
