@@ -52,32 +52,44 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAdminRaporu.cs">
+    <Compile Include="frmAdminReports.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAdminRaporu.Designer.cs">
-      <DependentUpon>frmAdminRaporu.cs</DependentUpon>
+    <Compile Include="frmAdminReports.Designer.cs">
+      <DependentUpon>frmAdminReports.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHaftalikAylikRapor.cs">
+    <Compile Include="frmEndOfTheDayReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHaftalikAylikRapor.Designer.cs">
-      <DependentUpon>frmHaftalikAylikRapor.cs</DependentUpon>
+    <Compile Include="frmEndOfTheDayReport.Designer.cs">
+      <DependentUpon>frmEndOfTheDayReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmKiyasRaporu.cs">
+    <Compile Include="frmComparisonReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmKiyasRaporu.Designer.cs">
-      <DependentUpon>frmKiyasRaporu.cs</DependentUpon>
+    <Compile Include="frmComparisonReport.Designer.cs">
+      <DependentUpon>frmComparisonReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmYemekCesidiRaporu.cs">
+    <Compile Include="frmFoodVariertyReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmYemekCesidiRaporu.Designer.cs">
-      <DependentUpon>frmYemekCesidiRaporu.cs</DependentUpon>
+    <Compile Include="frmFoodVariertyReport.Designer.cs">
+      <DependentUpon>frmFoodVariertyReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAdminReports.resx">
+      <DependentUpon>frmAdminReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComparisonReport.resx">
+      <DependentUpon>frmComparisonReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEndOfTheDayReport.resx">
+      <DependentUpon>frmEndOfTheDayReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFoodVariertyReport.resx">
+      <DependentUpon>frmFoodVariertyReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

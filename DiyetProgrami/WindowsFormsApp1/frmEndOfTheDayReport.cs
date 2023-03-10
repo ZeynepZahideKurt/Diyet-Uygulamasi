@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class frmKiyasRaporu : Form
+    public partial class frmEndOfTheDayReport : Form
     {
-        public frmKiyasRaporu()
+        public frmEndOfTheDayReport()
         {
             InitializeComponent();
+        }
+
+        private void frmEndOfTheDayReport_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
