@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43E6A4F8-4CC5-4FBB-96F5-C1E2B3372BB1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Diyet</RootNamespace>
+    <AssemblyName>Diyet</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminHealthyTips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminHealthyTips.Designer.cs">
+      <DependentUpon>frmAdminHealthyTips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminMain.Designer.cs">
+      <DependentUpon>FrmAdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminMotivationNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminMotivationNotes.Designer.cs">
+      <DependentUpon>frmAdminMotivationNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminReport.Designer.cs">
+      <DependentUpon>frmAdminReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminReports.Designer.cs">
+      <DependentUpon>FrmAdminReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComparisonReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComparisonReport.Designer.cs">
+      <DependentUpon>frmComparisonReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEndOfTheDayReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEndOfTheDayReport.Designer.cs">
+      <DependentUpon>frmEndOfTheDayReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFoodVariertyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFoodVariertyReport.Designer.cs">
+      <DependentUpon>frmFoodVariertyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordChange.Designer.cs">
+      <DependentUpon>PasswordChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordChangeControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordChangeControl.Designer.cs">
+      <DependentUpon>PasswordChangeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminHealthyTips.resx">
+      <DependentUpon>frmAdminHealthyTips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminMain.resx">
+      <DependentUpon>FrmAdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminMotivationNotes.resx">
+      <DependentUpon>frmAdminMotivationNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminReport.resx">
+      <DependentUpon>frmAdminReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminReports.resx">
+      <DependentUpon>FrmAdminReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComparisonReport.resx">
+      <DependentUpon>frmComparisonReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEndOfTheDayReport.resx">
+      <DependentUpon>frmEndOfTheDayReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFoodVariertyReport.resx">
+      <DependentUpon>frmFoodVariertyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordChange.resx">
+      <DependentUpon>PasswordChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordChangeControl.resx">
+      <DependentUpon>PasswordChangeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
