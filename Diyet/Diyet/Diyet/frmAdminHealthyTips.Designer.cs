@@ -56,27 +56,29 @@
             this.panel2.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(7, 553);
+            this.panel2.Location = new System.Drawing.Point(6, 442);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(168, 49);
+            this.panel2.Size = new System.Drawing.Size(149, 39);
             this.panel2.TabIndex = 26;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(23, 17);
+            this.label3.Location = new System.Drawing.Point(20, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 25);
+            this.label3.Size = new System.Drawing.Size(52, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "EXIT";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(102, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(91, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(47, 46);
+            this.pictureBox3.Size = new System.Drawing.Size(42, 37);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
@@ -86,27 +88,29 @@
             this.panel3.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.pictureBox4);
-            this.panel3.Location = new System.Drawing.Point(670, 553);
+            this.panel3.Location = new System.Drawing.Point(618, 442);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(168, 49);
+            this.panel3.Size = new System.Drawing.Size(149, 39);
             this.panel3.TabIndex = 25;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(89, 17);
+            this.label4.Location = new System.Drawing.Point(79, 14);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 25);
+            this.label4.Size = new System.Drawing.Size(59, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "BACK";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(16, 3);
+            this.pictureBox4.Location = new System.Drawing.Point(14, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(47, 46);
+            this.pictureBox4.Size = new System.Drawing.Size(42, 37);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
@@ -117,54 +121,62 @@
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.richTextBox1);
-            this.groupBox2.Location = new System.Drawing.Point(49, 304);
+            this.groupBox2.Location = new System.Drawing.Point(44, 243);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(750, 231);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(667, 185);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tips";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(499, 165);
+            this.button4.Location = new System.Drawing.Point(444, 132);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(183, 52);
+            this.button4.Size = new System.Drawing.Size(163, 42);
             this.button4.TabIndex = 14;
             this.button4.Text = "Delete";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(499, 102);
+            this.button3.Location = new System.Drawing.Point(444, 82);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(183, 57);
+            this.button3.Size = new System.Drawing.Size(163, 46);
             this.button3.TabIndex = 13;
             this.button3.Text = "Update";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(499, 45);
+            this.button2.Location = new System.Drawing.Point(444, 36);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(183, 51);
+            this.button2.Size = new System.Drawing.Size(163, 41);
             this.button2.TabIndex = 12;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(19, 35);
+            this.richTextBox1.Location = new System.Drawing.Point(17, 28);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(413, 185);
+            this.richTextBox1.Size = new System.Drawing.Size(368, 149);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(46, 12);
+            this.groupBox1.Location = new System.Drawing.Point(41, 10);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(756, 274);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(672, 219);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Healthy Tips List";
@@ -173,23 +185,25 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 27);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 17);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(750, 244);
+            this.dataGridView1.Size = new System.Drawing.Size(666, 200);
             this.dataGridView1.TabIndex = 0;
             // 
             // frmAdminHealthyTips
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(863, 621);
+            this.ClientSize = new System.Drawing.Size(767, 497);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmAdminHealthyTips";
             this.Text = "frmAdminHealthyTips";
             this.panel2.ResumeLayout(false);
