@@ -8,6 +8,7 @@ namespace Diyet
 {
     internal static class Program
     {
+        //Deneme123
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
