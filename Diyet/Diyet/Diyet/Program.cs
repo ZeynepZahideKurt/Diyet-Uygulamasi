@@ -12,12 +12,14 @@ namespace Diyet
         /// The main entry point for the application.
         /// </summary>
         /// //zeynep deneme
+       
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
+            /// deneme2
         }
     }
 }
