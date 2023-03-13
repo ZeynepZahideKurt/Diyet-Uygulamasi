@@ -27,6 +27,15 @@ namespace Diet_Model.Entity
         public FileStream MyProperty { get; set; }
 
         public UserType UserType { get; set; }
-        public List<string> Notes { get; set; }
+
+        public virtual ICollection<Meal> Meals { get; set; }
+
+        public virtual ICollection<HealthyTip> HealthyTips { get; set; }
+
+        public virtual ICollection<MotivationNote> MotivationNotes { get; set; }
+
+        public virtual ICollection<NutrientInfo> NutrientInfos { get; set; }
+
+        public virtual ICollection<Note> Notes { get; set; }
     }
 }

@@ -8,5 +8,6 @@ namespace Diet_Model.Entity
 {
     public class HealthyTip:BaseEntityForNotes
     {
+        public virtual ICollection<User> Users { get; set; }
     }
 }

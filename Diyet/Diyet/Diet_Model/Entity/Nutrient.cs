@@ -19,6 +19,10 @@ namespace Diet_Model.Entity
 
         public Amount Amount { get; set; }
 
+        public virtual ICollection<Meal> Meals { get; set; }
+
+        public int CategoryID { get; set; }
+        public Category Category { get; set; }
 
     }
 }

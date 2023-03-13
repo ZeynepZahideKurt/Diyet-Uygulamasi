@@ -8,5 +8,6 @@ namespace Diet_Model.Entity
 {
     public class MotivationNote : BaseEntityForNotes
     {
+        public virtual ICollection<User> Users { get; set; }
     }
 }

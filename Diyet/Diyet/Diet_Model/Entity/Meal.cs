@@ -12,5 +12,8 @@ namespace Diet_Model.Entity
         public string MealName { get; set; }
         public DateTime CreateTime { get; set; }
 
+        public virtual ICollection<User> Users { get; set; }
+        public virtual ICollection<Nutrient> Nutrients { get; set; }
+
     }
 }

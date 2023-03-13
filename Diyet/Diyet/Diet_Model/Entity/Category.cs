@@ -13,7 +13,7 @@ namespace Diet_Model.Entity
 
         public string CategoryName { get; set; }
 
-
+        public virtual ICollection<Nutrient> Nutrients { get; set; }
 
     }
 }
