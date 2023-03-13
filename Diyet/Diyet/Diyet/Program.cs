@@ -22,6 +22,7 @@ namespace Diyet
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
             /// deneme2
+            /// //deneme3
             
         }
     }
