@@ -12,7 +12,9 @@ namespace Diyet
         /// The main entry point for the application.
         /// </summary>
         /// //zeynep deneme
-       
+
+        /// //Berna deneme
+
         [STAThread]
         static void Main()
         {
@@ -20,6 +22,7 @@ namespace Diyet
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
             /// deneme2
+            
         }
     }
 }
