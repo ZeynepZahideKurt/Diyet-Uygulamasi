@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\Category.cs" />
+    <Compile Include="Entity\Meal.cs" />
+    <Compile Include="Entity\Nutrient.cs" />
     <Compile Include="Entity\User.cs" />
+    <Compile Include="Enum\Amount.cs" />
     <Compile Include="Enum\UserType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
