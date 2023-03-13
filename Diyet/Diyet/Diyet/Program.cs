@@ -11,6 +11,7 @@ namespace Diyet
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// //zeynep deneme
         [STAThread]
         static void Main()
         {
