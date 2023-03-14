@@ -55,4 +55,5 @@ namespace Diet_DAL.EntityConfigurations
                 cs.ToTable("UserToNutrientInfo");
             });
         }
+    }
 }

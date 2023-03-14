@@ -13,6 +13,7 @@ namespace Diet_DAL.EntityConfigurations
         public CategoryConfiguration()
         {
             HasKey(a => a.ID);
+            Property(a => a.CategoryName).IsRequired();
 
             //Relation
 

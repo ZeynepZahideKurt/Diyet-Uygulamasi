@@ -22,7 +22,10 @@ namespace Diet_Model.Entity
         public virtual ICollection<Meal> Meals { get; set; }
 
         public int CategoryID { get; set; }
-        public Category Category { get; set; }
+        public virtual Category Category { get; set; }
+
+
+        public virtual NutrientInfo NutrientInfo { get; set; }
 
     }
 }

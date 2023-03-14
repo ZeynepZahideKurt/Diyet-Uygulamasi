@@ -17,7 +17,8 @@ namespace Diet_DAL.EntityConfigurations
             Property(a => a.Amount).IsRequired();
             Property(a => a.Calories).IsRequired();
 
-
+            //one to one:burada besin olmadan, besin bilgisi olmuyor
+            HasRequired(x => x.NutrientInfo).WithRequiredPrincipal(x => x.Nutrient);
         }
     }
 }
