@@ -20,7 +20,7 @@ namespace Diet_Model.Entity
         public string LastName { get; set; }
         public string Mail { get; set; }
         public string Password { get; set; }
-        public int Size { get; set; }
+        public int Height { get; set; }
         public int Kilo { get; set; }
         public string Gender { get; set; }
     
@@ -36,7 +36,7 @@ namespace Diet_Model.Entity
 
         public virtual ICollection<Note> Notes { get; set; }
 
-        //çoka çok için ortak tablo oluşturduk (DateTişme Özelliğini ekleyebilmek için)
+        //çoka çok için ortak tablo oluşturduk (DateTime Özelliğini ekleyebilmek için)
         public virtual IList<UserToMeal> UserToMeal { get; set; }
     }
 }

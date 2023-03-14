@@ -543,7 +543,20 @@ namespace Diet_DAL.Strategy
             };
             context.Nutrients.Add(Yumurta);
 
+            User admin = new User()
+            {
+                FirstName = "admin",
+                LastName= "admin",
+                Mail= "admin@gmail.com",
+                Kilo =1,
+                Height = 1,
+                Password= "admin",
+                UserType= UserType.Admin,
+                Gender = "a",
 
+            };
+
+            context.Users.Add(admin);
             context.SaveChanges();
         }
     }
