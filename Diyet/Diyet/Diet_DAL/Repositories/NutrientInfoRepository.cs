@@ -10,47 +10,39 @@ namespace Diet_DAL.Repositories
     internal class NutrientInfoRepository
     {
         AppDbContext dbContext;
-        /*public List<User> GetAllUsers()
+        public List<NutrientInfo> GetAllUsers()
         {
-            return dbContext.Users.ToList();
+            return dbContext.NutrientInfos.ToList();
         }
 
-        public User GetUserById(int userId)
+        public NutrientInfo GetUserById(int nutrientId)
         {
-            return dbContext.Users.Where(a => a.ID == userId).FirstOrDefault();
+            return dbContext.NutrientInfos.Where(a => a.NutrientID == nutrientId).FirstOrDefault();
         }
         
-         public bool Insert(User user)
+         public bool Insert(NutrientInfo nutrientInfo)
         {
-            dbContext.Users.Add(user);
+            dbContext.NutrientInfos.Add(nutrientInfo);
             return dbContext.SaveChanges() > 0;
         }
 
-        public bool Update(Nutrient nutrient)
+        public bool Update(NutrientInfo nutrientInfo)
         {
-            Nutrient updateNutrient = dbContext.Nutrients.Where(a => a.ID == nutrient.ID).FirstOrDefault();
-            updateNutrient.NutrientName = nutrient.NutrientName;
-            updateNutrient.Calories = nutrient.Calories;
-            updateNutrient.Amount = nutrient.Amount;
-
-            updateNutrient.Category = nutrient.Category;
-            updateNutrient.CategoryID = nutrient.CategoryID;
-
-            updateNutrient.NutrientInfoID = nutrient.NutrientInfoID;
-            updateNutrient.NutrientInfo = nutrient.NutrientInfo;
-            updateNutrient.UserToMeals = nutrient.UserToMeals;
+            NutrientInfo updateNutrient = dbContext.NutrientInfos.Where(a => a.ID == nutrientInfo.ID).FirstOrDefault();
+            updateNutrient.NutrientID = nutrientInfo.NutrientID;
+            
 
             return dbContext.SaveChanges() > 0;
         }
 
-        public bool Delete(Nutrient nutrient)
+        public bool Delete(NutrientInfo nutrientInfo)
         {
-            Nutrient deleteNutrient = dbContext.Nutrients.Where(a => a.ID == nutrient.ID).FirstOrDefault();
-            dbContext.Nutrients.Remove(deleteNutrient);
+            NutrientInfo deleteNutrient = dbContext.NutrientInfos.Where(a => a.ID == nutrientInfo.ID).FirstOrDefault();
+            dbContext.NutrientInfos.Remove(deleteNutrient);
             return dbContext.SaveChanges() > 0;
         }
 
 
-         */
+         
     }
 }
