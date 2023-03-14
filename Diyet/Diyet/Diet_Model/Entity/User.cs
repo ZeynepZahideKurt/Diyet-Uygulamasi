@@ -26,15 +26,17 @@ namespace Diet_Model.Entity
     
 
         public UserType UserType { get; set; }
+        
 
-        public virtual ICollection<Meal> Meals { get; set; }
-
-        public virtual ICollection<HealthyTip> HealthyTips { get; set; }
+        //public virtual ICollection<HealthyTip> HealthyTips { get; set; }
 
         public virtual ICollection<MotivationNote> MotivationNotes { get; set; }
 
-        public virtual ICollection<NutrientInfo> NutrientInfos { get; set; }
+        
 
         public virtual ICollection<Note> Notes { get; set; }
+
+        //çoka çok için ortak tablo oluşturduk (DateTişme Özelliğini ekleyebilmek için)
+        public virtual IList<UserToMeal> UserToMeal { get; set; }
     }
 }

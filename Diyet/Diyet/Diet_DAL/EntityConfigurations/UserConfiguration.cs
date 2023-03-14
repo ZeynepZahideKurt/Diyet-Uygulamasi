@@ -27,19 +27,9 @@ namespace Diet_DAL.EntityConfigurations
 
             //Many-to-many
 
-            HasMany(a => a.Meals).WithMany(a => a.Users).Map(cs =>
-            {
-                cs.MapLeftKey("MealID");
-                cs.MapRightKey("ID");
-                cs.ToTable("UserToMeal");
-            });
+            
 
-            HasMany(a => a.HealthyTips).WithMany(a => a.Users).Map(cs =>
-            {
-                cs.MapLeftKey("ID");
-                cs.MapRightKey("ID");
-                cs.ToTable("UserToHealthyTip");
-            });
+            
 
             HasMany(a => a.MotivationNotes).WithMany(a => a.Users).Map(cs =>
             {
@@ -48,12 +38,7 @@ namespace Diet_DAL.EntityConfigurations
                 cs.ToTable("UserToMotivationNote");
             });
 
-            HasMany(a => a.NutrientInfos).WithMany(a => a.Users).Map(cs =>
-            {
-                cs.MapLeftKey("ID");
-                cs.MapRightKey("ID");
-                cs.ToTable("UserToNutrientInfo");
-            });
+           
         }
     }
 }

@@ -60,6 +60,7 @@
     <Compile Include="EntityConfigurations\NutrientConfiguration.cs" />
     <Compile Include="EntityConfigurations\NutrientInfoConfiguration.cs" />
     <Compile Include="EntityConfigurations\UserConfiguration.cs" />
+    <Compile Include="EntityConfigurations\UserToMealConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategy\DietStrategy.cs" />
   </ItemGroup>

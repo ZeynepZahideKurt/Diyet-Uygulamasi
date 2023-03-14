@@ -14,16 +14,9 @@ namespace Diet_DAL.EntityConfigurations
         {
             HasKey(a => a.ID);
             Property(a => a.MealName).IsRequired();
-            Property(a => a.CreateTime).IsRequired();
+            
 
-            //Many-to-Many
-
-            HasMany(a => a.Nutrients).WithMany(a => a.Meals).Map(cs =>
-            {
-                cs.MapLeftKey("ID");
-                cs.MapRightKey("ID");
-                cs.ToTable("NutrientsToMeals");
-            });
+            
         }
     }
 }

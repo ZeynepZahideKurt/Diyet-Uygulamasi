@@ -8,7 +8,8 @@ namespace Diet_Model.Entity
 {
     public class NutrientInfo:BaseEntityForNotes
     {
-        public virtual ICollection<User> Users { get; set; }
+
+        public int NutrientID { get; set; }
 
         public virtual Nutrient Nutrient { get; set; }
     }

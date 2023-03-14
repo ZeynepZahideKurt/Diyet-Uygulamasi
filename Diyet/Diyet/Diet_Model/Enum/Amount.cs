@@ -9,7 +9,7 @@ namespace Diet_Model.Enum
     public enum Amount
     {
 
-        Gram, Mililitre, Adet, Kase, YemekKasigi
+        Gram, Milliliter, Piece, Bowl, Tablespoon, Slice
 
 
     }
