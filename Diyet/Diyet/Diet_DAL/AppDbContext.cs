@@ -1,4 +1,6 @@
-﻿using Diet_Model.Entity;
+﻿using Diet_DAL.EntityConfigurations;
+using Diet_DAL.Strategy;
+using Diet_Model.Entity;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -12,7 +14,7 @@ namespace Diet_DAL
     {
         public AppDbContext():base("")
         {
-            //Database.SetInitializer(new NoteStrategy());
+            Database.SetInitializer(new DietStrategy());
         }
 
         public DbSet<User> Users { get; set; }
@@ -22,13 +24,18 @@ namespace Diet_DAL
         public DbSet<MotivationNote> MotivationNotes { get; set; }
         public DbSet<Note> Notes { get; set; }
         public DbSet<Nutrient> Nutrients { get; set; }
-        public DbSet<NutrientInfo> nutrientInfos { get; set; }
+        public DbSet<NutrientInfo> NutrientInfos { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-           // modelBuilder.Configurations.Add(new NoteConfiguration());
-            //modelBuilder.Configurations.Add(new PasswordConfiguration());
-            //modelBuilder.Configurations.Add(new UserConfiguration());
+            modelBuilder.Configurations.Add(new CategoryConfiguration());
+            modelBuilder.Configurations.Add(new HealthyTipConfiguration());
+            modelBuilder.Configurations.Add(new MealConfiguration());
+            modelBuilder.Configurations.Add(new MotivationNoteConfiguration());
+            modelBuilder.Configurations.Add(new NoteConfiguration());
+            modelBuilder.Configurations.Add(new NutrientConfiguration());
+            modelBuilder.Configurations.Add(new NutrientInfoConfiguration());
+            modelBuilder.Configurations.Add(new UserConfiguration());
         }
     }
 }

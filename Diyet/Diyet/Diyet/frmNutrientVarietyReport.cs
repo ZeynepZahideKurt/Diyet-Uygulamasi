@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Diyet
 {
-    public partial class frmAddFood : Form
+    public partial class frmNutrientVarietyReport : Form
     {
-        public frmAddFood()
+        public frmNutrientVarietyReport()
         {
             InitializeComponent();
         }

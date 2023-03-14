@@ -9,7 +9,7 @@ namespace Diet_Model.Entity
     public class Category
     {
 
-        public int CategoryID { get; set; }
+        public int ID { get; set; }
 
         public string CategoryName { get; set; }
 

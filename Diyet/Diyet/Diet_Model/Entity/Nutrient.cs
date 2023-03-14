@@ -9,7 +9,7 @@ namespace Diet_Model.Entity
 {
     public class Nutrient
     {
-        public int NutrientID { get; set; }
+        public int ID { get; set; }
 
         public string NutrientName { get; set; }
 

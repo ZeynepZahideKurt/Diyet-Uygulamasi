@@ -56,11 +56,11 @@
     <Compile Include="fmrAdminNutrientInfo.Designer.cs">
       <DependentUpon>fmrAdminNutrientInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddFood.cs">
+    <Compile Include="frmAddNutrient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddFood.Designer.cs">
-      <DependentUpon>frmAddFood.cs</DependentUpon>
+    <Compile Include="frmAddNutrient.Designer.cs">
+      <DependentUpon>frmAddNutrient.cs</DependentUpon>
     </Compile>
     <Compile Include="frmHomePage.cs">
       <SubType>Form</SubType>
@@ -116,11 +116,11 @@
     <Compile Include="frmEndOfTheDayReport.Designer.cs">
       <DependentUpon>frmEndOfTheDayReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmFoodVariertyReport.cs">
+    <Compile Include="frmNutrientVarietyReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmFoodVariertyReport.Designer.cs">
-      <DependentUpon>frmFoodVariertyReport.cs</DependentUpon>
+    <Compile Include="frmNutrientVarietyReport.Designer.cs">
+      <DependentUpon>frmNutrientVarietyReport.cs</DependentUpon>
     </Compile>
     <Compile Include="PasswordChange.cs">
       <SubType>Form</SubType>
@@ -145,8 +145,8 @@
     <EmbeddedResource Include="fmrAdminNutrientInfo.resx">
       <DependentUpon>fmrAdminNutrientInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddFood.resx">
-      <DependentUpon>frmAddFood.cs</DependentUpon>
+    <EmbeddedResource Include="frmAddNutrient.resx">
+      <DependentUpon>frmAddNutrient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHomePage.resx">
       <DependentUpon>frmHomePage.cs</DependentUpon>
@@ -175,8 +175,8 @@
     <EmbeddedResource Include="frmEndOfTheDayReport.resx">
       <DependentUpon>frmEndOfTheDayReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFoodVariertyReport.resx">
-      <DependentUpon>frmFoodVariertyReport.cs</DependentUpon>
+    <EmbeddedResource Include="frmNutrientVarietyReport.resx">
+      <DependentUpon>frmNutrientVarietyReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PasswordChange.resx">
       <DependentUpon>PasswordChange.cs</DependentUpon>

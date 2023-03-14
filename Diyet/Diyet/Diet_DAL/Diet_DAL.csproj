@@ -52,12 +52,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDbContext.cs" />
+    <Compile Include="EntityConfigurations\CategoryConfiguration.cs" />
+    <Compile Include="EntityConfigurations\HealthyTipConfiguration.cs" />
+    <Compile Include="EntityConfigurations\MealConfiguration.cs" />
+    <Compile Include="EntityConfigurations\MotivationNoteConfiguration.cs" />
+    <Compile Include="EntityConfigurations\NoteConfiguration.cs" />
+    <Compile Include="EntityConfigurations\NutrientConfiguration.cs" />
+    <Compile Include="EntityConfigurations\NutrientInfoConfiguration.cs" />
+    <Compile Include="EntityConfigurations\UserConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategy\DietStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="EntityConfigurations\" />
     <Folder Include="Repositories\" />
-    <Folder Include="Strategy\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

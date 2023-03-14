@@ -8,7 +8,7 @@ namespace Diet_Model.Entity
 {
     public class Note
     {
-        public int NoteID { get; set; }
+        public int ID { get; set; }
         public string Head { get; set; }
         public string Text { get; set; }
 
