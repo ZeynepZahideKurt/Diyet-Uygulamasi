@@ -65,6 +65,8 @@
     <Compile Include="Repositories\CategoryRepository.cs" />
     <Compile Include="Repositories\HealthyTipRepository.cs" />
     <Compile Include="Repositories\MealRepository.cs" />
+    <Compile Include="Repositories\MotivationNoteRepository.cs" />
+    <Compile Include="Repositories\NoteRepository.cs" />
     <Compile Include="Repositories\NutrientInfoRepository.cs" />
     <Compile Include="Repositories\NutrientRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
