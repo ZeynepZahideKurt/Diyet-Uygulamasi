@@ -19,8 +19,8 @@ namespace Diet_DAL.EntityConfigurations
 
             HasMany(a => a.Nutrients).WithMany(a => a.UserToMeals).Map(cs =>
             {
-                cs.MapLeftKey("NutrientID");
-                cs.MapRightKey("UserToMealID");
+                cs.MapLeftKey("ID");
+                cs.MapRightKey("ID");
                 cs.ToTable("NutrientsToUserToMeals");
             });
         }

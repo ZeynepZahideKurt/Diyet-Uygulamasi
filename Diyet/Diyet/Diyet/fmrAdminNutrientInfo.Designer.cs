@@ -163,10 +163,10 @@
             // 
             // richTextBoxInfo
             // 
-            this.richTextBoxInfo.Location = new System.Drawing.Point(15, 19);
+            this.richTextBoxInfo.Location = new System.Drawing.Point(15, 20);
             this.richTextBoxInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBoxInfo.Name = "richTextBoxInfo";
-            this.richTextBoxInfo.Size = new System.Drawing.Size(196, 137);
+            this.richTextBoxInfo.Size = new System.Drawing.Size(236, 136);
             this.richTextBoxInfo.TabIndex = 0;
             this.richTextBoxInfo.Text = "";
             // 

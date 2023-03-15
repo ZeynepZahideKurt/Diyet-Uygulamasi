@@ -17,6 +17,8 @@ namespace Diet_DAL.Repositories
         {
             dbContext = new AppDbContext();
         }
+
+
         public List<UserToMeal> GetAllUserToMeal()
         {
             return dbContext.UserToMeals.ToList();
@@ -26,11 +28,17 @@ namespace Diet_DAL.Repositories
             return dbContext.UserToMeals.Where(a => a.ID == userTomealID).FirstOrDefault();
         }
 
-        //public List<User> GetUserToMealsByUserId(User user)
-        //{
-        //    var list= dbContext.UserToMeals.Where(a =>a.UserID==user.ID).ToList();
-        //    return list;
-        //}
+        public List<UserToMeal> GetUserToMealsByUserId(User user)
+        {
+            var list = dbContext.UserToMeals.Where(a => a.UserID == user.ID).ToList();
+            return list;
+        }
+
+        public List<UserToMeal> GetUserToMealsByUserId(Meal meal)
+        {
+            var list = dbContext.UserToMeals.Where(a => a.MealID == meal.ID).ToList();
+            return list;
+        }
 
         public bool Insert(UserToMeal userToMeal)
         {

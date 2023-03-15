@@ -35,7 +35,7 @@ namespace Diet_DAL.Repositories
 
         public List<User> GetAllUsers()
         {
-            return dbContext.Users.ToList();
+            return dbContext.Users.OrderBy(a=>a.FirstName).ToList();
         }
 
         public User GetUserById(int userId)

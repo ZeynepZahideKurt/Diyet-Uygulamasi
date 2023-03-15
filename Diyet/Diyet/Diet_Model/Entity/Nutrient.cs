@@ -19,6 +19,8 @@ namespace Diet_Model.Entity
 
         public Amount Amount { get; set; }
 
+        public string PhotoPath { get; set; } = null;  
+
         public virtual ICollection<UserToMeal> UserToMeals { get; set; }
 
         public int CategoryID { get; set; }

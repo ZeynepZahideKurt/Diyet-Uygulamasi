@@ -11,6 +11,7 @@ namespace Diet_DAL.Repositories
     {
 
         AppDbContext dbContext;
+
         public HealthyTipRepository()
         {
             dbContext = new AppDbContext();
@@ -24,19 +25,19 @@ namespace Diet_DAL.Repositories
             {
                 return dbContext.HealthyTips.Where(a => a.ID == healthytipID).FirstOrDefault();
             }
-
+            //Admin
             public bool Insert(HealthyTip healthyTip)
             {
                 dbContext.HealthyTips.Add(healthyTip);
                 return dbContext.SaveChanges() > 0;
             }
-
+            //Admin 
             public bool Update(HealthyTip healthyTip)
             {
                 HealthyTip updateHealthyTip = dbContext.HealthyTips.Where(a => a.ID == healthyTip.ID).FirstOrDefault();
                 return dbContext.SaveChanges() > 0;
             }
-
+            //Admin
             public bool Delete(HealthyTip healthyTip)
             {
                 HealthyTip deleteHealthyTip = dbContext.HealthyTips.Where(a => a.ID == healthyTip.ID).FirstOrDefault();

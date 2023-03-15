@@ -19,7 +19,7 @@ namespace Diet_DAL.Repositories
             return dbContext.NutrientInfos.ToList();
         }
 
-        public NutrientInfo GetNutrientInfoById(int nutrientId)
+        public NutrientInfo GetNutrientInfoByNutrientId(int nutrientId)
         {
             return dbContext.NutrientInfos.Where(a => a.NutrientID == nutrientId).FirstOrDefault();
         }

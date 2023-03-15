@@ -57,14 +57,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.motivationNotesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.healthyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,7 +68,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,7 +80,6 @@
             this.gradientPanel2.Controls.Add(this.label10);
             this.gradientPanel2.Controls.Add(this.pictureBox1);
             this.gradientPanel2.Controls.Add(this.groupBox2);
-            this.gradientPanel2.Controls.Add(this.groupBox1);
             this.gradientPanel2.Controls.Add(this.menuStrip1);
             this.gradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gradientPanel2.Location = new System.Drawing.Point(0, 0);
@@ -109,11 +99,11 @@
             this.groupBox4.Controls.Add(this.button10);
             this.groupBox4.Controls.Add(this.textBox6);
             this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Location = new System.Drawing.Point(336, 34);
+            this.groupBox4.Location = new System.Drawing.Point(12, 34);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(330, 141);
+            this.groupBox4.Size = new System.Drawing.Size(452, 141);
             this.groupBox4.TabIndex = 34;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Categories";
@@ -189,7 +179,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(672, 140);
+            this.label10.Location = new System.Drawing.Point(643, 142);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(73, 16);
             this.label10.TabIndex = 32;
@@ -199,7 +189,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(670, 34);
+            this.pictureBox1.Location = new System.Drawing.Point(625, 43);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 97);
@@ -233,7 +223,7 @@
             this.groupBox2.Size = new System.Drawing.Size(776, 283);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Foods";
+            this.groupBox2.Text = "Besin";
             // 
             // textBox4
             // 
@@ -255,11 +245,11 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label11.Location = new System.Drawing.Point(23, 160);
+            this.label11.Location = new System.Drawing.Point(32, 155);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 17);
+            this.label11.Size = new System.Drawing.Size(47, 17);
             this.label11.TabIndex = 27;
-            this.label11.Text = "Meal:";
+            this.label11.Text = "Öğün:";
             // 
             // comboBox2
             // 
@@ -276,7 +266,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(99, 29);
             this.button5.TabIndex = 25;
-            this.button5.Text = "Select";
+            this.button5.Text = "Seç";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // textBox5
@@ -291,21 +281,21 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label5.Location = new System.Drawing.Point(9, 202);
+            this.label5.Location = new System.Drawing.Point(18, 192);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 17);
+            this.label5.Size = new System.Drawing.Size(65, 17);
             this.label5.TabIndex = 23;
-            this.label5.Text = "Picture:";
+            this.label5.Text = "Fotoğraf:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label4.Location = new System.Drawing.Point(6, 112);
+            this.label4.Location = new System.Drawing.Point(15, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 17);
+            this.label4.Size = new System.Drawing.Size(65, 17);
             this.label4.TabIndex = 22;
-            this.label4.Text = "Category:";
+            this.label4.Text = "Kategori:";
             // 
             // textBox3
             // 
@@ -319,11 +309,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label3.Location = new System.Drawing.Point(9, 70);
+            this.label3.Location = new System.Drawing.Point(24, 65);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 17);
+            this.label3.Size = new System.Drawing.Size(48, 17);
             this.label3.TabIndex = 20;
-            this.label3.Text = "Calorie:";
+            this.label3.Text = "Kalori:";
             // 
             // textBox2
             // 
@@ -337,11 +327,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label2.Location = new System.Drawing.Point(16, 28);
+            this.label2.Location = new System.Drawing.Point(31, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 17);
+            this.label2.Size = new System.Drawing.Size(29, 17);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Name:";
+            this.label2.Text = "Ad:";
             // 
             // dataGridView1
             // 
@@ -361,7 +351,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(99, 28);
             this.button4.TabIndex = 11;
-            this.button4.Text = "Delete";
+            this.button4.Text = "Sil";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -371,7 +361,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(99, 28);
             this.button3.TabIndex = 10;
-            this.button3.Text = "Update";
+            this.button3.Text = "Güncelle";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -381,95 +371,8 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 28);
             this.button2.TabIndex = 8;
-            this.button2.Text = "Add";
+            this.button2.Text = "Ekle";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.groupBox1.Location = new System.Drawing.Point(3, 34);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(332, 141);
-            this.groupBox1.TabIndex = 29;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Meals";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(132, 29);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(150, 28);
-            this.comboBox1.TabIndex = 16;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label9.Location = new System.Drawing.Point(12, 35);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 17);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Current Meals:";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(228, 102);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 28);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(123, 102);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(99, 28);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Update";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(12, 102);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(99, 28);
-            this.button7.TabIndex = 12;
-            this.button7.Text = "Add";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(132, 61);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 26);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label1.Location = new System.Drawing.Point(63, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name:";
             // 
             // menuStrip1
             // 
@@ -485,38 +388,38 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(782, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(782, 28);
             this.menuStrip1.TabIndex = 33;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // motivationNotesToolStripMenuItem
             // 
             this.motivationNotesToolStripMenuItem.Name = "motivationNotesToolStripMenuItem";
-            this.motivationNotesToolStripMenuItem.Size = new System.Drawing.Size(137, 20);
+            this.motivationNotesToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
             this.motivationNotesToolStripMenuItem.Text = "Motivation Notes";
             // 
             // healthyToolStripMenuItem
             // 
             this.healthyToolStripMenuItem.Name = "healthyToolStripMenuItem";
-            this.healthyToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
+            this.healthyToolStripMenuItem.Size = new System.Drawing.Size(109, 24);
             this.healthyToolStripMenuItem.Text = "Healthy Tips";
             // 
             // reportsToolStripMenuItem
             // 
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
             this.reportsToolStripMenuItem.Text = "Report to User";
             // 
             // nutrientInformationToolStripMenuItem
             // 
             this.nutrientInformationToolStripMenuItem.Name = "nutrientInformationToolStripMenuItem";
-            this.nutrientInformationToolStripMenuItem.Size = new System.Drawing.Size(154, 20);
+            this.nutrientInformationToolStripMenuItem.Size = new System.Drawing.Size(154, 24);
             this.nutrientInformationToolStripMenuItem.Text = "Nutrient Information";
             // 
             // settingToolStripMenuItem
             // 
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
-            this.settingToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.settingToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
             this.settingToolStripMenuItem.Text = "Setting";
             // 
             // FrmAdminMain
@@ -537,8 +440,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -575,14 +476,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem motivationNotesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem healthyToolStripMenuItem;

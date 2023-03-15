@@ -24,6 +24,7 @@ namespace Diet_DAL.Repositories
             return dbContext.Meals.Where(a => a.ID == mealID).FirstOrDefault();
         }
 
+        /*
         public bool Insert(Meal meal)
         {
             dbContext.Meals.Add(meal);
@@ -41,6 +42,6 @@ namespace Diet_DAL.Repositories
             Meal deleteMeal = dbContext.Meals.Where(a => a.ID == meal.ID).FirstOrDefault();
             dbContext.Meals.Remove(deleteMeal);
             return dbContext.SaveChanges() > 0;
-        }
+        }*/
     }
 }

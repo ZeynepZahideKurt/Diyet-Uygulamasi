@@ -62,6 +62,12 @@
     <Compile Include="frmAddNutrient.Designer.cs">
       <DependentUpon>frmAddNutrient.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHealthyTipNotforUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHealthyTipNotforUser.Designer.cs">
+      <DependentUpon>frmHealthyTipNotforUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHomePage.cs">
       <SubType>Form</SubType>
     </Compile>

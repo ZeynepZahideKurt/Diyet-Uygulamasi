@@ -44,11 +44,11 @@
             this.listBoxFoods = new System.Windows.Forms.ListBox();
             this.txtBoxSearch = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbAmount = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cbMeal = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -61,6 +61,7 @@
             this.gradientPanel1.Angle = 60F;
             this.gradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.gradientPanel1.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
+            this.gradientPanel1.Controls.Add(this.textBox1);
             this.gradientPanel1.Controls.Add(this.label6);
             this.gradientPanel1.Controls.Add(this.label5);
             this.gradientPanel1.Controls.Add(this.label4);
@@ -75,7 +76,6 @@
             this.gradientPanel1.Controls.Add(this.listBoxFoods);
             this.gradientPanel1.Controls.Add(this.txtBoxSearch);
             this.gradientPanel1.Controls.Add(this.label3);
-            this.gradientPanel1.Controls.Add(this.cbAmount);
             this.gradientPanel1.Controls.Add(this.label2);
             this.gradientPanel1.Controls.Add(this.cbCategory);
             this.gradientPanel1.Controls.Add(this.label1);
@@ -220,19 +220,11 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(125, 376);
+            this.label3.Location = new System.Drawing.Point(125, 383);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 17);
             this.label3.TabIndex = 24;
             this.label3.Text = "Choose amount";
-            // 
-            // cbAmount
-            // 
-            this.cbAmount.FormattingEnabled = true;
-            this.cbAmount.Location = new System.Drawing.Point(128, 400);
-            this.cbAmount.Name = "cbAmount";
-            this.cbAmount.Size = new System.Drawing.Size(155, 24);
-            this.cbAmount.TabIndex = 21;
             // 
             // label2
             // 
@@ -272,6 +264,13 @@
             this.cbMeal.Size = new System.Drawing.Size(289, 24);
             this.cbMeal.TabIndex = 23;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(128, 403);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(155, 22);
+            this.textBox1.TabIndex = 42;
+            // 
             // frmAddNutrient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -308,10 +307,10 @@
         private System.Windows.Forms.ListBox listBoxFoods;
         private System.Windows.Forms.TextBox txtBoxSearch;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbAmount;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbCategory;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbMeal;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

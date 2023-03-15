@@ -430,7 +430,8 @@ namespace Diet_DAL.Strategy
                 NutrientName = "Patates Kızartması",
                 Calories = 2.54,
                 Amount = Amount.Gram,
-                CategoryID = fastfood.ID
+                CategoryID = fastfood.ID,
+                
             };
             context.Nutrients.Add(patatesKızartması);
 

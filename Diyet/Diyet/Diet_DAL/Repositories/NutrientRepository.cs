@@ -15,11 +15,12 @@ namespace Diet_DAL.Repositories
         {
             dbContext= new AppDbContext();
         }
-        /*public List<Nutrient> GetByUserToMealId(int userToMealId)
-        {
-
-            return dbContext.Nutrients.Where(a => a.UserToMeals == userToMealId ).ToList();
-        }*/
+        //public List<Nutrient> GetByUserToMealId(int userToMealId)
+        //{
+        //    var list=(from u in dbContext.Nutrients
+        //              join m in dbContext.UserToMeals on u.ID equals m)
+            
+        //}
 
         public Nutrient GetNutrientById(int nutrientId)
         {
@@ -51,7 +52,7 @@ namespace Diet_DAL.Repositories
 
         public List<Nutrient> GetAllNutrients()
         {
-            return dbContext.Nutrients.ToList();
+            return dbContext.Nutrients.OrderBy(a=>a.NutrientName).ToList();
         }
         public bool Delete(Nutrient nutrient)
         {

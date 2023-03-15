@@ -27,16 +27,12 @@ namespace Diet_DAL.EntityConfigurations
 
             //Many-to-many
 
-            
-
-            
-
-            HasMany(a => a.MotivationNotes).WithMany(a => a.Users).Map(cs =>
-            {
-                cs.MapLeftKey("ID");
-                cs.MapRightKey("ID");
-                cs.ToTable("UserToMotivationNote");
-            });
+            //HasMany(a => a.MotivationNotes).WithMany(a => a.Users).Map(cs =>
+            //{
+            //    cs.MapLeftKey("ID");
+            //    cs.MapRightKey("ID");
+            //    cs.ToTable("UserToMotivationNote");
+            //});
 
            
         }

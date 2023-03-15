@@ -23,14 +23,14 @@ namespace Diet_Model.Entity
         public int Height { get; set; }
         public int Kilo { get; set; }
         public string Gender { get; set; }
-    
 
-        public UserType UserType { get; set; }
+
+        public UserType UserType { get; set; } = UserType.Standard;
         
 
         //public virtual ICollection<HealthyTip> HealthyTips { get; set; }
 
-        public virtual ICollection<MotivationNote> MotivationNotes { get; set; }
+        //public virtual ICollection<MotivationNote> MotivationNotes { get; set; }
 
         
 

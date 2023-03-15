@@ -35,9 +35,9 @@ namespace Diet_DAL.Repositories
             return dbContext.SaveChanges() > 0;
         }
 
-        public MotivationNote GetMotivationById(int userId)
+        public MotivationNote GetMotivationById(int motivationId)
         {
-            return dbContext.MotivationNotes.FirstOrDefault();
+            return dbContext.MotivationNotes.Where(a=>a.ID==motivationId).FirstOrDefault();
         }
 
         public List<MotivationNote> GetAllList()

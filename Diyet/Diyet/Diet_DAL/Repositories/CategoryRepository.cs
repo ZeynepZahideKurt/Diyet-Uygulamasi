@@ -18,7 +18,7 @@ namespace Diet_DAL.Repositories
 
         public List<Category> GetAllCategory()
         {
-            return dbContext.Categories.ToList();
+            return dbContext.Categories.OrderBy(a=>a.CategoryName).ToList();
         }
 
         public Category GetCategoryById(int categoryID)
@@ -26,18 +26,19 @@ namespace Diet_DAL.Repositories
             return dbContext.Categories.Where(a => a.ID == categoryID).FirstOrDefault();
         }
 
+        //Admin
         public bool Insert(Category category)
         {
             dbContext.Categories.Add(category);
             return dbContext.SaveChanges() > 0;
         }
-
+        //Admin
         public bool Update(Category category)
         {
             Category updateCategory = dbContext.Categories.Where(a => a.ID == category.ID).FirstOrDefault();
             return dbContext.SaveChanges() > 0;
         }
-
+        //Admin
         public bool Delete(Category category)
         {
             Category deleteCategory = dbContext.Categories.Where(a => a.ID == category.ID).FirstOrDefault();
