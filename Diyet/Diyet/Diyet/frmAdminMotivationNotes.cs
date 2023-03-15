@@ -16,5 +16,15 @@ namespace Diyet
         {
             InitializeComponent();
         }
+       
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gradientPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

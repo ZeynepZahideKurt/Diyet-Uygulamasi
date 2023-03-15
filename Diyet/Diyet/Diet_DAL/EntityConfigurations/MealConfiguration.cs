@@ -12,7 +12,7 @@ namespace Diet_DAL.EntityConfigurations
     {
         public MealConfiguration()
         {
-            HasKey(a => a.ID);
+            //HasKey(a => a.ID);
             Property(a => a.MealName).IsRequired();
             Property(a => a.CreateTime).IsRequired();
 

@@ -12,7 +12,7 @@ namespace Diet_DAL.EntityConfigurations
     {
         public NutrientConfiguration()
         {
-            HasKey(a => a.ID);
+            //HasKey(a => a.ID);
             Property(a => a.NutrientName).IsRequired();
             Property(a => a.Amount).IsRequired();
             Property(a => a.Calories).IsRequired();

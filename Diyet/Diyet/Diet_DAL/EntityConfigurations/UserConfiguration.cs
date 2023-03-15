@@ -16,7 +16,7 @@ namespace Diet_DAL.EntityConfigurations
         {
 
 
-            HasKey(x => x.ID);
+            //HasKey(x => x.ID);
             Property(x => x.ID).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(a => a.FirstName).IsRequired().HasMaxLength(200);
             Property(a => a.LastName).IsRequired().HasMaxLength(200);
@@ -25,6 +25,7 @@ namespace Diet_DAL.EntityConfigurations
             Property(a => a.Gender).IsRequired();
             Property(a => a.UserType).IsRequired();
             HasIndex(a => a.Mail).IsUnique();
+            Property(a => a.Mail).HasMaxLength(100);
             
 
             //One-to-Many

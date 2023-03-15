@@ -10,3 +10,15 @@ D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_Model\obj\Debug\Diet_Model.csproj
 D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_Model\obj\Debug\Diet_Model.csproj.CopyComplete
 D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_Model\obj\Debug\Diet_Model.dll
 D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_Model\obj\Debug\Diet_Model.pdb
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diet_Model\bin\Debug\Diet_Model.dll.config
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diet_Model\bin\Debug\Diet_Model.dll
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diet_Model\bin\Debug\Diet_Model.pdb
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diet_Model\bin\Debug\EntityFramework.dll
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diet_Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diet_Model\bin\Debug\EntityFramework.xml
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diet_Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diet_Model\obj\Debug\Diet_Model.csproj.AssemblyReference.cache
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diet_Model\obj\Debug\Diet_Model.csproj.CoreCompileInputs.cache
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diet_Model\obj\Debug\Diet_Model.csproj.CopyComplete
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diet_Model\obj\Debug\Diet_Model.dll
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diet_Model\obj\Debug\Diet_Model.pdb

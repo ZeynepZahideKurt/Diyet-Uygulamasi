@@ -12,7 +12,7 @@ namespace Diet_DAL.EntityConfigurations
     {
         public MotivationNoteConfiguration()
         {
-            HasKey(a => a.ID);
+            //HasKey(a => a.ID);
             Property(a => a.Text).HasMaxLength(1000).IsRequired();
         }
     }

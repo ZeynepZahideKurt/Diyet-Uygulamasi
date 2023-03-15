@@ -15,7 +15,6 @@ namespace Diet_BL.Services
         {
             noterepository= new NoteRepository();
 
-            
         }
         void CheckNoteId(int noteId)
         {

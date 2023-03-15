@@ -12,7 +12,7 @@ namespace Diet_DAL.EntityConfigurations
     {
         public NoteConfiguration()
         {
-            HasKey(a => a.ID);
+            /*HasKey(a => a.ID);*/
             Property(a => a.Head).HasMaxLength(100).IsRequired();
             Property(a => a.Text).HasMaxLength(1000).IsRequired();
         }
