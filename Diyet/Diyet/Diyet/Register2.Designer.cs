@@ -30,16 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register2));
             this.gradientPanel1 = new Diyet.GradientPanel();
+            this.txtHeight = new System.Windows.Forms.TextBox();
             this.pbExit = new System.Windows.Forms.PictureBox();
             this.pbBack = new System.Windows.Forms.PictureBox();
             this.pbProfile = new System.Windows.Forms.PictureBox();
             this.btnSave = new System.Windows.Forms.Button();
-            this.cbSizeCm = new System.Windows.Forms.ComboBox();
             this.cbGender = new System.Windows.Forms.ComboBox();
-            this.cbSizeM = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -55,16 +53,14 @@
             this.gradientPanel1.Angle = 60F;
             this.gradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.gradientPanel1.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
+            this.gradientPanel1.Controls.Add(this.txtHeight);
             this.gradientPanel1.Controls.Add(this.pbExit);
             this.gradientPanel1.Controls.Add(this.pbBack);
             this.gradientPanel1.Controls.Add(this.pbProfile);
             this.gradientPanel1.Controls.Add(this.btnSave);
-            this.gradientPanel1.Controls.Add(this.cbSizeCm);
             this.gradientPanel1.Controls.Add(this.cbGender);
-            this.gradientPanel1.Controls.Add(this.cbSizeM);
             this.gradientPanel1.Controls.Add(this.label9);
             this.gradientPanel1.Controls.Add(this.label8);
-            this.gradientPanel1.Controls.Add(this.label10);
             this.gradientPanel1.Controls.Add(this.label12);
             this.gradientPanel1.Controls.Add(this.label11);
             this.gradientPanel1.Controls.Add(this.label7);
@@ -75,6 +71,15 @@
             this.gradientPanel1.Size = new System.Drawing.Size(782, 473);
             this.gradientPanel1.TabIndex = 2;
             this.gradientPanel1.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(239)))), ((int)(((byte)(217)))));
+            // 
+            // txtHeight
+            // 
+            this.txtHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtHeight.Location = new System.Drawing.Point(302, 189);
+            this.txtHeight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtHeight.Name = "txtHeight";
+            this.txtHeight.Size = new System.Drawing.Size(177, 26);
+            this.txtHeight.TabIndex = 58;
             // 
             // pbExit
             // 
@@ -121,15 +126,7 @@
             this.btnSave.TabIndex = 52;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
-            // 
-            // cbSizeCm
-            // 
-            this.cbSizeCm.FormattingEnabled = true;
-            this.cbSizeCm.Location = new System.Drawing.Point(419, 195);
-            this.cbSizeCm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbSizeCm.Name = "cbSizeCm";
-            this.cbSizeCm.Size = new System.Drawing.Size(60, 24);
-            this.cbSizeCm.TabIndex = 51;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // cbGender
             // 
@@ -139,15 +136,6 @@
             this.cbGender.Name = "cbGender";
             this.cbGender.Size = new System.Drawing.Size(177, 24);
             this.cbGender.TabIndex = 50;
-            // 
-            // cbSizeM
-            // 
-            this.cbSizeM.FormattingEnabled = true;
-            this.cbSizeM.Location = new System.Drawing.Point(302, 195);
-            this.cbSizeM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbSizeM.Name = "cbSizeM";
-            this.cbSizeM.Size = new System.Drawing.Size(60, 24);
-            this.cbSizeM.TabIndex = 49;
             // 
             // label9
             // 
@@ -170,17 +158,6 @@
             this.label8.Size = new System.Drawing.Size(69, 20);
             this.label8.TabIndex = 45;
             this.label8.Text = "Gender:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(387, 195);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(13, 20);
-            this.label10.TabIndex = 43;
-            this.label10.Text = ".";
             // 
             // label12
             // 
@@ -232,6 +209,8 @@
             this.Controls.Add(this.gradientPanel1);
             this.Name = "Register2";
             this.Text = "Register2";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Register2_FormClosed);
+            this.Load += new System.EventHandler(this.Register2_Load);
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
@@ -248,15 +227,13 @@
         private System.Windows.Forms.PictureBox pbBack;
         private System.Windows.Forms.PictureBox pbProfile;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.ComboBox cbSizeCm;
         private System.Windows.Forms.ComboBox cbGender;
-        private System.Windows.Forms.ComboBox cbSizeM;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtWeight;
+        private System.Windows.Forms.TextBox txtHeight;
     }
 }

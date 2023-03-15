@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Diet_DAL.Repositories
 {
-    internal class NutrientInfoRepository
+    public class NutrientInfoRepository
     {
         AppDbContext dbContext;
         public NutrientInfoRepository()

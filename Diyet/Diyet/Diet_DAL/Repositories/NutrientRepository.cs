@@ -8,20 +8,21 @@ using System.Threading.Tasks;
 
 namespace Diet_DAL.Repositories
 {
-    internal class NutrientRepository
+    public class NutrientRepository
     {
         AppDbContext dbContext;
         public NutrientRepository()
         {
             dbContext= new AppDbContext();
         }
-        //public List<Nutrient> GetByUserToMealId(int userToMealId)
+        //public List<Nutrient> GetById(Meal meal)
         //{
-        //    var list=(from u in dbContext.Nutrients
-        //              join m in dbContext.UserToMeals on u.ID equals m)
-            
-        //}
+        //    var nutrientlist = (from b in dbContext.Meals
+        //                        join u in dbContext.Users on b.Users equals u.
+        //                        select b).ToList();
+        //    return nutrientlist;
 
+        //}
         public Nutrient GetNutrientById(int nutrientId)
         {
             return dbContext.Nutrients.Where(a => a.ID == nutrientId).FirstOrDefault();
@@ -45,7 +46,7 @@ namespace Diet_DAL.Repositories
 
             updateNutrient.NutrientInfoID = nutrient.NutrientInfoID;
             updateNutrient.NutrientInfo = nutrient.NutrientInfo;
-            updateNutrient.UserToMeals = nutrient.UserToMeals;
+            //updateNutrient.UserToMeals = nutrient.UserToMeals;
 
             return dbContext.SaveChanges() > 0;
         }

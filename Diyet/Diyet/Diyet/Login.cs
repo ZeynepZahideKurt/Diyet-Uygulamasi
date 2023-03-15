@@ -16,5 +16,12 @@ namespace Diyet
         {
             InitializeComponent();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Register rg=new Register();
+            this.Hide();
+            rg.ShowDialog();
+        }
     }
 }

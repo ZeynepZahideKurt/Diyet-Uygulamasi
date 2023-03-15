@@ -12,9 +12,10 @@ namespace Diet_DAL
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext():base("Server=DESKTOP-KNS1IUF\\MSSQLSERVER2022;Database=Diyet01;Trusted_Connection=True;")
+        public AppDbContext():base("Server=DESKTOP-SIJUH3V\\MSSQLSERVER2022;Database=myDataBase;User Id=sa;Password=1234;")
         {
             Database.SetInitializer(new DietStrategy());
+            
         }
 
         public DbSet<User> Users { get; set; }
@@ -25,7 +26,7 @@ namespace Diet_DAL
         public DbSet<Note> Notes { get; set; }
         public DbSet<Nutrient> Nutrients { get; set; }
         public DbSet<NutrientInfo> NutrientInfos { get; set; }
-        public DbSet<UserToMeal> UserToMeals { get; set; }
+       
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -37,7 +38,7 @@ namespace Diet_DAL
             modelBuilder.Configurations.Add(new NutrientConfiguration());
             modelBuilder.Configurations.Add(new NutrientInfoConfiguration());
             modelBuilder.Configurations.Add(new UserConfiguration());
-            modelBuilder.Configurations.Add(new UserToMealConfiguration());
+           
         }
     }
 }

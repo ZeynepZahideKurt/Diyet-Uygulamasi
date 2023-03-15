@@ -546,6 +546,7 @@ namespace Diet_DAL.Strategy
 
             User admin = new User()
             {
+                
                 FirstName = "admin",
                 LastName= "admin",
                 Mail= "admin@gmail.com",

@@ -11,7 +11,6 @@ D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\obj\Debug\Diyet.frmAdminReport.r
 D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\obj\Debug\Diyet.FrmAdminReports.resources
 D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\obj\Debug\Diyet.frmComparisonReport.resources
 D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\obj\Debug\Diyet.frmEndOfTheDayReport.resources
-D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\obj\Debug\Diyet.frmFoodVariertyReport.resources
 D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\obj\Debug\Diyet.PasswordChange.resources
 D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\obj\Debug\Diyet.PasswordChangeControl.resources
 D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\obj\Debug\Diyet.Properties.Resources.resources
@@ -70,3 +69,22 @@ C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diyet\obj\Debug\
 C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diyet\obj\Debug\Diet.csproj.CoreCompileInputs.cache
 C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diyet\obj\Debug\Diyet.exe
 C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet\Diyet\Diyet\obj\Debug\Diyet.pdb
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\bin\Debug\Diet_BL.dll
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\bin\Debug\Diet_Model.dll
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\bin\Debug\EntityFramework.dll
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\bin\Debug\EntityFramework.SqlServer.dll
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\bin\Debug\Diet_DAL.dll
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\bin\Debug\Diet_BL.pdb
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\bin\Debug\Diet_BL.dll.config
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\bin\Debug\Diet_Model.pdb
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\bin\Debug\Diet_Model.dll.config
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\bin\Debug\EntityFramework.xml
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\bin\Debug\EntityFramework.SqlServer.xml
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\bin\Debug\Diet_DAL.pdb
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\bin\Debug\Diet_DAL.dll.config
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\obj\Debug\Diyet.fmrAdminNutrientInfo.resources
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\obj\Debug\Diyet.frmAddNutrient.resources
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\obj\Debug\Diyet.frmHomePage.resources
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\obj\Debug\Diyet.frmNutrientVarietyReport.resources
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\obj\Debug\Diyet.Register2.resources
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diyet\obj\Debug\Diet.csproj.CopyComplete

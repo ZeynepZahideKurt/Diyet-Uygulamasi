@@ -1,0 +1,15 @@
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\bin\Debug\Diet_DAL.dll.config
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\bin\Debug\Diet_DAL.dll
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\bin\Debug\Diet_DAL.pdb
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\bin\Debug\Diet_Model.dll
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\bin\Debug\EntityFramework.dll
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\bin\Debug\Diet_Model.pdb
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\bin\Debug\Diet_Model.dll.config
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\bin\Debug\EntityFramework.xml
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\obj\Debug\Diet_DAL.csproj.AssemblyReference.cache
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\obj\Debug\Diet_DAL.csproj.CoreCompileInputs.cache
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\obj\Debug\Diet_DAL.csproj.CopyComplete
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\obj\Debug\Diet_DAL.dll
+D:\C#\DiyetUygulaması\Github\Diyet\Diyet\Diet_DAL\obj\Debug\Diet_DAL.pdb

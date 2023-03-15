@@ -10,10 +10,10 @@ namespace Diet_Model.Entity
     {
         public int ID { get; set; }
         public string MealName { get; set; }
-    
-        public virtual IList<UserToMeal> UserToMeal { get; set; }
-        
-        
 
+        public DateTime CreateTime { get; set; }
+
+        public virtual ICollection<User> Users { get; set; }
+        public virtual ICollection<Nutrient> Nutrients { get; set; }
     }
 }

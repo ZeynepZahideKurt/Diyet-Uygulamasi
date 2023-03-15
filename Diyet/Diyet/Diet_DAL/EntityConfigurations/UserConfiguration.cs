@@ -1,8 +1,10 @@
 ﻿using Diet_Model.Entity;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,7 +14,10 @@ namespace Diet_DAL.EntityConfigurations
     {
         public UserConfiguration()
         {
+
+
             HasKey(x => x.ID);
+            Property(x => x.ID).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(a => a.FirstName).IsRequired().HasMaxLength(200);
             Property(a => a.LastName).IsRequired().HasMaxLength(200);
             Property(a => a.Height).IsRequired();
@@ -20,7 +25,7 @@ namespace Diet_DAL.EntityConfigurations
             Property(a => a.Gender).IsRequired();
             Property(a => a.UserType).IsRequired();
             HasIndex(a => a.Mail).IsUnique();
-
+            
 
             //One-to-Many
             HasMany(a => a.Notes).WithRequired(a => a.User).HasForeignKey(a => a.UserID);

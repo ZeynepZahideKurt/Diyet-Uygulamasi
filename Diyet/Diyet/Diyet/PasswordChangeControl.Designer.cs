@@ -36,7 +36,6 @@
             this.btnConfirm = new System.Windows.Forms.Button();
             this.lblMail = new System.Windows.Forms.Label();
             this.lblConCode = new System.Windows.Forms.Label();
-            this.txtMail = new System.Windows.Forms.TextBox();
             this.txtConfirmationCode = new System.Windows.Forms.TextBox();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
@@ -55,7 +54,6 @@
             this.gradientPanel1.Controls.Add(this.btnConfirm);
             this.gradientPanel1.Controls.Add(this.lblMail);
             this.gradientPanel1.Controls.Add(this.lblConCode);
-            this.gradientPanel1.Controls.Add(this.txtMail);
             this.gradientPanel1.Controls.Add(this.txtConfirmationCode);
             this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
@@ -114,11 +112,11 @@
             this.lblMail.AutoSize = true;
             this.lblMail.BackColor = System.Drawing.Color.Transparent;
             this.lblMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMail.Location = new System.Drawing.Point(160, 223);
+            this.lblMail.Location = new System.Drawing.Point(74, 233);
             this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(62, 20);
+            this.lblMail.Size = new System.Drawing.Size(295, 20);
             this.lblMail.TabIndex = 43;
-            this.lblMail.Text = "E-Mail:";
+            this.lblMail.Text = "E-Mailinize Gelen Kodu Lütfen Giriniz:";
             // 
             // lblConCode
             // 
@@ -130,15 +128,6 @@
             this.lblConCode.Size = new System.Drawing.Size(148, 20);
             this.lblConCode.TabIndex = 42;
             this.lblConCode.Text = "Confirmation Code";
-            // 
-            // txtMail
-            // 
-            this.txtMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtMail.Location = new System.Drawing.Point(270, 220);
-            this.txtMail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(276, 26);
-            this.txtMail.TabIndex = 40;
             // 
             // txtConfirmationCode
             // 
@@ -158,7 +147,7 @@
             this.Controls.Add(this.gradientPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PasswordChangeControl";
-            this.Text = "PasswordChangeControl";
+            this.Text = "MailCheckControl";
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
@@ -177,7 +166,6 @@
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Label lblMail;
         private System.Windows.Forms.Label lblConCode;
-        private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.TextBox txtConfirmationCode;
     }
 }

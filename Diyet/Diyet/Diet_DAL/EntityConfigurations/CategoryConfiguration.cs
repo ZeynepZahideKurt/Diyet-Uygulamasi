@@ -18,7 +18,7 @@ namespace Diet_DAL.EntityConfigurations
             //Relation
 
             //One-to-Many
-            HasMany(a => a.Nutrients).WithRequired(a => a.Category).HasForeignKey(a => a.ID);
+            HasMany(a => a.Nutrients).WithRequired(a => a.Category).HasForeignKey(a => a.CategoryID);
 
         }
     }
