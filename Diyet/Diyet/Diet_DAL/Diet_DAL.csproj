@@ -62,9 +62,11 @@
     <Compile Include="EntityConfigurations\UserConfiguration.cs" />
     <Compile Include="EntityConfigurations\UserToMealConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\MealRepository.cs" />
     <Compile Include="Repositories\NutrientInfoRepository.cs" />
     <Compile Include="Repositories\NutrientRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Repositories\UserToMealRepository.cs" />
     <Compile Include="Strategy\DietStrategy.cs" />
   </ItemGroup>
   <ItemGroup />

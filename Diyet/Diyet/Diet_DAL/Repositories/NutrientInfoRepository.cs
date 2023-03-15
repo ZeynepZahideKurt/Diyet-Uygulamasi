@@ -10,12 +10,16 @@ namespace Diet_DAL.Repositories
     internal class NutrientInfoRepository
     {
         AppDbContext dbContext;
-        public List<NutrientInfo> GetAllUsers()
+        public NutrientInfoRepository()
+        {
+            dbContext= new AppDbContext();
+        }
+        public List<NutrientInfo> GetAllNutrientInfo()
         {
             return dbContext.NutrientInfos.ToList();
         }
 
-        public NutrientInfo GetUserById(int nutrientId)
+        public NutrientInfo GetNutrientInfoById(int nutrientId)
         {
             return dbContext.NutrientInfos.Where(a => a.NutrientID == nutrientId).FirstOrDefault();
         }

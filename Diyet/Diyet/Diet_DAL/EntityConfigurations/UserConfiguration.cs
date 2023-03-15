@@ -15,7 +15,7 @@ namespace Diet_DAL.EntityConfigurations
             HasKey(x => x.ID);
             Property(a => a.FirstName).IsRequired().HasMaxLength(200);
             Property(a => a.LastName).IsRequired().HasMaxLength(200);
-            Property(a => a.Size).IsRequired();
+            Property(a => a.Height).IsRequired();
             Property(a => a.Kilo).IsRequired();
             Property(a => a.Gender).IsRequired();
             Property(a => a.UserType).IsRequired();

@@ -11,6 +11,10 @@ namespace Diet_DAL.Repositories
     internal class NutrientRepository
     {
         AppDbContext dbContext;
+        public NutrientRepository()
+        {
+            dbContext= new AppDbContext();
+        }
         /*public List<Nutrient> GetByUserToMealId(int userToMealId)
         {
 

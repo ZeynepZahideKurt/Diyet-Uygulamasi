@@ -25,6 +25,7 @@ namespace Diet_DAL
         public DbSet<Note> Notes { get; set; }
         public DbSet<Nutrient> Nutrients { get; set; }
         public DbSet<NutrientInfo> NutrientInfos { get; set; }
+        public DbSet<UserToMeal> UserToMeals { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -36,6 +37,7 @@ namespace Diet_DAL
             modelBuilder.Configurations.Add(new NutrientConfiguration());
             modelBuilder.Configurations.Add(new NutrientInfoConfiguration());
             modelBuilder.Configurations.Add(new UserConfiguration());
+            modelBuilder.Configurations.Add(new UserToMealConfiguration());
         }
     }
 }

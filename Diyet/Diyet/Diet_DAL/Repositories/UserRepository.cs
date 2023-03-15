@@ -10,6 +10,10 @@ namespace Diet_DAL.Repositories
     public class UserRepository
     {
         AppDbContext dbContext;
+        public UserRepository()
+        {
+            dbContext= new AppDbContext();
+        }
         public bool Insert(User user)
         {
             dbContext.Users.Add(user);
