@@ -40,7 +40,9 @@ namespace Diet_DAL.Repositories
         //Admin
         public bool Update(Category category)
         {
+            
             Category updateCategory = dbContext.Categories.Where(a => a.ID == category.ID).FirstOrDefault();
+            updateCategory.CategoryName = category.CategoryName;
             return dbContext.SaveChanges() > 0;
         }
         //Admin

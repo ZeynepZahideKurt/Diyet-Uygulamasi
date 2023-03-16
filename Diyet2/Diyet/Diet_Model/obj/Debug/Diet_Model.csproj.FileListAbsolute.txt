@@ -34,3 +34,15 @@ D:\C#\DiyetUygulaması\LocalRepo\Diyet2\Diyet\Diet_Model\obj\Debug\Diet_Model.cs
 D:\C#\DiyetUygulaması\LocalRepo\Diyet2\Diyet\Diet_Model\obj\Debug\Diet_Model.csproj.CopyComplete
 D:\C#\DiyetUygulaması\LocalRepo\Diyet2\Diyet\Diet_Model\obj\Debug\Diet_Model.dll
 D:\C#\DiyetUygulaması\LocalRepo\Diyet2\Diyet\Diet_Model\obj\Debug\Diet_Model.pdb
+C:\Users\ASUS\Desktop\Github\Github\Diyet2\Diyet\Diet_Model\bin\Debug\Diet_Model.dll.config
+C:\Users\ASUS\Desktop\Github\Github\Diyet2\Diyet\Diet_Model\bin\Debug\Diet_Model.dll
+C:\Users\ASUS\Desktop\Github\Github\Diyet2\Diyet\Diet_Model\bin\Debug\Diet_Model.pdb
+C:\Users\ASUS\Desktop\Github\Github\Diyet2\Diyet\Diet_Model\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Desktop\Github\Github\Diyet2\Diyet\Diet_Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\Github\Github\Diyet2\Diyet\Diet_Model\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\Github\Github\Diyet2\Diyet\Diet_Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\Github\Github\Diyet2\Diyet\Diet_Model\obj\Debug\Diet_Model.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Github\Github\Diyet2\Diyet\Diet_Model\obj\Debug\Diet_Model.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Github\Github\Diyet2\Diyet\Diet_Model\obj\Debug\Diet_Model.csproj.CopyComplete
+C:\Users\ASUS\Desktop\Github\Github\Diyet2\Diyet\Diet_Model\obj\Debug\Diet_Model.dll
+C:\Users\ASUS\Desktop\Github\Github\Diyet2\Diyet\Diet_Model\obj\Debug\Diet_Model.pdb
