@@ -27,7 +27,11 @@ namespace Diet_DAL.Repositories
         {
             return dbContext.Nutrients.Where(a => a.ID == nutrientId).FirstOrDefault();
         }
-
+       /*public List<Nutrient> Search(string s)
+        {
+            return dbContext.Nutrients.ContainsAsync(s);
+        }*/
+        
         public bool Insert(Nutrient nutrient)
         {
             dbContext.Nutrients.Add(nutrient);

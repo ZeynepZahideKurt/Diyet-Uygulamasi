@@ -28,8 +28,8 @@ namespace Diyet
             categoryService = new CategoryServices();
             mealService = new MealServices();
             ListNutrient();
-            ListCategory(); ListCategory2();
-            ListMeal();
+            ListCategory(); 
+            ListCategory2();
             ListAmount();
         }
         public void ListNutrient()
@@ -62,12 +62,7 @@ namespace Diyet
            /* cmbMiktarCinsi.DisplayMember = "CategoryName";
             cmbMiktarCinsi.ValueMember = "ID";*/
         }
-        public void ListMeal()
-        {
-            cmbCategory.DataSource = mealService.GetList();
-            cmbCategory.DisplayMember = "MealName";
-            cmbCategory.ValueMember = "ID";
-        }
+     
         private void FrmAdminMain_Load(object sender, EventArgs e)
         {
 
@@ -130,7 +125,6 @@ namespace Diyet
 
             }
         }
-        
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
@@ -142,11 +136,13 @@ namespace Diyet
                 NutrientName = txtAd.Text,
                 Calories = Convert.ToInt32(txtKalori.Text),
                 CategoryID = i,
-                Amount =(Amount)cmbMiktarCinsi.SelectedItem,
-                //Amount =tx
+                Amount =(Amount)cmbMiktarCinsi.SelectedIndex,
+                
 
             });
             MessageBox.Show(result ? "Ekleme başarılı" : "Ekleme başarız!");
+
+            ListNutrient();
         }
     }
 }

@@ -41,6 +41,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cmbMiktarCinsi = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.cmbKategoribesinin = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
             this.txtFoto = new System.Windows.Forms.TextBox();
@@ -61,8 +63,6 @@
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nutrientInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmbMiktarCinsi = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.gradientPanel2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,7 +85,7 @@
             this.gradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.gradientPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gradientPanel2.Name = "gradientPanel2";
-            this.gradientPanel2.Size = new System.Drawing.Size(880, 591);
+            this.gradientPanel2.Size = new System.Drawing.Size(1299, 591);
             this.gradientPanel2.TabIndex = 4;
             this.gradientPanel2.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(239)))), ((int)(((byte)(217)))));
             // 
@@ -110,6 +110,7 @@
             // 
             // cmbCategory
             // 
+            this.cmbCategory.Enabled = false;
             this.cmbCategory.FormattingEnabled = true;
             this.cmbCategory.Location = new System.Drawing.Point(134, 23);
             this.cmbCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -162,6 +163,7 @@
             // 
             // txtCategoryName
             // 
+            this.txtCategoryName.Enabled = false;
             this.txtCategoryName.Location = new System.Drawing.Point(134, 73);
             this.txtCategoryName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCategoryName.Name = "txtCategoryName";
@@ -182,7 +184,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(723, 178);
+            this.label10.Location = new System.Drawing.Point(1178, 214);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(96, 20);
             this.label10.TabIndex = 32;
@@ -192,10 +194,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(703, 54);
+            this.pictureBox1.Location = new System.Drawing.Point(1120, 42);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(112, 121);
+            this.pictureBox1.Size = new System.Drawing.Size(167, 156);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
@@ -223,13 +225,34 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(873, 354);
+            this.groupBox2.Size = new System.Drawing.Size(1296, 354);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Besin";
             // 
+            // cmbMiktarCinsi
+            // 
+            this.cmbMiktarCinsi.Enabled = false;
+            this.cmbMiktarCinsi.FormattingEnabled = true;
+            this.cmbMiktarCinsi.Location = new System.Drawing.Point(110, 237);
+            this.cmbMiktarCinsi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmbMiktarCinsi.Name = "cmbMiktarCinsi";
+            this.cmbMiktarCinsi.Size = new System.Drawing.Size(166, 28);
+            this.cmbMiktarCinsi.TabIndex = 42;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label1.Location = new System.Drawing.Point(5, 240);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 20);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "Miktar Cinsi:";
+            // 
             // cmbKategoribesinin
             // 
+            this.cmbKategoribesinin.Enabled = false;
             this.cmbKategoribesinin.FormattingEnabled = true;
             this.cmbKategoribesinin.Location = new System.Drawing.Point(110, 127);
             this.cmbKategoribesinin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -359,7 +382,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(317, 286);
+            this.dataGridView1.Size = new System.Drawing.Size(735, 286);
             this.dataGridView1.TabIndex = 13;
             // 
             // menuStrip1
@@ -376,65 +399,46 @@
             this.settingToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(880, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1949, 54);
             this.menuStrip1.TabIndex = 33;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // motivationNotesToolStripMenuItem
             // 
             this.motivationNotesToolStripMenuItem.Name = "motivationNotesToolStripMenuItem";
-            this.motivationNotesToolStripMenuItem.Size = new System.Drawing.Size(159, 24);
+            this.motivationNotesToolStripMenuItem.Size = new System.Drawing.Size(159, 48);
             this.motivationNotesToolStripMenuItem.Text = "Motivation Notes";
             // 
             // healthyToolStripMenuItem
             // 
             this.healthyToolStripMenuItem.Name = "healthyToolStripMenuItem";
-            this.healthyToolStripMenuItem.Size = new System.Drawing.Size(124, 24);
+            this.healthyToolStripMenuItem.Size = new System.Drawing.Size(124, 48);
             this.healthyToolStripMenuItem.Text = "Healthy Tips";
             // 
             // reportsToolStripMenuItem
             // 
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(144, 48);
             this.reportsToolStripMenuItem.Text = "Report to User";
             // 
             // nutrientInformationToolStripMenuItem
             // 
             this.nutrientInformationToolStripMenuItem.Name = "nutrientInformationToolStripMenuItem";
-            this.nutrientInformationToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+            this.nutrientInformationToolStripMenuItem.Size = new System.Drawing.Size(186, 48);
             this.nutrientInformationToolStripMenuItem.Text = "Nutrient Information";
             // 
             // settingToolStripMenuItem
             // 
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
-            this.settingToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.settingToolStripMenuItem.Size = new System.Drawing.Size(83, 48);
             this.settingToolStripMenuItem.Text = "Setting";
-            // 
-            // cmbMiktarCinsi
-            // 
-            this.cmbMiktarCinsi.FormattingEnabled = true;
-            this.cmbMiktarCinsi.Location = new System.Drawing.Point(110, 237);
-            this.cmbMiktarCinsi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cmbMiktarCinsi.Name = "cmbMiktarCinsi";
-            this.cmbMiktarCinsi.Size = new System.Drawing.Size(166, 28);
-            this.cmbMiktarCinsi.TabIndex = 42;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label1.Location = new System.Drawing.Point(5, 240);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 20);
-            this.label1.TabIndex = 41;
-            this.label1.Text = "Miktar Cinsi:";
             // 
             // FrmAdminMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(880, 591);
+            this.ClientSize = new System.Drawing.Size(1299, 591);
             this.Controls.Add(this.gradientPanel2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmAdminMain";
