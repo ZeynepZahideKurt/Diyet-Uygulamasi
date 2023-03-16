@@ -2,6 +2,7 @@
 using Diet_Model.Entity;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,7 @@ namespace Diet_BL.Services
 
             return Nutrients;
         }
-
+      
         public bool Insert(HealthyTip healthyTip)
         {
             return healthyTipRepository.Insert(healthyTip);
@@ -44,6 +45,10 @@ namespace Diet_BL.Services
         {
 
             return healthyTipRepository.Delete(healthyTip);
+        }
+        public HealthyTip GetHealthyTipById(int healthytipID)
+        {
+            return healthyTipRepository.GetHealthyTipById(healthytipID);
         }
     }
 }

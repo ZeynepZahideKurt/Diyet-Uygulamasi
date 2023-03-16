@@ -35,6 +35,8 @@ namespace Diet_DAL.Repositories
             public bool Update(HealthyTip healthyTip)
             {
                 HealthyTip updateHealthyTip = dbContext.HealthyTips.Where(a => a.ID == healthyTip.ID).FirstOrDefault();
+            updateHealthyTip.Text = healthyTip.Text;
+
                 return dbContext.SaveChanges() > 0;
             }
             //Admin

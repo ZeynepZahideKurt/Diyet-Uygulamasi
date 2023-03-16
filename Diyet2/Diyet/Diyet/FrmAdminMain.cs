@@ -144,5 +144,21 @@ namespace Diyet
 
             ListNutrient();
         }
+
+        private void healthyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAdminHealthyTips frm = new frmAdminHealthyTips();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        private void nutrientInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fmrAdminNutrientInfo frm = new fmrAdminNutrientInfo();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
     }
 }

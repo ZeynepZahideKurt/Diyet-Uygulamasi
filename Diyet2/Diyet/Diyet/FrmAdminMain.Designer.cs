@@ -399,38 +399,40 @@
             this.settingToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1949, 54);
+            this.menuStrip1.Size = new System.Drawing.Size(1299, 32);
             this.menuStrip1.TabIndex = 33;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // motivationNotesToolStripMenuItem
             // 
             this.motivationNotesToolStripMenuItem.Name = "motivationNotesToolStripMenuItem";
-            this.motivationNotesToolStripMenuItem.Size = new System.Drawing.Size(159, 48);
+            this.motivationNotesToolStripMenuItem.Size = new System.Drawing.Size(159, 28);
             this.motivationNotesToolStripMenuItem.Text = "Motivation Notes";
             // 
             // healthyToolStripMenuItem
             // 
             this.healthyToolStripMenuItem.Name = "healthyToolStripMenuItem";
-            this.healthyToolStripMenuItem.Size = new System.Drawing.Size(124, 48);
+            this.healthyToolStripMenuItem.Size = new System.Drawing.Size(124, 28);
             this.healthyToolStripMenuItem.Text = "Healthy Tips";
+            this.healthyToolStripMenuItem.Click += new System.EventHandler(this.healthyToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem
             // 
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(144, 48);
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(144, 28);
             this.reportsToolStripMenuItem.Text = "Report to User";
             // 
             // nutrientInformationToolStripMenuItem
             // 
             this.nutrientInformationToolStripMenuItem.Name = "nutrientInformationToolStripMenuItem";
-            this.nutrientInformationToolStripMenuItem.Size = new System.Drawing.Size(186, 48);
+            this.nutrientInformationToolStripMenuItem.Size = new System.Drawing.Size(186, 28);
             this.nutrientInformationToolStripMenuItem.Text = "Nutrient Information";
+            this.nutrientInformationToolStripMenuItem.Click += new System.EventHandler(this.nutrientInformationToolStripMenuItem_Click);
             // 
             // settingToolStripMenuItem
             // 
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
-            this.settingToolStripMenuItem.Size = new System.Drawing.Size(83, 48);
+            this.settingToolStripMenuItem.Size = new System.Drawing.Size(83, 28);
             this.settingToolStripMenuItem.Text = "Setting";
             // 
             // FrmAdminMain
