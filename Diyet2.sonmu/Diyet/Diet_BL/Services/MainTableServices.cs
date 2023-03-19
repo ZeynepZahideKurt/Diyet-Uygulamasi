@@ -1,0 +1,70 @@
+﻿using Diet_DAL.Repositories;
+using Diet_Model.Entity;
+using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Runtime.Remoting.Contexts;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Diet_BL.Services
+{
+    public class MainTableServices
+    {
+        MainTableRepository mainTableRepository;
+        public MainTableServices()
+        {
+            mainTableRepository= new MainTableRepository();
+        }
+        public bool Insert(MainTable mainTable)
+        {
+            return mainTableRepository.Insert(mainTable);
+        }
+
+        public List<MainTable> GetListMainTablesByID(int mainTableid)
+        {
+            return mainTableRepository.GetListMainTablesByID(mainTableid);
+        }
+
+        public List<MainTable> GetAllMainTables()
+        {
+            return mainTableRepository.GetAllMainTables();
+        }
+
+        public MainTable GetMainTableById(int mainTableId)
+        {
+            return mainTableRepository.GetMainTableById(mainTableId);
+        }
+
+        public List<MainTable> GetListMainTablesByUserID(int userID)
+        {
+            return mainTableRepository.GetListMainTablesByUserID(userID);
+        }
+
+        public List<MainTable> GetListMainTablesByMealID(int mealID)
+        {
+            return mainTableRepository.GetListMainTablesByMealID(mealID);
+        }
+
+        public List<MainTable> GetListMainTablesByNutrientID(int nutrientID)
+        {
+            return mainTableRepository.GetListMainTablesByNutrientID(nutrientID);
+        }
+
+        public MainTable GetMainTablesByUserID(int userID)
+        {
+            return mainTableRepository.GetMainTablesByUserID(userID);
+        }
+
+        public MainTable GetMainTablesByMealID(int mealID)
+        {
+            return mainTableRepository.GetMainTablesByMealID(mealID);
+        }
+
+        public MainTable GetMainTablesByNutrientID(int nutrientID)
+        {
+            return mainTableRepository.GetMainTablesByNutrientID(nutrientID);
+        }
+    }
+}
