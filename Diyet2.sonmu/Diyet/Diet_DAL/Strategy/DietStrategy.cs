@@ -13,63 +13,22 @@ namespace Diet_DAL.Strategy
     {
         protected override void Seed(AppDbContext context)
         {
-            #region MyRegion
-           
-
-            //Meal oglen = new Meal()
-            //{
-            //    MealName = "Öğlen"
-            //};
-
-            //Meal Aksam = new Meal()
-            //{
-            //    MealName = "Akşam"
-            //};
-
-            //Meal araOgun = new Meal()
-            //{
-            //    MealName = "Ara Öğun"
-            //};
-            //context.Meals.Add(araOgun);
-            //context.Meals.Add(sabah);
-            //context.Meals.Add(oglen);
-            //context.Meals.Add(Aksam);
-            #endregion
-
-
-
             Category tahilVeEkmekUrunleri = new Category()
             {
                 CategoryName = "TAHIL VE EKMEK URUNLERI"
             };
 
-            #region MyRegion
-            //context.Categories.Add(tahilVeEkmekUrunleri);
-
-
-            //Nutrient tamBugdayEkmegi = new Nutrient()
-            //{
-            //    NutrientName = "Tam Buğday Ekmeği",
-            //    Calories = 63,
-            //    Amount = Amount.Slice,
-            //    CategoryID = tahilVeEkmekUrunleri.ID
-
-            //};
-
-            //context.Nutrients.Add(tamBugdayEkmegi);
-
-            #endregion
 
             tahilVeEkmekUrunleri.Nutrients.Add(new Nutrient()
             {
                 NutrientName = "Tam Buğday Ekmeği",
                 Calories = 63,
                 Amount = Amount.Slice,
-                
+
 
             });
             context.Categories.Add(tahilVeEkmekUrunleri);
-
+            context.SaveChanges();
 
             Category SutVeSutUrunleri = new Category()
             {
@@ -158,7 +117,7 @@ namespace Diet_DAL.Strategy
             {
                 NutrientName = "Badem ",
                 Calories = 7.46,
-                Amount = Amount.Piece,
+                Amount = Amount.Gram,
 
 
             });
@@ -169,7 +128,7 @@ namespace Diet_DAL.Strategy
             {
                 NutrientName = "Fındık",
                 Calories = 8.8,
-                Amount = Amount.Piece,
+                Amount = Amount.Gram,
 
 
             });
@@ -287,7 +246,7 @@ namespace Diet_DAL.Strategy
                 Amount = Amount.Bowl,
 
             });
-            
+
             salatalar.Nutrients.Add(new Nutrient()
             {
                 NutrientName = "Tavuklu Salata",
@@ -310,7 +269,7 @@ namespace Diet_DAL.Strategy
 
             });
             context.Categories.Add(sebzeYemekleri);
-           
+
 
             sebzeYemekleri.Nutrients.Add(new Nutrient()
             {
@@ -343,432 +302,155 @@ namespace Diet_DAL.Strategy
 
             };
             context.SaveChanges();
-            /*Category SutVeSutUrunleri = new Category()
-            {
-                CategoryName = "SÜT VE SÜT ÜRÜNLER"
-            };
 
-            context.Categories.Add(SutVeSutUrunleri);
-
-            Nutrient lorPeynir = new Nutrient()
-            {
-                NutrientName = "Lor Peynir",
-                Calories = 0.86,
-                Amount = Amount.Gram,
-                CategoryID = SutVeSutUrunleri.ID
-
-            };
-            context.Nutrients.Add(lorPeynir);
-
-
-
-
-            Category Meyveler = new Category()
-            {
-                CategoryName = "Meyveler"
-            };
-
-            context.Categories.Add(Meyveler);
-
-            Nutrient Elma = new Nutrient()
-            {
-                NutrientName = "Elma",
-                Calories = 95,
-                Amount = Amount.Piece,
-                CategoryID = Meyveler.ID
-
-            };
-            context.Nutrients.Add(Elma);
-
-
-
-            Category cigSebzeler = new Category()
-            {
-                CategoryName = "ÇİĞ SEBZELER"
-            };
-            context.Categories.Add(cigSebzeler);
-
-            Nutrient Domates = new Nutrient()
-            {
-                NutrientName = "Domates",
-                Calories = 22,
-                Amount = Amount.Piece,
-                CategoryID = cigSebzeler.ID
-
-            };
-            context.Nutrients.Add(Domates);
-
-
-            Nutrient Salatalık = new Nutrient()
-            {
-                NutrientName = "Salatalık",
-                Calories = 15,
-                Amount = Amount.Piece,
-                CategoryID = cigSebzeler.ID
-
-            };
-            context.Nutrients.Add(Salatalık);
-
-            Nutrient Havuc = new Nutrient()
-            {
-                NutrientName = "Havuç",
-                Calories = 25,
-                Amount = Amount.Piece,
-                CategoryID = cigSebzeler.ID
-
-            };
-            context.Nutrients.Add(Havuc);
-
-            Category yagliTohumlarVeAtistirmaliklar = new Category()
-            {
-                CategoryName = "YAĞLI TOHUMLAR VE ATIŞTIRMALIKLAR"
-            };
-            context.Categories.Add(yagliTohumlarVeAtistirmaliklar);
-
-            Nutrient Badem = new Nutrient()
-            {
-                NutrientName = "Badem ",
-                Calories = 7.46,
-                Amount = Amount.Piece,
-                CategoryID = yagliTohumlarVeAtistirmaliklar.ID
-
-            };
-            context.Nutrients.Add(Badem);
-
-
-            Nutrient Findik = new Nutrient()
-            {
-                NutrientName = "Fındık",
-                Calories = 8.8,
-                Amount = Amount.Piece,
-                CategoryID = yagliTohumlarVeAtistirmaliklar.ID
-
-            };
-            context.Nutrients.Add(Findik);
-
-
-            Category Yaglar = new Category()
-            {
-                CategoryName = "YAĞLAR"
-            };
-            context.Categories.Add(Yaglar);
-
-            Nutrient Zeytinyagi = new Nutrient()
-            {
-                NutrientName = "Zeytinyağı",
-                Calories = 9.0,
-                Amount = Amount.Gram,
-                CategoryID = Yaglar.ID
-            };
-            context.Nutrients.Add(Zeytinyagi);
-
-            Nutrient Terayag = new Nutrient()
-
-            {
-                NutrientName = "Terayağ",
-                Calories = 7.2,
-                Amount = Amount.Gram,
-                CategoryID = Yaglar.ID
-            };
-
-            context.Nutrients.Add(Terayag);
-
-            Category denizUrunleri = new Category()
-            {
-                CategoryName = "DENİZ ÜRÜNLERİ"
-            };
-
-            context.Categories.Add(denizUrunleri);
-
-            Nutrient somon = new Nutrient()
-            {
-                NutrientName = "Somon",
-                Calories = 1.52,
-                Amount = Amount.Gram,
-                CategoryID = denizUrunleri.ID
-            };
-            context.Nutrients.Add(somon);
-
-
-            Nutrient alabalik = new Nutrient()
-            {
-                NutrientName = "Alabalık",
-                Calories = 1.68,
-                Amount = Amount.Gram,
-                CategoryID = denizUrunleri.ID
-            };
-            context.Nutrients.Add(alabalik);
-
-
-            Category Corbalar = new Category()
-            {
-                CategoryName = "ÇORBALAR"
-            };
-            context.Categories.Add(Corbalar);
-
-            Nutrient mercimekCorbasi = new Nutrient()
-            {
-                NutrientName = "Mercimek Çorbası",
-                Calories = 0.396,
-                Amount = Amount.Milliliter,
-                CategoryID = Corbalar.ID
-            };
-            context.Nutrients.Add(mercimekCorbasi); 
-
-            Nutrient tavukCorbasi = new Nutrient()
-            {
-                NutrientName = "Tavuk Çorbası",
-                Calories = 0.224,
-                Amount = Amount.Milliliter,
-                CategoryID = Corbalar.ID
-            };
-            context.Nutrients.Add(tavukCorbasi);
-
-
-            Category EtUrunleri = new Category()
-            {
-                CategoryName = "ET ÜRÜNLERİ"
-            };
-            context.Categories.Add(EtUrunleri); 
-
-            Nutrient Kofte = new Nutrient()
-            {
-                NutrientName = "Köfte",
-                Calories = 1.9,
-                Amount = Amount.Gram,
-                CategoryID = EtUrunleri.ID
-            };
-            context.Nutrients.Add(Kofte); 
-            
-
-            Nutrient Biftek = new Nutrient()
-            {
-                NutrientName = "Biftek",
-                Calories = 2.52,
-                Amount = Amount.Gram,
-                CategoryID = EtUrunleri.ID
-            };
-            context.Nutrients.Add(Biftek);
-
-            Category salatalar = new Category()
-            {
-                CategoryName = "SALATALAR"
-            };
-            context.Categories.Add(salatalar); 
-            
-            Nutrient sadeSalata = new Nutrient()
-            {
-                NutrientName = "Sade Salata(karışık yeşillik) ",
-                Calories = 9,
-                Amount = Amount.Bowl,
-                CategoryID = salatalar.ID
-            };
-            context.Nutrients.Add(sadeSalata); 
-            
-            Nutrient tavukluSalata = new Nutrient()
-            {
-                NutrientName = "Tavuklu Salata",
-                Calories = 225,
-                Amount = Amount.Bowl,
-                CategoryID = salatalar.ID
-            };
-            context.Nutrients.Add(tavukluSalata);
-
-            Category sebzeYemekleri = new Category()
-            {
-                CategoryName = "SEBZE YEMEKLERİ"
-            };
-            context.Categories.Add(sebzeYemekleri);
-
-            Nutrient bezelyeYemegi = new Nutrient()
-            {
-                NutrientName = "Bezelye Yemeği (Etli/Tavuklu/Kıymalı) ",
-                Calories = 29.4,
-                Amount = Amount.Tablespoon,
-                CategoryID = sebzeYemekleri.ID
-            };
-            context.Nutrients.Add(bezelyeYemegi);
-
-
-            Nutrient brokoli = new Nutrient()
-            {
-                NutrientName = "Zeytinyağlı Brokoli ",
-                Calories = 1.08,
-                Amount = Amount.Tablespoon,
-                CategoryID = sebzeYemekleri.ID
-            };
-            context.Nutrients.Add(brokoli);
-
-
-            Category tahil = new Category()
-            {
-                CategoryName = "TAHIL VE KURUBAKLAGİL YEMEKLERİ"
-            };
-            context.Categories.Add(tahil);
-
-            Nutrient KuruFasulyeYemegi = new Nutrient()
-            {
-                NutrientName = "Kuru Fasülye Yemeği ",
-                Calories = 33.8,
-                Amount = Amount.Tablespoon,
-                CategoryID = tahil.ID
-            };
-            context.Nutrients.Add(KuruFasulyeYemegi);
-
-
-             Nutrient Makarna = new Nutrient()
-            {
-                NutrientName = "Makarna(Peynirli) ",
-                Calories = 29.35,
-                Amount = Amount.Tablespoon,
-                CategoryID = tahil.ID
-            };
-            context.Nutrients.Add(Makarna);
 
 
             Category haslamaSebze = new Category()
             {
                 CategoryName = "BUHARDA VEYA HAŞLAMA OLARAK TÜKETİLECEK SEBZELER"
             };
-            context.Categories.Add(haslamaSebze);
 
-            Nutrient Karnabahar = new Nutrient()
+
+            haslamaSebze.Nutrients.Add(new Nutrient()
             {
                 NutrientName = "Karnabahar ",
                 Calories = 29,
                 Amount = Amount.Bowl,
-                CategoryID = haslamaSebze.ID
-            };
-            context.Nutrients.Add(Karnabahar);
-            
-            
-            Nutrient TazeFasulye = new Nutrient()
+
+            });
+
+
+
+            haslamaSebze.Nutrients.Add(new Nutrient()
             {
                 NutrientName = "Taze Fasülye ",
                 Calories = 44,
                 Amount = Amount.Bowl,
-                CategoryID = haslamaSebze.ID
-            };
-            context.Nutrients.Add(TazeFasulye);
-            
-            
+
+            });
+            context.Categories.Add(haslamaSebze);
+            context.SaveChanges();
+
             Category kahvaltilik = new Category()
             {
                 CategoryName = "KAHVALTILIK"
             };
-            context.Categories.Add(kahvaltilik);
 
-            Nutrient Menemen = new Nutrient()
+
+            kahvaltilik.Nutrients.Add(new Nutrient()
             {
                 NutrientName = "Menemen (2 yumurtalı) ",
                 Calories = 1.36,
                 Amount = Amount.Gram,
-                CategoryID = kahvaltilik.ID
-            };
-            context.Nutrients.Add(Menemen);
 
+            });
+            context.Categories.Add(kahvaltilik);
+            context.SaveChanges();
 
             Category KumesHayvanlari = new Category()
             {
                 CategoryName = "KÜMES HAYVANLARI"
             };
-            context.Categories.Add(KumesHayvanlari); 
 
-            Nutrient HindiGogus = new Nutrient()
+
+            KumesHayvanlari.Nutrients.Add(new Nutrient()
             {
                 NutrientName = "Hindi(Göğüs)",
                 Calories = 1.26,
                 Amount = Amount.Gram,
-                CategoryID = KumesHayvanlari.ID
-            };
-            context.Nutrients.Add(HindiGogus);
+
+            });
 
 
-           Nutrient TavukKanat = new Nutrient()
+
+            KumesHayvanlari.Nutrients.Add(new Nutrient()
             {
                 NutrientName = "Tavuk(Kanat)",
                 Calories = 2.0,
                 Amount = Amount.Gram,
-                CategoryID = KumesHayvanlari.ID
-            }; 
-            context.Nutrients.Add(TavukKanat);
+
+            });
+            context.Categories.Add(KumesHayvanlari);
+            context.SaveChanges();
 
 
             Category fastfood = new Category()
             {
                 CategoryName = "FASTFOOD",
-                
-                
+
+
             };
-            context.Categories.Add(fastfood); 
-            
-            Nutrient cheeseburger = new Nutrient()
+            context.Categories.Add(fastfood);
+
+            fastfood.Nutrients.Add(new Nutrient()
             {
                 NutrientName = "Cheeseburger",
                 Calories = 2.63,
                 Amount = Amount.Gram,
-                CategoryID = fastfood.ID
-            };
-            context.Nutrients.Add(cheeseburger); 
-            
-            Nutrient patatesKızartması = new Nutrient()
+
+            });
+
+
+            fastfood.Nutrients.Add(new Nutrient()
             {
                 NutrientName = "Patates Kızartması",
                 Calories = 2.54,
                 Amount = Amount.Gram,
-                CategoryID = fastfood.ID,
-                
-            };
-            context.Nutrients.Add(patatesKızartması);
+
+
+            });
+            context.Categories.Add(fastfood);
+            context.SaveChanges();
 
 
             Category AlkolluIcecekler = new Category()
             {
                 CategoryName = "ALKOLLÜ İÇECEKLER"
             };
-            context.Categories.Add(AlkolluIcecekler); 
-            
-            Nutrient Bira = new Nutrient()
+
+
+            AlkolluIcecekler.Nutrients.Add(new Nutrient()
             {
                 NutrientName = "Bira",
                 Calories = 0.43,
                 Amount = Amount.Milliliter,
-                CategoryID = AlkolluIcecekler.ID
-            };
-            context.Nutrients.Add(Bira); 
-               
-            
-            Nutrient Raki = new Nutrient()
+
+            });
+
+
+
+
+            AlkolluIcecekler.Nutrients.Add(new Nutrient()
             {
                 NutrientName = "Rakı",
                 Calories = 2.51,
                 Amount = Amount.Milliliter,
-               CategoryID = AlkolluIcecekler.ID
-            };
-            context.Nutrients.Add(Raki);
+
+            });
+            context.Categories.Add(AlkolluIcecekler);
+            context.SaveChanges();
+
 
             Category Icecekler = new Category()
             {
                 CategoryName = "İÇECEKLER"
             };
-            context.Categories.Add(Icecekler);
 
-            Nutrient Su = new Nutrient()
+
+            Icecekler.Nutrients.Add(new Nutrient()
             {
                 NutrientName = "Su",
                 Calories = 0,
                 Amount = Amount.Milliliter,
-                CategoryID = Icecekler.ID
-            };
-            context.Nutrients.Add(Su);
-            Nutrient Yumurta = new Nutrient()
-            {
-                NutrientName = "Yumurta (Haşlanmış)",
-                Calories = 70,
-                Amount = Amount.Piece,
-                CategoryID = kahvaltilik.ID
-            };
-            context.Nutrients.Add(Yumurta);*/
+
+            });
+            context.Categories.Add(Icecekler);
+            context.SaveChanges();
+
+
+
+
+
 
             MotivationNote not1 = new MotivationNote()
             {
