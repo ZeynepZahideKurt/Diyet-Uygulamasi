@@ -25,7 +25,6 @@ namespace Diet_Model.Entity
 
         public string PhotoPath { get; set; } = null;  
 
-        public virtual ICollection<Meal> Meals { get; set; }
 
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }

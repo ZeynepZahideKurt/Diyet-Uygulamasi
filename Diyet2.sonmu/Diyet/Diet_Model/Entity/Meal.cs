@@ -11,7 +11,6 @@ namespace Diet_Model.Entity
     {
         public Meal()
         {
-            Nutrients = new List<Nutrient>();
             MainTables = new List<MainTable>();
             //Users= new List<User>();
         }
@@ -20,8 +19,6 @@ namespace Diet_Model.Entity
 
         public DateTime CreateTime { get; set; }
 
-        public virtual ICollection<User> Users { get; set; }
-        public virtual ICollection<Nutrient> Nutrients { get; set; }
 
         public virtual ICollection<MainTable> MainTables { get; set; }
     }

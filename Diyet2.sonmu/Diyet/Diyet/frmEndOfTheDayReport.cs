@@ -33,10 +33,10 @@ namespace Diyet
         private void CreateColumnGraph()
         {
 
-            chart1.DataSource = nutrientServices.GetCaloribyUserID(user.ID,addedDay);
+           /* chart1.DataSource = nutrientServices.GetCaloribyUserID(user.ID,addedDay);
             chart1.Series["Günlük Kalori"].XValueMember = "MealName";
             chart1.Series["Günlük Kalori"].YValueMembers = "Calories";
-            chart1.Titles.Add("Gün Sonu Raporu");
+            chart1.Titles.Add("Gün Sonu Raporu");*/
 
         }
         private void CreatePieChart()
@@ -46,10 +46,10 @@ namespace Diyet
             {
                 series.Points.Clear();
             }
-            chart2.DataSource = nutrientServices.GetCaloribyUserID(user.ID, addedDay);
+            /*chart2.DataSource = nutrientServices.GetCaloribyUserID(user.ID, addedDay);
             chart2.Series["Günlük Kalori"].XValueMember = "MealName";
             chart2.Series["Günlük Kalori"].YValueMembers = "Calories";
-            chart2.Titles.Add("Gün Sonu Raporu");
+            chart2.Titles.Add("Gün Sonu Raporu");*/
         }
 
     }

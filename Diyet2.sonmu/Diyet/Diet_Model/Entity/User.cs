@@ -18,7 +18,6 @@ namespace Diet_Model.Entity
     {
         public User()
         {
-            Meals= new List<Meal>();
             Notes= new List<Note>();
             MainTables=new List<MainTable>();
         }
@@ -46,7 +45,6 @@ namespace Diet_Model.Entity
 
         public virtual ICollection<MainTable> MainTables { get; set; }
 
-        //çoka çok için ortak tablo oluşturduk (DateTime Özelliğini ekleyebilmek için)
-        public virtual ICollection<Meal> Meals { get; set; }
+
     }
 }

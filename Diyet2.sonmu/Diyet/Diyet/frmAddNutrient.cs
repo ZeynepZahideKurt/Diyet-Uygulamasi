@@ -140,14 +140,14 @@ namespace Diyet
             
         }
 
-        private void listBoxFoods_SelectedIndexChanged(object sender, EventArgs e)
+        
+
+        private void listBoxFoods_MouseClick(object sender, MouseEventArgs e)
         {
-          
-            int nutId = (int)listBoxFoods.SelectedValue;
+            int i = (int)listBoxFoods.SelectedValue;
             try
             {
-                Nutrient nut = nutrientServices.GetByNutrientId(nutId);
-                label4.Text=nut.Amount.ToString();
+                label4.Text = nutrientServices.GetByNutrientId(i).Amount.ToString();
             }
             catch (Exception ex)
             {
@@ -155,5 +155,7 @@ namespace Diyet
                 MessageBox.Show(ex.Message);
             }
         }
+
+       
     }
 }

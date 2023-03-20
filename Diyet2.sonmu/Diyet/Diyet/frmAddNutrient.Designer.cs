@@ -87,24 +87,26 @@
             this.gradientPanel1.Controls.Add(this.cbMeal);
             this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(1104, 475);
+            this.gradientPanel1.Size = new System.Drawing.Size(1242, 594);
             this.gradientPanel1.TabIndex = 2;
             this.gradientPanel1.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(239)))), ((int)(((byte)(217)))));
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(128, 403);
+            this.textBox1.Location = new System.Drawing.Point(144, 504);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 22);
+            this.textBox1.Size = new System.Drawing.Size(174, 26);
             this.textBox1.TabIndex = 42;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(1046, 383);
+            this.label6.Location = new System.Drawing.Point(1177, 479);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(14, 16);
+            this.label6.Size = new System.Drawing.Size(18, 20);
             this.label6.TabIndex = 41;
             this.label6.Text = "0";
             // 
@@ -112,9 +114,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(908, 383);
+            this.label5.Location = new System.Drawing.Point(1022, 479);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 16);
+            this.label5.Size = new System.Drawing.Size(152, 20);
             this.label5.TabIndex = 40;
             this.label5.Text = "Toplam kalori miktarı";
             // 
@@ -122,27 +124,28 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(289, 403);
+            this.label4.Location = new System.Drawing.Point(325, 504);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 16);
+            this.label4.Size = new System.Drawing.Size(63, 20);
             this.label4.TabIndex = 40;
             this.label4.Text = "amount";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(51, 33);
+            this.dateTimePicker1.Location = new System.Drawing.Point(57, 41);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(176, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(198, 26);
             this.dateTimePicker1.TabIndex = 39;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox4.Location = new System.Drawing.Point(14, 14);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox4.Size = new System.Drawing.Size(34, 38);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 34;
             this.pictureBox4.TabStop = false;
@@ -151,10 +154,10 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1049, 11);
+            this.pictureBox3.Location = new System.Drawing.Point(1180, 14);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.Size = new System.Drawing.Size(34, 38);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 33;
             this.pictureBox3.TabStop = false;
@@ -163,9 +166,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1013, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1140, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(34, 38);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
@@ -179,12 +183,14 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(409, 58);
+            this.dataGridView1.Location = new System.Drawing.Point(460, 72);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(670, 317);
+            this.dataGridView1.Size = new System.Drawing.Size(754, 396);
             this.dataGridView1.TabIndex = 31;
+            
             // 
             // Column1
             // 
@@ -224,9 +230,10 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(877, 415);
+            this.button3.Location = new System.Drawing.Point(987, 519);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 31);
+            this.button3.Size = new System.Drawing.Size(108, 39);
             this.button3.TabIndex = 29;
             this.button3.Text = "Remove";
             this.button3.UseVisualStyleBackColor = true;
@@ -234,9 +241,10 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(979, 415);
+            this.button2.Location = new System.Drawing.Point(1101, 519);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 31);
+            this.button2.Size = new System.Drawing.Size(108, 39);
             this.button2.TabIndex = 29;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = true;
@@ -245,9 +253,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(244, 430);
+            this.button1.Location = new System.Drawing.Point(274, 538);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 31);
+            this.button1.Size = new System.Drawing.Size(108, 39);
             this.button1.TabIndex = 30;
             this.button1.Text = "Choose";
             this.button1.UseVisualStyleBackColor = true;
@@ -256,18 +265,20 @@
             // listBoxFoods
             // 
             this.listBoxFoods.FormattingEnabled = true;
-            this.listBoxFoods.ItemHeight = 16;
-            this.listBoxFoods.Location = new System.Drawing.Point(51, 193);
+            this.listBoxFoods.ItemHeight = 20;
+            this.listBoxFoods.Location = new System.Drawing.Point(57, 241);
+            this.listBoxFoods.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBoxFoods.Name = "listBoxFoods";
-            this.listBoxFoods.Size = new System.Drawing.Size(289, 180);
+            this.listBoxFoods.Size = new System.Drawing.Size(325, 224);
             this.listBoxFoods.TabIndex = 28;
-            this.listBoxFoods.SelectedIndexChanged += new System.EventHandler(this.listBoxFoods_SelectedIndexChanged);
+            this.listBoxFoods.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listBoxFoods_MouseClick);
             // 
             // txtBoxSearch
             // 
-            this.txtBoxSearch.Location = new System.Drawing.Point(50, 162);
+            this.txtBoxSearch.Location = new System.Drawing.Point(56, 202);
+            this.txtBoxSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBoxSearch.Name = "txtBoxSearch";
-            this.txtBoxSearch.Size = new System.Drawing.Size(118, 22);
+            this.txtBoxSearch.Size = new System.Drawing.Size(132, 26);
             this.txtBoxSearch.TabIndex = 27;
             this.txtBoxSearch.Text = "Search";
             // 
@@ -276,9 +287,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(125, 383);
+            this.label3.Location = new System.Drawing.Point(141, 479);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 17);
+            this.label3.Size = new System.Drawing.Size(122, 20);
             this.label3.TabIndex = 24;
             this.label3.Text = "Choose amount";
             // 
@@ -287,18 +298,19 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(48, 113);
+            this.label2.Location = new System.Drawing.Point(54, 141);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 17);
+            this.label2.Size = new System.Drawing.Size(142, 20);
             this.label2.TabIndex = 25;
             this.label2.Text = "Choose a category";
             // 
             // cbCategory
             // 
             this.cbCategory.FormattingEnabled = true;
-            this.cbCategory.Location = new System.Drawing.Point(51, 132);
+            this.cbCategory.Location = new System.Drawing.Point(57, 165);
+            this.cbCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(289, 24);
+            this.cbCategory.Size = new System.Drawing.Size(325, 28);
             this.cbCategory.TabIndex = 22;
             this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
             // 
@@ -307,27 +319,29 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(48, 58);
+            this.label1.Location = new System.Drawing.Point(54, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 17);
+            this.label1.Size = new System.Drawing.Size(115, 20);
             this.label1.TabIndex = 26;
             this.label1.Text = "Choose a meal";
             // 
             // cbMeal
             // 
             this.cbMeal.FormattingEnabled = true;
-            this.cbMeal.Location = new System.Drawing.Point(51, 77);
+            this.cbMeal.Location = new System.Drawing.Point(57, 96);
+            this.cbMeal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbMeal.Name = "cbMeal";
-            this.cbMeal.Size = new System.Drawing.Size(289, 24);
+            this.cbMeal.Size = new System.Drawing.Size(325, 28);
             this.cbMeal.TabIndex = 23;
             this.cbMeal.SelectedIndexChanged += new System.EventHandler(this.cbMeal_SelectedIndexChanged);
             // 
             // frmAddNutrient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1104, 475);
+            this.ClientSize = new System.Drawing.Size(1242, 594);
             this.Controls.Add(this.gradientPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmAddNutrient";
             this.Text = "Add Nutrient";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddNutrient_FormClosed);

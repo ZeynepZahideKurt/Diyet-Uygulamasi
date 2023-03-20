@@ -69,9 +69,280 @@ namespace Diet_DAL.Strategy
 
             });
             context.Categories.Add(tahilVeEkmekUrunleri);
+
+
+            Category SutVeSutUrunleri = new Category()
+            {
+                CategoryName = "SÜT VE SÜT ÜRÜNLER"
+            };
+
+
+
+            SutVeSutUrunleri.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Lor Peynir",
+                Calories = 0.86,
+                Amount = Amount.Gram,
+
+
+            });
+            context.Categories.Add(SutVeSutUrunleri);
             context.SaveChanges();
 
 
+
+
+            Category Meyveler = new Category()
+            {
+                CategoryName = "MEYVELER"
+            };
+
+            Meyveler.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Elma",
+                Calories = 95,
+                Amount = Amount.Piece,
+
+
+            });
+            context.Categories.Add(Meyveler);
+
+
+
+            Category cigSebzeler = new Category()
+            {
+                CategoryName = "ÇİĞ SEBZELER"
+            };
+
+
+            cigSebzeler.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Domates",
+                Calories = 22,
+                Amount = Amount.Piece,
+
+
+            });
+
+
+
+            cigSebzeler.Nutrients.Add(new Nutrient()
+
+            {
+                NutrientName = "Salatalık",
+                Calories = 15,
+                Amount = Amount.Piece,
+
+
+            });
+
+
+            cigSebzeler.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Havuç",
+                Calories = 25,
+                Amount = Amount.Piece,
+
+
+            });
+            context.Categories.Add(cigSebzeler);
+            context.SaveChanges();
+
+            Category yagliTohumlarVeAtistirmaliklar = new Category()
+            {
+                CategoryName = "YAĞLI TOHUMLAR VE ATIŞTIRMALIKLAR"
+            };
+            context.Categories.Add(yagliTohumlarVeAtistirmaliklar);
+
+            yagliTohumlarVeAtistirmaliklar.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Badem ",
+                Calories = 7.46,
+                Amount = Amount.Piece,
+
+
+            });
+            context.Categories.Add(yagliTohumlarVeAtistirmaliklar);
+            context.SaveChanges();
+
+            yagliTohumlarVeAtistirmaliklar.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Fındık",
+                Calories = 8.8,
+                Amount = Amount.Piece,
+
+
+            });
+
+
+            Category Yaglar = new Category()
+            {
+                CategoryName = "YAĞLAR"
+            };
+
+
+            Yaglar.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Zeytinyağı",
+                Calories = 9.0,
+                Amount = Amount.Gram,
+
+            });
+            context.Categories.Add(Yaglar);
+            context.SaveChanges();
+
+
+            Yaglar.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Terayağ",
+                Calories = 7.2,
+                Amount = Amount.Gram,
+
+            });
+
+
+
+            Category denizUrunleri = new Category()
+            {
+                CategoryName = "DENİZ ÜRÜNLERİ"
+            };
+
+            context.Categories.Add(denizUrunleri);
+
+            denizUrunleri.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Somon",
+                Calories = 1.52,
+                Amount = Amount.Gram,
+
+            });
+
+            denizUrunleri.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Alabalık",
+                Calories = 1.68,
+                Amount = Amount.Gram,
+
+            });
+
+
+            Category Corbalar = new Category()
+            {
+                CategoryName = "ÇORBALAR"
+            };
+
+            Corbalar.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Mercimek Çorbası",
+                Calories = 0.396,
+                Amount = Amount.Milliliter,
+
+            });
+            context.Categories.Add(Corbalar);
+
+
+            Corbalar.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Tavuk Çorbası",
+                Calories = 0.224,
+                Amount = Amount.Milliliter,
+
+            });
+
+
+
+            Category EtUrunleri = new Category()
+            {
+                CategoryName = "ET ÜRÜNLERİ"
+            };
+
+
+            EtUrunleri.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Köfte",
+                Calories = 1.9,
+                Amount = Amount.Gram,
+
+            });
+
+            EtUrunleri.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Biftek",
+                Calories = 2.52,
+                Amount = Amount.Gram,
+
+            });
+            context.Categories.Add(EtUrunleri);
+
+            Category salatalar = new Category()
+            {
+                CategoryName = "SALATALAR"
+            };
+
+            context.Categories.Add(salatalar);
+            salatalar.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Sade Salata(karışık yeşillik) ",
+                Calories = 9,
+                Amount = Amount.Bowl,
+
+            });
+            
+            salatalar.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Tavuklu Salata",
+                Calories = 225,
+                Amount = Amount.Bowl,
+
+            });
+
+            Category sebzeYemekleri = new Category()
+            {
+                CategoryName = "SEBZE YEMEKLERİ"
+            };
+
+
+            sebzeYemekleri.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Bezelye Yemeği (Etli/Tavuklu/Kıymalı) ",
+                Calories = 29.4,
+                Amount = Amount.Tablespoon,
+
+            });
+            context.Categories.Add(sebzeYemekleri);
+           
+
+            sebzeYemekleri.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Zeytinyağlı Brokoli ",
+                Calories = 1.08,
+                Amount = Amount.Tablespoon,
+
+            });
+
+            Category tahil = new Category()
+            {
+                CategoryName = "TAHIL VE KURUBAKLAGİL YEMEKLERİ"
+            };
+
+
+            tahil.Nutrients.Add(new Nutrient()
+            {
+                NutrientName = "Kuru Fasülye Yemeği ",
+                Calories = 33.8,
+                Amount = Amount.Tablespoon,
+
+            });
+            context.Categories.Add(tahil);
+
+            Nutrient Makarna = new Nutrient()
+            {
+                NutrientName = "Makarna(Peynirli) ",
+                Calories = 29.35,
+                Amount = Amount.Tablespoon,
+
+            };
+            context.SaveChanges();
             /*Category SutVeSutUrunleri = new Category()
             {
                 CategoryName = "SÜT VE SÜT ÜRÜNLER"

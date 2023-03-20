@@ -46,16 +46,16 @@ namespace Diet_BL.Services
         }
 
 
-        public List<Nutrient> GetCaloribyUserID(int userid, DateTime dt)
+        /*public List<Nutrient> GetCaloribyUserID(int userid, DateTime dt)
         {
             return nutrientRepository.GetCaloribyUserID(userid,dt);
 
-        }
-        public List<Nutrient> GetNutrientsbyMealID(int mealid)
+        }*/
+       /* public List<Nutrient> GetNutrientsbyMealID(int mealid)
         {
             return nutrientRepository.GetNutrientsbyMealID(mealid);
 
-        }
+        }*/
         public List<Nutrient> GetNutrientsbyCategoryID(int CatID)
         {
 

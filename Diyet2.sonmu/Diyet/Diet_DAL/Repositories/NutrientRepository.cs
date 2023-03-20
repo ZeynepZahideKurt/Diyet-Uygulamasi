@@ -24,7 +24,7 @@ namespace Diet_DAL.Repositories
         //    return nutrientlist;
 
         //}
-        public List<Nutrient> GetCaloribyUserID(int userid, DateTime dt)
+        /*public List<Nutrient> GetCaloribyUserID(int userid, DateTime dt)
         {
             var list = dbContext.Database.SqlQuery<Nutrient>
                 ("SELECT m.MealName, SUM(n.Calories) AS Calories FROM dbo.Nutrients n" +
@@ -36,8 +36,8 @@ namespace Diet_DAL.Repositories
                 , new SqlParameter("@UserID", userid), new SqlParameter("@Time",dt));
             return list.ToList();
 
-        }
-        public List<Nutrient> GetNutrientsbyMealID(int mealid)
+        }*/
+        /*public List<Nutrient> GetNutrientsbyMealID(int mealid)
         {
             var list = dbContext.Database.SqlQuery<Nutrient>
                 ("SELECT n.NutrientName FROM dbo.Nutrients n" +
@@ -47,7 +47,7 @@ namespace Diet_DAL.Repositories
                 , new SqlParameter("@mealID", mealid));
             return list.ToList();
 
-        }
+        }*/
 
         public List<Nutrient> GetNutrientsbyCategoryID(int CatID)
         {
@@ -86,6 +86,7 @@ namespace Diet_DAL.Repositories
         {
             Nutrient updateNutrient = dbContext.Nutrients.Where(a => a.ID == nutrient.ID).FirstOrDefault();
             updateNutrient.NutrientName = nutrient.NutrientName;
+ 
             updateNutrient.Calories = nutrient.Calories;
             updateNutrient.Amount = nutrient.Amount;
 

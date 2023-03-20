@@ -17,20 +17,20 @@ namespace Diet_DAL.EntityConfigurations
             Property(a => a.CreateTime).IsRequired();
 
             //many to many
-            HasMany(a => a.Nutrients).WithMany(a => a.Meals).Map(cs =>
+            /*HasMany(a => a.Nutrients).WithMany(a => a.Meals).Map(cs =>
             {
                 cs.MapLeftKey("NutrientID");
                 cs.MapRightKey("MealID");
                 cs.ToTable("NutrientsToMeals");
-            });
+            });*/
 
             //many to many
-            HasMany(a => a.Users).WithMany(a => a.Meals).Map(cs =>
+            /*HasMany(a => a.Users).WithMany(a => a.Meals).Map(cs =>
             {
                 cs.MapLeftKey("UserID");
                 cs.MapRightKey("MealID");
                 cs.ToTable("UserToMeals");
-            });
+            });*/
 
             HasMany(a => a.MainTables).WithRequired(a => a.Meal).HasForeignKey(a => a.MealID);
         }
