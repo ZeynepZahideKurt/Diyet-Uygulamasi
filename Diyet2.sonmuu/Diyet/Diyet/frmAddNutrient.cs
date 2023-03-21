@@ -32,10 +32,10 @@ namespace Diyet
             mainTableServices= new MainTableServices(); 
             user =_user;
         }
-        int i;
+       
         private void frmAddNutrient_Load(object sender, EventArgs e)
         {
-
+            
             FillCmbMeal();
             FillListBox();
             //listBoxFoods.SelectedIndex = -1;
@@ -46,17 +46,24 @@ namespace Diyet
         {
 
         }
-        private void FillListboxByCategory()
+        //private void FillListboxByCategory()
+        //{
+        //    listBoxFoods.Items.Clear();
+        //    var list = nutrientServices.GetNutrientsbyCategoryID(catID);
+        //    listBoxFoods.DataSource= list;
+        //    listBoxFoods.DisplayMember= "NutrientName";
+        //    listBoxFoods.ValueMember = "ID";
+        //}
+        void ListNutrientforCategory(int catID)
         {
-            listBoxFoods.Items.Clear();
-            var list = nutrientServices.GetNutrientsbyCategoryID(catID);
-            listBoxFoods.DataSource= list;
-            listBoxFoods.DisplayMember= "NutrientName";
+            //listBoxFoods.Items.Clear();
+            listBoxFoods.DataSource = categoryServices.GetNutrientByCategoryId(catID);
+            listBoxFoods.DisplayMember = "NutrientName";
             listBoxFoods.ValueMember = "ID";
         }
         private void FillListBox()
         {
-            listBoxFoods.Items.Clear();
+            //listBoxFoods.Items.Clear();
             listBoxFoods.DataSource = nutrientServices.GetList();
             listBoxFoods.DisplayMember = "NutrientName";
             listBoxFoods.ValueMember = "ID";
@@ -87,7 +94,7 @@ namespace Diyet
         int catID;
         private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
-            catID=cbCategory.SelectedIndex;
+            //catID=cbCategory.SelectedIndex;
           
         }
 
@@ -112,7 +119,9 @@ namespace Diyet
                     UserID = user.ID,
                     MealID = meal.ID,
                     NutrientID = (int)listBoxFoods.SelectedValue,
-               };
+                    Amt = Convert.ToDouble(textBox1.Text),
+                    //TotalCalorie= Amt* nutrientServices.GetByNutrientId((int)listBoxFoods.SelectedValue).Calories,
+                };
                 bool result = mainTableServices.Insert(mainTable);
                 if(nutrientServices.GetByNutrientId((int)listBoxFoods.SelectedValue).Description!= null)
                     MessageBox.Show(nutrientServices.GetByNutrientId((int)listBoxFoods.SelectedValue).Description);
@@ -160,6 +169,33 @@ namespace Diyet
             }
         }
 
-       
+        private void cbCategory_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked == false)
+            {
+                catID = (int)cbCategory.SelectedValue;
+                ListNutrientforCategory(catID);
+            }
+            
+           
+        }
+
+        private void txtBoxSearch_TextChanged(object sender, EventArgs e)
+        {
+            ListNutrientforCategory(catID);
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                FillListBox();
+            }
+            else
+            {
+                
+                ListNutrientforCategory(catID);
+            }
+        }
     }
 }

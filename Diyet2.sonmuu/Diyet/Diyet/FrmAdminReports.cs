@@ -25,7 +25,7 @@ namespace Diyet
 
         private void FrmAdminReports_Load(object sender, EventArgs e)
         {
-            richTextBox1.Enabled= false;
+            
             FillListBox();
         }
         

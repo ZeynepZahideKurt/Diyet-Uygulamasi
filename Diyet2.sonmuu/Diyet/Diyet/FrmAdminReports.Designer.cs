@@ -51,11 +51,11 @@
             this.gradientPanel2.Angle = 60F;
             this.gradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.gradientPanel2.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
+            this.gradientPanel2.Controls.Add(this.groupBox2);
+            this.gradientPanel2.Controls.Add(this.groupBox1);
             this.gradientPanel2.Controls.Add(this.pictureBox7);
             this.gradientPanel2.Controls.Add(this.pictureBox8);
             this.gradientPanel2.Controls.Add(this.pictureBox9);
-            this.gradientPanel2.Controls.Add(this.groupBox2);
-            this.gradientPanel2.Controls.Add(this.groupBox1);
             this.gradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.gradientPanel2.Margin = new System.Windows.Forms.Padding(4);
@@ -63,7 +63,6 @@
             this.gradientPanel2.Size = new System.Drawing.Size(782, 473);
             this.gradientPanel2.TabIndex = 4;
             this.gradientPanel2.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(239)))), ((int)(((byte)(217)))));
-           
             // 
             // pictureBox7
             // 
@@ -106,14 +105,14 @@
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.richTextBox1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(374, 66);
+            this.groupBox2.Location = new System.Drawing.Point(372, 66);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Size = new System.Drawing.Size(396, 396);
-            this.groupBox2.TabIndex = 26;
+            this.groupBox2.TabIndex = 53;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Comments From Admin";
+            this.groupBox2.Text = "Not";
             // 
             // richTextBox1
             // 
@@ -131,14 +130,14 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.listBox1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 66);
+            this.groupBox1.Location = new System.Drawing.Point(10, 66);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Size = new System.Drawing.Size(356, 396);
-            this.groupBox1.TabIndex = 21;
+            this.groupBox1.TabIndex = 52;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Comments Title From Admin";
+            this.groupBox1.Text = "Doktorun Sizin İçin Yazdığı Notlar";
             // 
             // label1
             // 
@@ -146,9 +145,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label1.Location = new System.Drawing.Point(17, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 17);
+            this.label1.Size = new System.Drawing.Size(246, 17);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Please pick one title to be seen";
+            this.label1.Text = "Görüntülemek istediğiniz notu seçiniz:";
             // 
             // listBox1
             // 
@@ -159,7 +158,6 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(313, 284);
             this.listBox1.TabIndex = 0;
-            this.listBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseClick);
             // 
             // FrmAdminReports
             // 

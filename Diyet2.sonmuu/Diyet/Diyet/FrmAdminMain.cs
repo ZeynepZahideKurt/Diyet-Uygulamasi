@@ -147,6 +147,7 @@ namespace Diyet
             if (txtFoto.Text != "")
                 pictureBox2.Image = Image.FromFile(txtFoto.Text);
             ListNutrient();
+            txtClear();
         }
 
         private void healthyToolStripMenuItem_Click(object sender, EventArgs e)
@@ -190,6 +191,7 @@ namespace Diyet
             txtKalori.Text = "";
             txtFoto.Text = "";
             richTextBox1.Text = "";
+            pictureBox2.Image = null;
         }
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
@@ -226,6 +228,22 @@ namespace Diyet
             }
         }
 
+        private void motivationNotesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAdminMotivationNotes mn=new frmAdminMotivationNotes();
+            this.Hide();
+            mn.ShowDialog();
+            this.Show();
+        }
+
+        private void reportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAdminReport frm=new frmAdminReport();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             try
@@ -246,11 +264,15 @@ namespace Diyet
 
                 if (dataGridView1.CurrentRow.Cells[5].Value != null)
                     txtFoto.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-
+                else
+                {
+                    pictureBox2.Image = null;
+                    txtFoto.Text = "";
+                }
 
                 if (txtFoto.Text != "")
                     pictureBox2.Image = Image.FromFile(txtFoto.Text);
-
+                
                 //dataGridView1.CurrentRow.Cells[5].Visible= false;
 
                 secilenCategoryId = Convert.ToInt32(dataGridView1.CurrentRow.Cells[6].Value.ToString());

@@ -14,7 +14,8 @@ namespace Diet_DAL.EntityConfigurations
         {
             //HasKey(a => a.ID);
             Property(a => a.MealName).IsRequired();
-            Property(a => a.CreateTime).IsRequired();
+            Property(a => a.CreateTime).IsRequired().HasColumnType("Date");
+
 
             //many to many
             /*HasMany(a => a.Nutrients).WithMany(a => a.Meals).Map(cs =>

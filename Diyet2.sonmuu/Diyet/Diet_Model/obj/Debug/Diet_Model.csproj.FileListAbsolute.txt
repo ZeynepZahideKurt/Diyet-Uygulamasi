@@ -70,3 +70,15 @@ C:\Users\ASUS\Desktop\Diyet2.sonmu\Diyet\Diet_Model\obj\Debug\Diet_Model.csproj.
 C:\Users\ASUS\Desktop\Diyet2.sonmu\Diyet\Diet_Model\obj\Debug\Diet_Model.csproj.CopyComplete
 C:\Users\ASUS\Desktop\Diyet2.sonmu\Diyet\Diet_Model\obj\Debug\Diet_Model.dll
 C:\Users\ASUS\Desktop\Diyet2.sonmu\Diyet\Diet_Model\obj\Debug\Diet_Model.pdb
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diet_Model\bin\Debug\Diet_Model.dll.config
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diet_Model\bin\Debug\Diet_Model.dll
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diet_Model\bin\Debug\Diet_Model.pdb
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diet_Model\bin\Debug\EntityFramework.dll
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diet_Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diet_Model\bin\Debug\EntityFramework.xml
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diet_Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diet_Model\obj\Debug\Diet_Model.csproj.AssemblyReference.cache
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diet_Model\obj\Debug\Diet_Model.csproj.CoreCompileInputs.cache
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diet_Model\obj\Debug\Diet_Model.csproj.CopyComplete
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diet_Model\obj\Debug\Diet_Model.dll
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diet_Model\obj\Debug\Diet_Model.pdb

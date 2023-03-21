@@ -34,6 +34,16 @@ namespace Diet_DAL.Repositories
             return dbContext.Categories.Where(a => a.ID == CategoryId).ToList();
         }
 
+        public List<Nutrient> GetNutrientByCategoryId(int categoryId)
+        {
+            var nutList = (from n in dbContext.Nutrients
+                           join c in dbContext.Categories on n.CategoryID equals c.ID
+                           where c.ID == categoryId
+                           select n).OrderBy(a => a.NutrientName).ToList();
+
+            return nutList;
+        }
+
         //Admin
         public bool Insert(Category category)
         {

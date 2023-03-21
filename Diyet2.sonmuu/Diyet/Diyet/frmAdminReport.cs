@@ -1,5 +1,6 @@
 ﻿using Diet_BL.Services;
 using Diet_Model.Entity;
+using Diet_Model.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,27 +19,48 @@ namespace Diyet
 
         NoteServices noteServices;
         UserService userService;
-        MealServices mealServices;
+        MainTableServices mainTableServices;
         public frmAdminReport()
         {
             InitializeComponent();
             noteServices = new NoteServices();
             userService = new UserService();
-            mealServices = new MealServices();
+            mainTableServices = new MainTableServices();
         }
 
         private void frmAdminReport_Load(object sender, EventArgs e)
         {
+            comboBox1.SelectedIndex = -1;
+            comboBox2.Enabled = false;
+            comboBox3.Enabled = false;
+            button2.Enabled = false;
+            FillUserCombox();
+            button1.Enabled = false;
+            richTextBox1.Enabled = false;
 
         }
-        void FillCombox()
+        void FillUserCombox()
         {
             try
             {
-                List<User> users = userService.GetAllUsers();
+                List<User> users = userService.GetAllUsers().Where(a => a.UserType == UserType.Standard).ToList();
                 comboBox1.DataSource = users;
                 comboBox1.DisplayMember = "Firstname";
                 comboBox1.ValueMember = "ID";
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+        void FillDateCombos(int userid)
+        {
+            try
+            {
+                mainTableServices.GetDatebyUserId(userid, comboBox2);
+                mainTableServices.GetDatebyUserId(userid, comboBox3);
 
             }
             catch (Exception ex)
@@ -55,40 +77,31 @@ namespace Diyet
             bool datetimeControl = DateTimeControl();
             try
             {
-                if(changedD1 == true && changedD2==true || changedD1==false && changedD2==true ||
-                    changedD1==true && changedD2 == false)
+                if (datetimeControl == true)
                 {
-                    if(datetimeControl == true) 
+                    if (comboBox1.SelectedIndex != -1)
                     {
-                        if (comboBox1.SelectedIndex == -1)
+                        result = noteServices.Insert(new Note()
                         {
-                            result = noteServices.Insert(new Note()
-                            {
-                                Text = richTextBox1.Text,
-                                UserID = userID,
-                            });
-                            MessageBox.Show(result ? "Ekleme başarılı" : "Ekleme başarız!");
-                            richTextBox1.Clear();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Bir note eklemeden önce kullanıcı seçmelisiniz");
-                            return;
-                        }
+                            Head = textBox1.Text,
+                            Text = richTextBox1.Text,
+                            UserID = userID,
+                        });
+                        MessageBox.Show(result ? "Ekleme başarılı" : "Ekleme başarız!");
+                        richTextBox1.Clear();
+                        textBox1.Clear();
                     }
                     else
                     {
-                        MessageBox.Show("Başlangıç bitiş tarihinden büyük olamaz. Lütfen tarihlerinizi kontrol ediniz");
+                        MessageBox.Show("Bir note eklemeden önce kullanıcı seçmelisiniz");
                         return;
                     }
-                    
                 }
                 else
                 {
-                    MessageBox.Show("Herhangi bir tarih seçimi yapmadınız! Tarihlerinizi tekrar kontrol ediniz!");
+                    MessageBox.Show("Başlangıç bitiş tarihinden büyük olamaz. Lütfen tarihlerinizi kontrol ediniz");
                     return;
                 }
-
 
             }
             catch (Exception ex)
@@ -98,22 +111,15 @@ namespace Diyet
             }
         }
       
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            GrafikOlustur();
-        }
-        private void GrafikOlustur()
+        private void GrafikOlustur(int userid)
         {
 
-            chart1.DataSource = mealServices.GetMealbyUserIDwithTime(userID, dateTimePicker1.Value, dateTimePicker2.Value);
-            chart1.Series["Günlük Kalori"].XValueMember = "CreateTime";
-            chart1.Series["Günlük Kalori"].YValueMembers = "Calories";
-            chart1.Titles.Add(dateTimePicker1.Value.ToString() + " - " + dateTimePicker2.Value.ToString() + " Arasında Alınan Kalori Değeri");
+            mainTableServices.GetCaloriesbyUserID(userid, chart1, Convert.ToDateTime(comboBox2.Text), Convert.ToDateTime(comboBox3.Text));
 
         }
         private bool DateTimeControl()
         {
-            if (dateTimePicker1.Value > dateTimePicker2.Value)
+            if (Convert.ToDateTime(comboBox2.Text) > Convert.ToDateTime(comboBox3.Text))
             {
                 return false;
             }
@@ -123,18 +129,23 @@ namespace Diyet
             }
         }
 
-        bool changedD1=false;
-        bool changedD2=false;
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        int userid;
+
+        private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            changedD1= true;
+            userid = (int)comboBox1.SelectedValue;
+            comboBox2.Enabled = true;
+            comboBox3.Enabled = true;
+            FillDateCombos(userid);
+            button2.Enabled = true;
+
         }
 
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            changedD2= true;
+            GrafikOlustur(userid);
+            richTextBox1.Enabled = true;
+            button1.Enabled = true;
         }
-
-       
     }
 }

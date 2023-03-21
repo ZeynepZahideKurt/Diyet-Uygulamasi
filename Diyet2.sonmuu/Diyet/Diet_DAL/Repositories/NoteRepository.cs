@@ -36,7 +36,7 @@ namespace Diet_DAL.Repositories
 
         public List<Note> GetByUserId(int userId)
         {
-            return dbContext.Notes.Where(a => a.ID == userId).ToList();
+            return dbContext.Notes.Where(a => a.UserID == userId).ToList();
         }
 
         public Note GetNoteById(int noteId)

@@ -18,5 +18,9 @@ namespace Diet_Model.Entity
 
         public int MealID { get; set; }
         public virtual Meal Meal { get; set; }
+
+        public Double TotalCalorie { get; set; } = 0;
+        
+        public Double Amt { get; set; }
     }
 }

@@ -19,6 +19,7 @@ namespace Diet_Model.Entity
 
         public DateTime CreateTime { get; set; }
 
+       
 
         public virtual ICollection<MainTable> MainTables { get; set; }
     }

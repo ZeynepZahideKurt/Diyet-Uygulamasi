@@ -31,10 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHomePage));
             this.gradientPanel1 = new Diyet.GradientPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,6 +39,7 @@
             this.pbWater = new System.Windows.Forms.PictureBox();
             this.pbWaterMinus = new System.Windows.Forms.PictureBox();
             this.pbWaterPlus = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,6 +47,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.blogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sağlıklıYaşamTüyolarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,16 +57,17 @@
             this.kıyasRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yemekÇeşitliliğiRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.gradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNutrient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWater)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWaterMinus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWaterPlus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,82 +78,41 @@
             this.gradientPanel1.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.gradientPanel1.Controls.Add(this.label5);
             this.gradientPanel1.Controls.Add(this.dateTimePicker1);
-            this.gradientPanel1.Controls.Add(this.pictureBox7);
-            this.gradientPanel1.Controls.Add(this.pictureBox8);
-            this.gradientPanel1.Controls.Add(this.pictureBox9);
             this.gradientPanel1.Controls.Add(this.lblWelcome);
             this.gradientPanel1.Controls.Add(this.groupBox2);
+            this.gradientPanel1.Controls.Add(this.pictureBox7);
             this.gradientPanel1.Controls.Add(this.groupBox1);
+            this.gradientPanel1.Controls.Add(this.pictureBox8);
+            this.gradientPanel1.Controls.Add(this.pictureBox9);
             this.gradientPanel1.Controls.Add(this.menuStrip1);
             this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.gradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(782, 473);
+            this.gradientPanel1.Size = new System.Drawing.Size(691, 537);
             this.gradientPanel1.TabIndex = 2;
             this.gradientPanel1.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(239)))), ((int)(((byte)(217)))));
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(381, 48);
+            this.label5.Font = new System.Drawing.Font("Rockwell", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label5.Location = new System.Drawing.Point(349, 80);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 16);
-            this.label5.TabIndex = 40;
+            this.label5.Size = new System.Drawing.Size(322, 100);
+            this.label5.TabIndex = 44;
             this.label5.Text = "Motivasyon Notu";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(57, 41);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(176, 22);
-            this.dateTimePicker1.TabIndex = 38;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(3, 33);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 37;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(740, 33);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 36;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(704, 34);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 35;
-            this.pictureBox9.TabStop = false;
             // 
             // lblWelcome
             // 
-            this.lblWelcome.AutoSize = true;
             this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
-            this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblWelcome.Location = new System.Drawing.Point(57, 77);
+            this.lblWelcome.Font = new System.Drawing.Font("Rockwell", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.ForeColor = System.Drawing.Color.Olive;
+            this.lblWelcome.Location = new System.Drawing.Point(53, 80);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(126, 20);
-            this.lblWelcome.TabIndex = 15;
-            this.lblWelcome.Text = "Welcome Zehra";
+            this.lblWelcome.Size = new System.Drawing.Size(271, 100);
+            this.lblWelcome.TabIndex = 43;
+            this.lblWelcome.Text = "Hoşgeldiniz";
             // 
             // groupBox2
             // 
@@ -165,12 +124,12 @@
             this.groupBox2.Controls.Add(this.pbWaterMinus);
             this.groupBox2.Controls.Add(this.pbWaterPlus);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox2.Location = new System.Drawing.Point(61, 295);
+            this.groupBox2.Location = new System.Drawing.Point(47, 341);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(624, 178);
-            this.groupBox2.TabIndex = 11;
+            this.groupBox2.TabIndex = 41;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Now";
+            this.groupBox2.Text = "EKLENECEKLER";
             // 
             // label2
             // 
@@ -178,9 +137,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(374, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 20);
+            this.label2.Size = new System.Drawing.Size(107, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Add Nutrient";
+            this.label2.Text = "BESİN EKLE";
             // 
             // label1
             // 
@@ -188,9 +147,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(84, 124);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 20);
+            this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Add Water";
+            this.label1.Text = "SU EKLE";
             // 
             // pbNutrient
             // 
@@ -200,7 +159,7 @@
             this.pbNutrient.Size = new System.Drawing.Size(50, 50);
             this.pbNutrient.TabIndex = 2;
             this.pbNutrient.TabStop = false;
-            this.pbNutrient.Click += new System.EventHandler(this.pbNutrient_Click);
+            this.pbNutrient.Click += new System.EventHandler(this.pbNutrient_Click_1);
             // 
             // pbWater
             // 
@@ -232,6 +191,18 @@
             this.pbWaterPlus.TabIndex = 2;
             this.pbWaterPlus.TabStop = false;
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(3, 33);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 37;
+            this.pictureBox7.TabStop = false;
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
@@ -242,12 +213,12 @@
             this.groupBox1.Controls.Add(this.progressBar2);
             this.groupBox1.Controls.Add(this.progressBar1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.Location = new System.Drawing.Point(61, 149);
+            this.groupBox1.Location = new System.Drawing.Point(47, 183);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(624, 137);
-            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Target";
+            this.groupBox1.Text = "HEDEFLER";
             // 
             // label7
             // 
@@ -301,15 +272,40 @@
             this.progressBar1.Size = new System.Drawing.Size(199, 23);
             this.progressBar1.TabIndex = 0;
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(643, 3);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 36;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(607, 3);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 35;
+            this.pictureBox9.TabStop = false;
+            // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.BurlyWood;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.blogToolStripMenuItem,
             this.raporlarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(782, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(691, 28);
             this.menuStrip1.TabIndex = 39;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -361,12 +357,20 @@
             this.adminRaporuToolStripMenuItem.Name = "adminRaporuToolStripMenuItem";
             this.adminRaporuToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
             this.adminRaporuToolStripMenuItem.Text = "Admin Raporu";
+            this.adminRaporuToolStripMenuItem.Click += new System.EventHandler(this.adminRaporuToolStripMenuItem_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(57, 41);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(176, 22);
+            this.dateTimePicker1.TabIndex = 38;
             // 
             // frmHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 473);
+            this.ClientSize = new System.Drawing.Size(691, 537);
             this.Controls.Add(this.gradientPanel1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmHomePage";
@@ -374,17 +378,17 @@
             this.Load += new System.EventHandler(this.frmHomePage_Load);
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNutrient)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWater)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWaterMinus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWaterPlus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -394,10 +398,18 @@
         #endregion
 
         private GradientPanel gradientPanel1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem blogToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sağlıklıYaşamTüyolarıToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem raporlarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem günSonuRaporuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kıyasRaporuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem yemekÇeşitliliğiRaporuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adminRaporuToolStripMenuItem;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
@@ -407,20 +419,12 @@
         private System.Windows.Forms.PictureBox pbWaterMinus;
         private System.Windows.Forms.PictureBox pbWaterPlus;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem blogToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sağlıklıYaşamTüyolarıToolStripMenuItem;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ToolStripMenuItem raporlarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem günSonuRaporuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kıyasRaporuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem yemekÇeşitliliğiRaporuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem adminRaporuToolStripMenuItem;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

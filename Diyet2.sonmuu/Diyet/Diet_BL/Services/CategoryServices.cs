@@ -47,6 +47,10 @@ namespace Diet_BL.Services
 
             return categorys;
         }
+        public List<Nutrient> GetNutrientByCategoryId(int categoryId)
+        {
+            return categoryRepository.GetNutrientByCategoryId(categoryId);
+        }
         public bool Insert(Category category)
         {
             return categoryRepository.Insert(category);

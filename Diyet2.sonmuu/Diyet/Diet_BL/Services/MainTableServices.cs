@@ -7,6 +7,9 @@ using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
+using static Diet_DAL.Repositories.MainTableRepository;
 
 namespace Diet_BL.Services
 {
@@ -15,7 +18,7 @@ namespace Diet_BL.Services
         MainTableRepository mainTableRepository;
         public MainTableServices()
         {
-            mainTableRepository= new MainTableRepository();
+            mainTableRepository = new MainTableRepository();
         }
         public bool Insert(MainTable mainTable)
         {
@@ -66,5 +69,22 @@ namespace Diet_BL.Services
         {
             return mainTableRepository.GetMainTablesByNutrientID(nutrientID);
         }
+
+        public void GetCaloriesbyUserID(int userid, Chart c1, DateTime d1, DateTime d2)
+        {
+
+            mainTableRepository.GetCaloriesbyUserID(userid, c1, d1, d2);
+
+        }
+
+        public void GetDatebyUserId(int userid, ComboBox comboBox)
+        {
+            mainTableRepository.GetDatebyUserId(userid, comboBox);
+        }
+        public MainTable CalculateTotalCal(DateTime d1, int userid)
+        {
+           return mainTableRepository.CalculateTotalCal(d1, userid);
+        }
+
     }
 }

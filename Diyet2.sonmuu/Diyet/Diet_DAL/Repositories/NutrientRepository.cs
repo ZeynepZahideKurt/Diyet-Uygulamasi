@@ -97,6 +97,7 @@ namespace Diet_DAL.Repositories
             /*updateNutrient.NutrientInfoID = nutrient.NutrientInfoID;
             updateNutrient.NutrientInfo = nutrient.NutrientInfo;*/
             //updateNutrient.UserToMeals = nutrient.UserToMeals;
+            updateNutrient.PhotoPath= nutrient.PhotoPath;
 
             return dbContext.SaveChanges() > 0;
         }
