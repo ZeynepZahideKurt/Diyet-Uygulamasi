@@ -59,14 +59,31 @@ namespace Diyet
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MotivationNote selectedNote = (MotivationNote)listBox1.SelectedItem;
-            if (selectedNote == null)
+            //MotivationNote selectedNote = (MotivationNote)listBox1.SelectedItem;
+            //if (selectedNote == null)
+            //{
+            //    MessageBox.Show("Seçili eleman yok");
+            //}
+            //else
+            //{
+            //    motivationNoteId = selectedNote.ID;
+            //    result = AdminmotivationNoteService.Update(new MotivationNote()
+            //    {
+            //        ID = motivationNoteId,
+            //        Text = richTextBox1.Text
+            //    });
+            //    MessageBox.Show(result ? "Güncelleme başarılı" : "Güncelleme başarız!");
+            //    richTextBox1.Clear();
+            //    FillNotes();
+
+
+            motivationNoteId = (int)listBox1.SelectedValue;
+            if (listBox1.SelectedIndex == -1)
             {
                 MessageBox.Show("Seçili eleman yok");
             }
             else
             {
-                motivationNoteId = selectedNote.ID;
                 result = AdminmotivationNoteService.Update(new MotivationNote()
                 {
                     ID = motivationNoteId,
@@ -74,9 +91,11 @@ namespace Diyet
                 });
                 MessageBox.Show(result ? "Güncelleme başarılı" : "Güncelleme başarız!");
                 richTextBox1.Clear();
-                FillNotes();
+
             }
+            FillNotes();
         }
+        
 
         private void button4_Click(object sender, EventArgs e)
         {
