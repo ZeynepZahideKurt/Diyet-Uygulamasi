@@ -158,6 +158,24 @@ namespace Diet_DAL.Repositories
 
 
         }
+        public void CalculateCalByMealID(DateTime d1, int userid, Chart c1)
+        {
+            var list = (from mt in dbContext.MainTables
+                        where mt.Meal.CreateTime == d1 && mt.User.ID == userid
+                        group mt by mt.Meal.MealName into g
+                        select new
+                        {
+                            MealName = g.Key.ToString(),
+                            Calories = g.Sum(a => a.TotalCalorie)
+                        }).ToList();
+
+            c1.DataSource = list;
+            c1.Series["Öğünler"].XValueMember = "MealName";
+            c1.Series["Öğünler"].YValueMembers = "Calories";
+
+            c1.DataBind();
+
+        }
     }
     public class ComparisonRapor
     {

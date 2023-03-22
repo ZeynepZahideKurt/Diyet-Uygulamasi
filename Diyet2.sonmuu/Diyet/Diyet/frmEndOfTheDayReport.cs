@@ -15,6 +15,7 @@ namespace Diyet
     public partial class frmEndOfTheDayReport : Form
     {
         NutrientServices nutrientServices;
+        MainTableServices mainTableServices;
         User user;
         DateTime addedDay;
         public frmEndOfTheDayReport(User _user, DateTime _addedDay)
@@ -33,24 +34,29 @@ namespace Diyet
         private void CreateColumnGraph()
         {
 
-           /* chart1.DataSource = nutrientServices.GetCaloribyUserID(user.ID,addedDay);
-            chart1.Series["Günlük Kalori"].XValueMember = "MealName";
-            chart1.Series["Günlük Kalori"].YValueMembers = "Calories";
-            chart1.Titles.Add("Gün Sonu Raporu");*/
+            mainTableServices.CalculateCalByMealID(addedDay, user.ID, chart1);
 
         }
         private void CreatePieChart()
         {
+            mainTableServices.CalculateCalByMealID(addedDay, user.ID, chart2);
 
-            foreach (var series in chart2.Series)
-            {
-                series.Points.Clear();
-            }
-            /*chart2.DataSource = nutrientServices.GetCaloribyUserID(user.ID, addedDay);
-            chart2.Series["Günlük Kalori"].XValueMember = "MealName";
-            chart2.Series["Günlük Kalori"].YValueMembers = "Calories";
-            chart2.Titles.Add("Gün Sonu Raporu");*/
         }
 
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            DialogResult dg = new DialogResult();
+            dg = MessageBox.Show("Çıkış yapmak istediğinize emin misiniz?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dg == DialogResult.Yes)
+            {
+                this.Hide();
+                Login frmlog = new Login();
+                frmlog.Show();
+            }
+            else
+            {
+                MessageBox.Show("Haydi kalori eklemeye devam edelim!");
+            }
+        }
     }
 }

@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmComparisonReport));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.gradientPanel2 = new Diyet.GradientPanel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rprOlustur = new System.Windows.Forms.Button();
             this.cmbTypeFood = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cmbMeals = new System.Windows.Forms.ComboBox();
@@ -46,7 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.rprOlustur = new System.Windows.Forms.Button();
             this.gradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -120,7 +120,7 @@
             this.groupBox3.Controls.Add(this.radioButton2);
             this.groupBox3.Controls.Add(this.radioButton1);
             this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox3.Location = new System.Drawing.Point(66, 32);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Name = "groupBox3";
@@ -130,13 +130,22 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Filtrele";
             // 
+            // rprOlustur
+            // 
+            this.rprOlustur.Location = new System.Drawing.Point(335, 77);
+            this.rprOlustur.Name = "rprOlustur";
+            this.rprOlustur.Size = new System.Drawing.Size(169, 40);
+            this.rprOlustur.TabIndex = 44;
+            this.rprOlustur.Text = "Rapor Oluştur";
+            this.rprOlustur.UseVisualStyleBackColor = true;
+            // 
             // cmbTypeFood
             // 
             this.cmbTypeFood.FormattingEnabled = true;
             this.cmbTypeFood.Location = new System.Drawing.Point(138, 88);
             this.cmbTypeFood.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbTypeFood.Name = "cmbTypeFood";
-            this.cmbTypeFood.Size = new System.Drawing.Size(173, 24);
+            this.cmbTypeFood.Size = new System.Drawing.Size(173, 26);
             this.cmbTypeFood.TabIndex = 42;
             // 
             // label6
@@ -144,7 +153,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(51, 91);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 17);
+            this.label6.Size = new System.Drawing.Size(76, 18);
             this.label6.TabIndex = 41;
             this.label6.Text = "Kategori:";
             // 
@@ -154,7 +163,7 @@
             this.cmbMeals.Location = new System.Drawing.Point(138, 56);
             this.cmbMeals.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbMeals.Name = "cmbMeals";
-            this.cmbMeals.Size = new System.Drawing.Size(173, 24);
+            this.cmbMeals.Size = new System.Drawing.Size(173, 26);
             this.cmbMeals.TabIndex = 40;
             // 
             // label5
@@ -162,7 +171,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(69, 59);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 17);
+            this.label5.Size = new System.Drawing.Size(53, 18);
             this.label5.TabIndex = 39;
             this.label5.Text = "Öğün:";
             // 
@@ -172,7 +181,7 @@
             this.radioButton2.Location = new System.Drawing.Point(236, 27);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(76, 21);
+            this.radioButton2.Size = new System.Drawing.Size(86, 22);
             this.radioButton2.TabIndex = 7;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Haftalık";
@@ -184,7 +193,7 @@
             this.radioButton1.Location = new System.Drawing.Point(140, 27);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 21);
+            this.radioButton1.Size = new System.Drawing.Size(64, 22);
             this.radioButton1.TabIndex = 6;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Aylık";
@@ -195,7 +204,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(60, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 17);
+            this.label1.Size = new System.Drawing.Size(66, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "Periyot:";
             // 
@@ -215,36 +224,30 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(0, 25);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(758, 281);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
-            // 
-            // rprOlustur
-            // 
-            this.rprOlustur.Location = new System.Drawing.Point(360, 85);
-            this.rprOlustur.Name = "rprOlustur";
-            this.rprOlustur.Size = new System.Drawing.Size(130, 29);
-            this.rprOlustur.TabIndex = 44;
-            this.rprOlustur.Text = "Rapor Oluştur";
-            this.rprOlustur.UseVisualStyleBackColor = true;
             // 
             // frmComparisonReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkKhaki;
             this.ClientSize = new System.Drawing.Size(782, 473);
             this.Controls.Add(this.gradientPanel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmComparisonReport";
             this.Text = "frmComparisonReport";

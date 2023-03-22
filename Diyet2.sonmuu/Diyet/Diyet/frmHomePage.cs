@@ -24,7 +24,7 @@ namespace Diyet
             mainTableServices = new MainTableServices();
             user = _user;
         }
-
+        string dt1;
         private void frmHomePage_Load(object sender, EventArgs e)
         {
             Random rnd = new Random();
@@ -34,7 +34,7 @@ namespace Diyet
             int randoMoti = rnd.Next(1, 3); //Burada 3 yerine; motivation note kadar olmalı
             label5.Text = motivationNoteServices.GetMotivationById(randoMoti).Text;
 
-            string dt1 = dateTimePicker1.Value.ToString().Substring(0, 10);
+             dt1 = dateTimePicker1.Value.ToString().Substring(0, 10);
 
             double toplam = mainTableServices.CalculateTotalCalTurnList(Convert.ToDateTime(dt1), user.ID);
 
@@ -55,10 +55,18 @@ namespace Diyet
 
         private void adminRaporuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmAdminReports frmnot = new FrmAdminReports(user);
-            this.Hide();
-            frmnot.ShowDialog();
-            this.Show();
+            if (LblAlinanKalori.Text.EndsWith("0") == false)
+            {
+                FrmAdminReports frmnot = new FrmAdminReports(user);
+                this.Hide();
+                frmnot.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+
+                MessageBox.Show("Eklemiş olduğunuz herhangi bir besin yok. Rapor alabilmek için öncelikle besin eklemelisiniz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
@@ -127,9 +135,54 @@ namespace Diyet
 
         private void yemekÇeşitliliğiRaporuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmNutrientVarietyReport fnvp=new frmNutrientVarietyReport(user);
+            if (LblAlinanKalori.Text.EndsWith("0") == false)
+            {
+                frmNutrientVarietyReport fnvp = new frmNutrientVarietyReport(user);
+                this.Hide();
+                fnvp.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Eklemiş olduğunuz herhangi bir besin yok. Rapor alabilmek için öncelikle besin eklemelisiniz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void günSonuRaporuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (LblAlinanKalori.Text.EndsWith("0") == false)
+            {
+                frmEndOfTheDayReport fredp = new frmEndOfTheDayReport(user, Convert.ToDateTime(dt1));
+                this.Hide();
+                fredp.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Eklemiş olduğunuz herhangi bir besin yok. Rapor alabilmek için öncelikle besin eklemelisiniz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void kıyasRaporuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (LblAlinanKalori.Text.EndsWith("0") == false)
+            {
+                frmComparisonReport fcp = new frmComparisonReport();
+                this.Hide();
+                fcp.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Eklemiş olduğunuz herhangi bir besin yok. Rapor alabilmek için öncelikle besin eklemelisiniz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            PasswordChange pc = new PasswordChange();
             this.Hide();
-            fnvp.ShowDialog();
+            pc.ShowDialog();
             this.Show();
         }
     }

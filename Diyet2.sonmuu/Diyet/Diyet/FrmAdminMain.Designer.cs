@@ -80,7 +80,6 @@
             this.gradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.gradientPanel2.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.gradientPanel2.Controls.Add(this.groupBox4);
-            this.gradientPanel2.Controls.Add(this.label10);
             this.gradientPanel2.Controls.Add(this.pictureBox1);
             this.gradientPanel2.Controls.Add(this.groupBox2);
             this.gradientPanel2.Controls.Add(this.menuStrip1);
@@ -88,7 +87,7 @@
             this.gradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.gradientPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.gradientPanel2.Name = "gradientPanel2";
-            this.gradientPanel2.Size = new System.Drawing.Size(1158, 654);
+            this.gradientPanel2.Size = new System.Drawing.Size(1163, 667);
             this.gradientPanel2.TabIndex = 4;
             this.gradientPanel2.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(239)))), ((int)(((byte)(217)))));
             // 
@@ -102,7 +101,8 @@
             this.groupBox4.Controls.Add(this.btnAddC);
             this.groupBox4.Controls.Add(this.txtCategoryName);
             this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Location = new System.Drawing.Point(12, 34);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox4.Location = new System.Drawing.Point(12, 40);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -185,17 +185,18 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(1047, 171);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(1003, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 16);
+            this.label10.Size = new System.Drawing.Size(112, 20);
             this.label10.TabIndex = 32;
-            this.label10.Text = "DR. XXXXX";
+            this.label10.Text = "DR. ADMIN ";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(996, 34);
+            this.pictureBox1.Location = new System.Drawing.Point(982, 52);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(148, 125);
@@ -207,6 +208,7 @@
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.richTextBox1);
+            this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.pictureBox2);
             this.groupBox2.Controls.Add(this.cmbMiktarCinsi);
             this.groupBox2.Controls.Add(this.label8);
@@ -225,7 +227,8 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(3, 179);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox2.Location = new System.Drawing.Point(0, 186);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -248,7 +251,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(304, 28);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(157, 96);
+            this.pictureBox2.Size = new System.Drawing.Size(157, 98);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 44;
             this.pictureBox2.TabStop = false;
@@ -430,7 +433,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1158, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1163, 24);
             this.menuStrip1.TabIndex = 33;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -465,9 +468,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(1158, 654);
+            this.ClientSize = new System.Drawing.Size(1163, 667);
             this.Controls.Add(this.gradientPanel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmAdminMain";
             this.Text = "FrmAdminMain";

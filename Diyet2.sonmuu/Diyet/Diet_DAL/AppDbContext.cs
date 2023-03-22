@@ -12,7 +12,7 @@ namespace Diet_DAL
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext():base("Server=DESKTOP-KNS1IUF\\MSSQLSERVER2022;Database=DiyetDb;User Id=sa;Password=1234;")
+        public AppDbContext():base("Server=LAPTOP-5JQ1KEF4;Database=DiyetDb;User Id=sa;Password=1234;")
         {
             Database.SetInitializer(new DietStrategy());
             
