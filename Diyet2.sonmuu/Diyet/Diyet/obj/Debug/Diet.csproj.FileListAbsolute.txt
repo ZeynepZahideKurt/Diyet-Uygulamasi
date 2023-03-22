@@ -334,3 +334,42 @@ C:\Users\ASUS\Desktop\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diet.csproj.CoreCompil
 C:\Users\ASUS\Desktop\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diet.csproj.CopyComplete
 C:\Users\ASUS\Desktop\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.exe
 C:\Users\ASUS\Desktop\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.pdb
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diet.csproj.AssemblyReference.cache
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diet.csproj.SuggestedBindingRedirects.cache
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.frmAddNutrient.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.frmHealthyTipforUser.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.frmHomePage.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.Login.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.frmAdminHealthyTips.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.FrmAdminMain.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.frmAdminMotivationNotes.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.frmAdminReport.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.FrmAdminReports.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.frmComparisonReport.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.frmEndOfTheDayReport.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.frmNutrientVarietyReport.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.PasswordChange.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.Properties.Resources.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.Register.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.Register2.resources
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diet.csproj.GenerateResource.cache
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diet.csproj.CoreCompileInputs.cache
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.exe
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.pdb
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\Diyet.exe.config
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\Diyet.exe
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\Diyet.pdb
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\Diet_BL.dll
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\Diet_DAL.dll
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\Diet_Model.dll
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\EntityFramework.dll
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\Diet_BL.pdb
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\Diet_BL.dll.config
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\Diet_DAL.pdb
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\Diet_DAL.dll.config
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\Diet_Model.pdb
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\Diet_Model.dll.config
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\EntityFramework.xml
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diet.csproj.CopyComplete

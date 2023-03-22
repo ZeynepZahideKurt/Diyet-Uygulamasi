@@ -1,4 +1,5 @@
 ﻿using Diet_Model.Entity;
+using Diet_Model.Enum;
 using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
@@ -131,5 +132,37 @@ namespace Diet_DAL.Repositories
             }
             return toplam;
         }
+
+        public void GetCategorybyUserID(int categoryId, MealName mealName, DateTime baslTrh, DateTime bitisTrh, Chart c1)
+        {
+            
+            var comparisonRapor = (from u in dbContext.Users
+                                   join mt in dbContext.MainTables on u.ID equals mt.UserID
+                                   join m in dbContext.Meals on mt.MealID equals m.ID
+                                   join n in dbContext.Nutrients on mt.NutrientID equals n.ID
+                                   join c in dbContext.Categories on n.CategoryID equals c.ID
+                                   where c.ID == categoryId && m.MealName == mealName && (m.CreateTime >= baslTrh && m.CreateTime <= bitisTrh)
+                                   group u by u.ID into g
+                                   select new
+                                   {
+                                       UserId = g.Key.ToString(),
+                                       CategoryAdet = dbContext.Categories.Count(),
+
+                                   }).ToList();
+            c1.DataSource = comparisonRapor;
+            c1.Series["Series1"].XValueMember = "UserId";
+            c1.Series["Series1"].YValueMembers = "CategoryAdet";
+            c1.DataBind();
+            //return comparisonRapor;
+
+
+
+        }
+    }
+    public class ComparisonRapor
+    {
+        public string UserId { get; set; }
+        public int CategoryAdet { get; set; }
     }
 }
+

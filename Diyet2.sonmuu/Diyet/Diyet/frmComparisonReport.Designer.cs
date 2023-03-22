@@ -46,6 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.rprOlustur = new System.Windows.Forms.Button();
             this.gradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -111,6 +112,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.rprOlustur);
             this.groupBox3.Controls.Add(this.cmbTypeFood);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.cmbMeals);
@@ -227,6 +229,15 @@
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
+            // rprOlustur
+            // 
+            this.rprOlustur.Location = new System.Drawing.Point(360, 85);
+            this.rprOlustur.Name = "rprOlustur";
+            this.rprOlustur.Size = new System.Drawing.Size(130, 29);
+            this.rprOlustur.TabIndex = 44;
+            this.rprOlustur.Text = "Rapor Oluştur";
+            this.rprOlustur.UseVisualStyleBackColor = true;
+            // 
             // frmComparisonReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -237,6 +248,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmComparisonReport";
             this.Text = "frmComparisonReport";
+            this.Load += new System.EventHandler(this.frmComparisonReport_Load);
             this.gradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -265,5 +277,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Button rprOlustur;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Diet_DAL.Repositories;
 using Diet_Model.Entity;
+using Diet_Model.Enum;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -75,6 +76,10 @@ namespace Diet_BL.Services
 
             mainTableRepository.GetCaloriesbyUserID(userid, c1, d1, d2);
 
+        }
+        public void GetRaport(int categoryId, MealName mealName, DateTime d1, DateTime d2, Chart c1)
+        {
+            mainTableRepository.GetCategorybyUserID(categoryId, mealName, d1, d2, c1);
         }
 
         public void GetDatebyUserId(int userid, ComboBox comboBox)

@@ -118,3 +118,18 @@ C:\Users\ASUS\Desktop\Diyet2.sonmuu\Diyet\Diet_DAL\obj\Debug\Diet_DAL.csproj.Cor
 C:\Users\ASUS\Desktop\Diyet2.sonmuu\Diyet\Diet_DAL\obj\Debug\Diet_DAL.csproj.CopyComplete
 C:\Users\ASUS\Desktop\Diyet2.sonmuu\Diyet\Diet_DAL\obj\Debug\Diet_DAL.dll
 C:\Users\ASUS\Desktop\Diyet2.sonmuu\Diyet\Diet_DAL\obj\Debug\Diet_DAL.pdb
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\obj\Debug\Diet_DAL.csproj.AssemblyReference.cache
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\obj\Debug\Diet_DAL.csproj.CoreCompileInputs.cache
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\obj\Debug\Diet_DAL.dll
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\obj\Debug\Diet_DAL.pdb
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\bin\Debug\Diet_DAL.dll.config
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\bin\Debug\Diet_DAL.dll
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\bin\Debug\Diet_DAL.pdb
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\bin\Debug\Diet_Model.dll
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\bin\Debug\EntityFramework.dll
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\bin\Debug\Diet_Model.pdb
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\bin\Debug\Diet_Model.dll.config
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\bin\Debug\EntityFramework.xml
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Fafsin\Desktop\Github web\Diyet-Uygulamasi\Diyet2.sonmuu\Diyet\Diet_DAL\obj\Debug\Diet_DAL.csproj.CopyComplete
