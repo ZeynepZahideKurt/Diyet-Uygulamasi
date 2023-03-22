@@ -124,7 +124,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label6.Location = new System.Drawing.Point(40, 25);
+            this.label6.Location = new System.Drawing.Point(45, 21);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 17);
             this.label6.TabIndex = 22;
@@ -137,7 +137,7 @@
             this.btnDeleteC.Name = "btnDeleteC";
             this.btnDeleteC.Size = new System.Drawing.Size(99, 28);
             this.btnDeleteC.TabIndex = 21;
-            this.btnDeleteC.Text = "Delete";
+            this.btnDeleteC.Text = "Sil";
             this.btnDeleteC.UseVisualStyleBackColor = true;
             this.btnDeleteC.Click += new System.EventHandler(this.btnDeleteC_Click);
             // 
@@ -148,7 +148,7 @@
             this.btnUpdateC.Name = "btnUpdateC";
             this.btnUpdateC.Size = new System.Drawing.Size(99, 28);
             this.btnUpdateC.TabIndex = 20;
-            this.btnUpdateC.Text = "Update";
+            this.btnUpdateC.Text = "Güncelle";
             this.btnUpdateC.UseVisualStyleBackColor = true;
             this.btnUpdateC.Click += new System.EventHandler(this.btnUpdateC_Click);
             // 
@@ -159,7 +159,7 @@
             this.btnAddC.Name = "btnAddC";
             this.btnAddC.Size = new System.Drawing.Size(99, 28);
             this.btnAddC.TabIndex = 19;
-            this.btnAddC.Text = "Add";
+            this.btnAddC.Text = "Ekle";
             this.btnAddC.UseVisualStyleBackColor = true;
             this.btnAddC.Click += new System.EventHandler(this.btnAddC_Click);
             // 
@@ -175,7 +175,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label7.Location = new System.Drawing.Point(26, 60);
+            this.label7.Location = new System.Drawing.Point(21, 61);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 17);
             this.label7.TabIndex = 17;
@@ -275,7 +275,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label1.Location = new System.Drawing.Point(4, 192);
+            this.label1.Location = new System.Drawing.Point(6, 193);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 17);
             this.label1.TabIndex = 41;
@@ -345,7 +345,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label5.Location = new System.Drawing.Point(19, 145);
+            this.label5.Location = new System.Drawing.Point(25, 149);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 17);
             this.label5.TabIndex = 37;
@@ -355,7 +355,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label4.Location = new System.Drawing.Point(20, 108);
+            this.label4.Location = new System.Drawing.Point(25, 105);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 17);
             this.label4.TabIndex = 36;
@@ -373,7 +373,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label3.Location = new System.Drawing.Point(29, 66);
+            this.label3.Location = new System.Drawing.Point(42, 64);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 17);
             this.label3.TabIndex = 34;
@@ -391,7 +391,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label2.Location = new System.Drawing.Point(36, 24);
+            this.label2.Location = new System.Drawing.Point(61, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 17);
             this.label2.TabIndex = 32;
@@ -403,7 +403,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(140, 22);
             this.textBox4.TabIndex = 0;
-            this.textBox4.Text = "Search";
+            this.textBox4.Text = "Ara";
             // 
             // dataGridView1
             // 
@@ -430,36 +430,36 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1158, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1158, 24);
             this.menuStrip1.TabIndex = 33;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // motivationNotesToolStripMenuItem
             // 
             this.motivationNotesToolStripMenuItem.Name = "motivationNotesToolStripMenuItem";
-            this.motivationNotesToolStripMenuItem.Size = new System.Drawing.Size(137, 24);
-            this.motivationNotesToolStripMenuItem.Text = "Motivation Notes";
+            this.motivationNotesToolStripMenuItem.Size = new System.Drawing.Size(150, 20);
+            this.motivationNotesToolStripMenuItem.Text = "Motivasyon Notları";
             this.motivationNotesToolStripMenuItem.Click += new System.EventHandler(this.motivationNotesToolStripMenuItem_Click);
             // 
             // healthyToolStripMenuItem
             // 
             this.healthyToolStripMenuItem.Name = "healthyToolStripMenuItem";
-            this.healthyToolStripMenuItem.Size = new System.Drawing.Size(109, 24);
-            this.healthyToolStripMenuItem.Text = "Healthy Tips";
+            this.healthyToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
+            this.healthyToolStripMenuItem.Text = "Sağlık İpuçları";
             this.healthyToolStripMenuItem.Click += new System.EventHandler(this.healthyToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem
             // 
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
-            this.reportsToolStripMenuItem.Text = "Report to User";
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(160, 20);
+            this.reportsToolStripMenuItem.Text = "Kullanıcı Raporlama";
             this.reportsToolStripMenuItem.Click += new System.EventHandler(this.reportsToolStripMenuItem_Click);
             // 
             // settingToolStripMenuItem
             // 
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
-            this.settingToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
-            this.settingToolStripMenuItem.Text = "Setting";
+            this.settingToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.settingToolStripMenuItem.Text = "Ayarlar";
             // 
             // FrmAdminMain
             // 

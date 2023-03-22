@@ -103,7 +103,7 @@
             this.groupBox2.Size = new System.Drawing.Size(667, 185);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Note";
+            this.groupBox2.Text = "Not";
             // 
             // button4
             // 
@@ -112,7 +112,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(163, 41);
             this.button4.TabIndex = 14;
-            this.button4.Text = "Delete";
+            this.button4.Text = "Sil";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -123,7 +123,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(163, 41);
             this.button3.TabIndex = 13;
-            this.button3.Text = "Update";
+            this.button3.Text = "Güncelle";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -134,7 +134,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(163, 41);
             this.button2.TabIndex = 12;
-            this.button2.Text = "Add";
+            this.button2.Text = "Ekle";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -159,7 +159,7 @@
             this.groupBox1.Size = new System.Drawing.Size(672, 219);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Motivation List";
+            this.groupBox1.Text = "Motivasyon Listesi";
             // 
             // listBox1
             // 

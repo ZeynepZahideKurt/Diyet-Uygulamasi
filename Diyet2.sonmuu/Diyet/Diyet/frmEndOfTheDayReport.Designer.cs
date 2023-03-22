@@ -116,7 +116,7 @@
             this.groupBox2.Size = new System.Drawing.Size(727, 357);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Graphs";
+            this.groupBox2.Text = "Grafik";
             // 
             // chart2
             // 

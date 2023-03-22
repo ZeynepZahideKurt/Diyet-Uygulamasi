@@ -132,6 +132,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label3.Location = new System.Drawing.Point(675, 149);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 16);
@@ -172,6 +173,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label1.Location = new System.Drawing.Point(637, 116);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 16);
@@ -190,7 +192,7 @@
             this.groupBox1.Size = new System.Drawing.Size(197, 71);
             this.groupBox1.TabIndex = 57;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Users List";
+            this.groupBox1.Text = "Kullanıcı Listesi";
             // 
             // comboBox1
             // 
@@ -217,12 +219,12 @@
             this.groupBox3.Size = new System.Drawing.Size(354, 246);
             this.groupBox3.TabIndex = 58;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Notes";
+            this.groupBox3.Text = "Notlar";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 77);
+            this.label4.Location = new System.Drawing.Point(60, 77);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 20);
             this.label4.TabIndex = 4;
@@ -251,7 +253,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 91);
             this.button1.TabIndex = 1;
-            this.button1.Text = "ADD";
+            this.button1.Text = "Ekle";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // richTextBox1

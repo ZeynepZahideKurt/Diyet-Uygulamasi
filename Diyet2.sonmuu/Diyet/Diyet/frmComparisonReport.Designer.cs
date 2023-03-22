@@ -123,10 +123,10 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox3.Size = new System.Drawing.Size(322, 123);
+            this.groupBox3.Size = new System.Drawing.Size(607, 123);
             this.groupBox3.TabIndex = 42;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Constraints";
+            this.groupBox3.Text = "Filtrele";
             // 
             // cmbTypeFood
             // 
@@ -160,9 +160,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(69, 59);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 17);
+            this.label5.Size = new System.Drawing.Size(47, 17);
             this.label5.TabIndex = 39;
-            this.label5.Text = "Meals:";
+            this.label5.Text = "Öğün:";
             // 
             // radioButton2
             // 
@@ -170,10 +170,10 @@
             this.radioButton2.Location = new System.Drawing.Point(236, 27);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(75, 21);
+            this.radioButton2.Size = new System.Drawing.Size(76, 21);
             this.radioButton2.TabIndex = 7;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Weekly";
+            this.radioButton2.Text = "Haftalık";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
@@ -182,20 +182,20 @@
             this.radioButton1.Location = new System.Drawing.Point(140, 27);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(78, 21);
+            this.radioButton1.Size = new System.Drawing.Size(58, 21);
             this.radioButton1.TabIndex = 6;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Monthly";
+            this.radioButton1.Text = "Aylık";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 29);
+            this.label1.Location = new System.Drawing.Point(60, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 17);
+            this.label1.Size = new System.Drawing.Size(56, 17);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Period Type:";
+            this.label1.Text = "Periyot:";
             // 
             // groupBox2
             // 
@@ -209,7 +209,7 @@
             this.groupBox2.Size = new System.Drawing.Size(758, 311);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Graphs";
+            this.groupBox2.Text = "Grafik";
             // 
             // chart1
             // 

@@ -156,6 +156,9 @@
     <EmbeddedResource Include="frmAddNutrient.resx">
       <DependentUpon>frmAddNutrient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmHealthyTipforUser.resx">
+      <DependentUpon>frmHealthyTipforUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHomePage.resx">
       <DependentUpon>frmHomePage.cs</DependentUpon>
     </EmbeddedResource>
