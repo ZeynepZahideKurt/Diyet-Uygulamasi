@@ -107,6 +107,12 @@ namespace Diet_BL.Services
 
             return nutrientRepository.Delete(nutrient);
         }
+
+        public List<Nutrient> Search(string name)
+        {
+
+            return nutrientRepository.Search(name);
+        }
     }
 }
 

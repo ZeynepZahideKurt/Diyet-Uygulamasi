@@ -244,6 +244,11 @@ namespace Diyet
             this.Show();
         }
 
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             try

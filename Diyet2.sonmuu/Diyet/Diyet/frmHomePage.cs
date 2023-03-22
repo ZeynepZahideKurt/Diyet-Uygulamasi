@@ -34,12 +34,9 @@ namespace Diyet
             int randoMoti = rnd.Next(1, 3); //Burada 3 yerine; motivation note kadar olmalı
             label5.Text = motivationNoteServices.GetMotivationById(randoMoti).Text;
 
-             dt1 = dateTimePicker1.Value.ToString().Substring(0, 10);
-
-            double toplam = mainTableServices.CalculateTotalCalTurnList(Convert.ToDateTime(dt1), user.ID);
+            CalculateCal();
 
             lblVki.Text += VkiCalculate(user).ToString();
-            LblAlinanKalori.Text += toplam.ToString();
             lblAlinmasiGerekenKalori.Text += CaloriesNeeded(user).ToString();
 
 
@@ -184,6 +181,18 @@ namespace Diyet
             this.Hide();
             pc.ShowDialog();
             this.Show();
+        }
+        public void CalculateCal()
+        {
+            string dt1 = dateTimePicker1.Value.ToString().Substring(0, 10);
+
+            double toplam = mainTableServices.CalculateTotalCalTurnList(Convert.ToDateTime(dt1), user.ID);
+
+            LblAlinanKalori.Text = "Alınan Kalori: " + toplam.ToString();
+        }
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            CalculateCal();
         }
     }
 }

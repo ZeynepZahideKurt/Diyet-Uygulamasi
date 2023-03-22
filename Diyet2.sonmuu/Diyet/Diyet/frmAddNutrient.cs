@@ -35,7 +35,7 @@ namespace Diyet
        
         private void frmAddNutrient_Load(object sender, EventArgs e)
         {
-            
+            txtBoxSearch.Text = "";
             FillCmbMeal();
             FillListBox();
             //listBoxFoods.SelectedIndex = -1;
@@ -182,7 +182,9 @@ namespace Diyet
 
         private void txtBoxSearch_TextChanged(object sender, EventArgs e)
         {
-            ListNutrientforCategory(catID);
+            listBoxFoods.DataSource = nutrientServices.Search(txtBoxSearch.Text);
+            listBoxFoods.DisplayMember = "NutrientName";
+            listBoxFoods.ValueMember = "ID";
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

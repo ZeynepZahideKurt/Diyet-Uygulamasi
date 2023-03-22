@@ -18,6 +18,12 @@ namespace Diet_DAL.Repositories
         {
             dbContext= new AppDbContext();
         }
+
+        public List<Nutrient> Search(string name)
+        {
+            var result = (from d in dbContext.Nutrients where d.NutrientName.Contains(name) select d).ToList();
+            return result;
+        }
         //public List<Nutrient> GetById(Meal meal)
         //{
         //    var nutrientlist = (from b in dbContext.Meals
