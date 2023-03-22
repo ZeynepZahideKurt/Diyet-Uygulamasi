@@ -8,6 +8,8 @@ using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Diet_BL.Services
 {
@@ -44,18 +46,29 @@ namespace Diet_BL.Services
             else throw new Exception("Parametre degeri uygun degildir");
             return Nutrients;
         }
-
+        public string GetTheMostSelectedNutrient(int userid)
+        {
+            return nutrientRepository.GetTheMostSelectedNutrient(userid);
+        }
+        public void GetVariertyReport(int userid, Chart c1, int nutrientid)
+        {
+            nutrientRepository.GetVariertyReport(userid, c1, nutrientid);
+        }
+        public void GetNutrientListByUserid(int userid, ComboBox c1)
+        {
+            nutrientRepository.GetNutrientListByUserid(userid, c1);
+        }
 
         /*public List<Nutrient> GetCaloribyUserID(int userid, DateTime dt)
         {
             return nutrientRepository.GetCaloribyUserID(userid,dt);
 
         }*/
-       /* public List<Nutrient> GetNutrientsbyMealID(int mealid)
-        {
-            return nutrientRepository.GetNutrientsbyMealID(mealid);
+        /* public List<Nutrient> GetNutrientsbyMealID(int mealid)
+         {
+             return nutrientRepository.GetNutrientsbyMealID(mealid);
 
-        }*/
+         }*/
         public List<Nutrient> GetNutrientsbyCategoryID(int CatID)
         {
 

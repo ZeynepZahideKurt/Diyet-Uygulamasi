@@ -6,6 +6,8 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Diet_DAL.Repositories
 {
@@ -115,6 +117,64 @@ namespace Diet_DAL.Repositories
         public List<Nutrient> GetNutrientByIdTurnList(int nutrientId)
         {
             return dbContext.Nutrients.Where(a => a.ID == nutrientId).ToList();
+
+        }
+
+        public string GetTheMostSelectedNutrient(int userid)
+        {
+            var list = (from n in dbContext.Nutrients
+                        join mt in dbContext.MainTables on n.ID equals mt.NutrientID
+                        where mt.UserID == userid
+                        group n by n.NutrientName into g
+                        select new
+                        {
+                            NutrientName = g.Key,
+                            Amount = g.Count(),
+                        }).ToList().OrderByDescending(a => a.Amount);
+
+
+            string themostselected = list.First().NutrientName;
+
+            return themostselected;
+        }
+
+        public void GetVariertyReport(int userid, Chart c1, int nutrientid)
+        {
+            var list = (from mt in dbContext.MainTables
+                        join m in dbContext.Meals on mt.MealID equals m.ID
+                        where mt.UserID == userid && mt.NutrientID == nutrientid
+                        group mt by mt.Meal.MealName into g
+                        select new
+                        {
+                            MealName = g.Key.ToString(),
+                            Amount = g.Count(),
+                        }).ToList();
+
+            c1.DataSource = list;
+            c1.Series["Tercih Edilme Adedi"].XValueMember = "MealName";
+            c1.Series["Tercih Edilme Adedi"].YValueMembers = "Amount";
+            c1.DataBind();
+
+
+
+        }
+        public void GetNutrientListByUserid(int userid, ComboBox cmb)
+        {
+            var list = (from n in dbContext.Nutrients
+                        join mt in dbContext.MainTables on n.ID equals mt.NutrientID
+                        join u in dbContext.Users on mt.UserID equals u.ID
+                        where mt.UserID == userid
+                        select new
+                        {
+                            NutrientName = n.NutrientName,
+                            ID = n.ID,
+
+                        }).Distinct().ToList();
+
+            cmb.DataSource = list;
+            cmb.DisplayMember = "NutrientName";
+            cmb.ValueMember = "ID";
+
         }
     }
 }

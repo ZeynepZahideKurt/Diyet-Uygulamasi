@@ -125,5 +125,12 @@ namespace Diyet
             return vki;
         }
 
+        private void yemekÇeşitliliğiRaporuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNutrientVarietyReport fnvp=new frmNutrientVarietyReport(user);
+            this.Hide();
+            fnvp.ShowDialog();
+            this.Show();
+        }
     }
 }
