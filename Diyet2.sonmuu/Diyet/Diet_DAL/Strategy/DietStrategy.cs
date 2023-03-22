@@ -412,8 +412,7 @@ namespace Diet_DAL.Strategy
                 Description = "Zeytinyağının tüketimi, daha güçlü bir kemik yapısının oluşmasını ve kolesterol seviyesinin dengelenmesinde önemli bir rol oynar.",
 
             });
-            context.Categories.Add(Yaglar);
-            context.SaveChanges();
+            
 
 
             Yaglar.Nutrients.Add(new Nutrient()
@@ -432,9 +431,9 @@ namespace Diet_DAL.Strategy
 
             });
 
-
             context.Categories.Add(Yaglar);
             context.SaveChanges();
+
 
             Category denizUrunleri = new Category()
             {
