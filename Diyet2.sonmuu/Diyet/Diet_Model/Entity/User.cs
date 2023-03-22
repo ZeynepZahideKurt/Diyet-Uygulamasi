@@ -31,7 +31,7 @@ namespace Diet_Model.Entity
         public double Kilo { get; set; }
         public string Gender { get; set; }
 
-
+        public double Age { get; set; }
         public UserType UserType { get; set; } = UserType.Standard;
         
 

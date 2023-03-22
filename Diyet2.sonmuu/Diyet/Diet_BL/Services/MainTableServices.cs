@@ -85,6 +85,9 @@ namespace Diet_BL.Services
         {
            return mainTableRepository.CalculateTotalCal(d1, userid);
         }
-
+        public double CalculateTotalCalTurnList(DateTime d1, int userid)
+        {
+            return mainTableRepository.CalculateTotalCalTurnList(d1, userid);
+        }
     }
 }

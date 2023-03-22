@@ -120,7 +120,7 @@ namespace Diyet
                     MealID = meal.ID,
                     NutrientID = (int)listBoxFoods.SelectedValue,
                     Amt = Convert.ToDouble(textBox1.Text),
-                    //TotalCalorie= Amt* nutrientServices.GetByNutrientId((int)listBoxFoods.SelectedValue).Calories,
+                    TotalCalorie= Convert.ToDouble(textBox1.Text) * nutrientServices.GetByNutrientId((int)listBoxFoods.SelectedValue).Calories,
                 };
                 bool result = mainTableServices.Insert(mainTable);
                 if(nutrientServices.GetByNutrientId((int)listBoxFoods.SelectedValue).Description!= null)
@@ -196,6 +196,13 @@ namespace Diyet
                 
                 ListNutrientforCategory(catID);
             }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            frmHomePage f = new frmHomePage(user);
+            this.Hide();
+            f.ShowDialog();
         }
     }
 }

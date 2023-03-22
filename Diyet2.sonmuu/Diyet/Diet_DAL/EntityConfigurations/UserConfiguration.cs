@@ -21,6 +21,7 @@ namespace Diet_DAL.EntityConfigurations
             Property(a => a.Height).IsRequired();
             Property(a => a.Kilo).IsRequired();
             Property(a => a.Gender).IsRequired();
+            Property(a => a.Age).IsRequired();
             Property(a => a.UserType).IsRequired();
             HasIndex(a => a.Mail).IsUnique();
             Property(a => a.Mail).HasMaxLength(100);

@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHomePage));
             this.gradientPanel1 = new Diyet.GradientPanel();
             this.label5 = new System.Windows.Forms.Label();
+            this.lblVki = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,7 +43,8 @@
             this.pbWaterPlus = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.LblAlinanKalori = new System.Windows.Forms.Label();
+            this.lblAlinmasiGerekenKalori = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -57,7 +60,6 @@
             this.kıyasRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yemekÇeşitliliğiRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.gradientPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNutrient)).BeginInit();
@@ -77,6 +79,7 @@
             this.gradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.gradientPanel1.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.gradientPanel1.Controls.Add(this.label5);
+            this.gradientPanel1.Controls.Add(this.lblVki);
             this.gradientPanel1.Controls.Add(this.dateTimePicker1);
             this.gradientPanel1.Controls.Add(this.lblWelcome);
             this.gradientPanel1.Controls.Add(this.groupBox2);
@@ -87,9 +90,9 @@
             this.gradientPanel1.Controls.Add(this.menuStrip1);
             this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(691, 537);
+            this.gradientPanel1.Size = new System.Drawing.Size(777, 707);
             this.gradientPanel1.TabIndex = 2;
             this.gradientPanel1.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(239)))), ((int)(((byte)(217)))));
             // 
@@ -97,20 +100,37 @@
             // 
             this.label5.Font = new System.Drawing.Font("Rockwell", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.label5.Location = new System.Drawing.Point(349, 80);
+            this.label5.Location = new System.Drawing.Point(371, 61);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(322, 100);
+            this.label5.Size = new System.Drawing.Size(362, 125);
             this.label5.TabIndex = 44;
             this.label5.Text = "Motivasyon Notu";
+            // 
+            // lblVki
+            // 
+            this.lblVki.AutoSize = true;
+            this.lblVki.Location = new System.Drawing.Point(372, 219);
+            this.lblVki.Name = "lblVki";
+            this.lblVki.Size = new System.Drawing.Size(181, 20);
+            this.lblVki.TabIndex = 5;
+            this.lblVki.Text = "Bazal Metabolizma Hızı: ";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(64, 51);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(198, 26);
+            this.dateTimePicker1.TabIndex = 38;
             // 
             // lblWelcome
             // 
             this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
             this.lblWelcome.Font = new System.Drawing.Font("Rockwell", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.Color.Olive;
-            this.lblWelcome.Location = new System.Drawing.Point(53, 80);
+            this.lblWelcome.Location = new System.Drawing.Point(60, 100);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(271, 100);
+            this.lblWelcome.Size = new System.Drawing.Size(305, 86);
             this.lblWelcome.TabIndex = 43;
             this.lblWelcome.Text = "Hoşgeldiniz";
             // 
@@ -124,9 +144,11 @@
             this.groupBox2.Controls.Add(this.pbWaterMinus);
             this.groupBox2.Controls.Add(this.pbWaterPlus);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox2.Location = new System.Drawing.Point(47, 341);
+            this.groupBox2.Location = new System.Drawing.Point(31, 481);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(624, 178);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Size = new System.Drawing.Size(702, 222);
             this.groupBox2.TabIndex = 41;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "EKLENECEKLER";
@@ -135,9 +157,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(374, 124);
+            this.label2.Location = new System.Drawing.Point(421, 155);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 20);
+            this.label2.Size = new System.Drawing.Size(134, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "BESİN EKLE";
             // 
@@ -145,18 +167,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(84, 124);
+            this.label1.Location = new System.Drawing.Point(94, 155);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 20);
+            this.label1.Size = new System.Drawing.Size(101, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "SU EKLE";
             // 
             // pbNutrient
             // 
             this.pbNutrient.Image = ((System.Drawing.Image)(resources.GetObject("pbNutrient.Image")));
-            this.pbNutrient.Location = new System.Drawing.Point(403, 57);
+            this.pbNutrient.Location = new System.Drawing.Point(453, 71);
+            this.pbNutrient.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pbNutrient.Name = "pbNutrient";
-            this.pbNutrient.Size = new System.Drawing.Size(50, 50);
+            this.pbNutrient.Size = new System.Drawing.Size(56, 62);
             this.pbNutrient.TabIndex = 2;
             this.pbNutrient.TabStop = false;
             this.pbNutrient.Click += new System.EventHandler(this.pbNutrient_Click_1);
@@ -164,9 +187,10 @@
             // pbWater
             // 
             this.pbWater.Image = ((System.Drawing.Image)(resources.GetObject("pbWater.Image")));
-            this.pbWater.Location = new System.Drawing.Point(103, 57);
+            this.pbWater.Location = new System.Drawing.Point(116, 71);
+            this.pbWater.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pbWater.Name = "pbWater";
-            this.pbWater.Size = new System.Drawing.Size(50, 50);
+            this.pbWater.Size = new System.Drawing.Size(56, 62);
             this.pbWater.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbWater.TabIndex = 2;
             this.pbWater.TabStop = false;
@@ -174,7 +198,8 @@
             // pbWaterMinus
             // 
             this.pbWaterMinus.Image = ((System.Drawing.Image)(resources.GetObject("pbWaterMinus.Image")));
-            this.pbWaterMinus.Location = new System.Drawing.Point(174, 83);
+            this.pbWaterMinus.Location = new System.Drawing.Point(196, 104);
+            this.pbWaterMinus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pbWaterMinus.Name = "pbWaterMinus";
             this.pbWaterMinus.Size = new System.Drawing.Size(24, 24);
             this.pbWaterMinus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -184,7 +209,8 @@
             // pbWaterPlus
             // 
             this.pbWaterPlus.Image = ((System.Drawing.Image)(resources.GetObject("pbWaterPlus.Image")));
-            this.pbWaterPlus.Location = new System.Drawing.Point(60, 83);
+            this.pbWaterPlus.Location = new System.Drawing.Point(68, 104);
+            this.pbWaterPlus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pbWaterPlus.Name = "pbWaterPlus";
             this.pbWaterPlus.Size = new System.Drawing.Size(24, 24);
             this.pbWaterPlus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -195,10 +221,10 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(3, 33);
+            this.pictureBox7.Location = new System.Drawing.Point(3, 41);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox7.Size = new System.Drawing.Size(34, 38);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 37;
             this.pictureBox7.TabStop = false;
@@ -206,35 +232,47 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.LblAlinanKalori);
+            this.groupBox1.Controls.Add(this.lblAlinmasiGerekenKalori);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.progressBar2);
             this.groupBox1.Controls.Add(this.progressBar1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.Location = new System.Drawing.Point(47, 183);
+            this.groupBox1.Location = new System.Drawing.Point(31, 243);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(624, 137);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(702, 215);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "HEDEFLER";
             // 
-            // label7
+            // LblAlinanKalori
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(374, 104);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 20);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "label7";
+            this.LblAlinanKalori.AutoSize = true;
+            this.LblAlinanKalori.Location = new System.Drawing.Point(325, 186);
+            this.LblAlinanKalori.Name = "LblAlinanKalori";
+            this.LblAlinanKalori.Size = new System.Drawing.Size(145, 25);
+            this.LblAlinanKalori.TabIndex = 5;
+            this.LblAlinanKalori.Text = "Alınan Kalori: ";
+            // 
+            // lblAlinmasiGerekenKalori
+            // 
+            this.lblAlinmasiGerekenKalori.AutoSize = true;
+            this.lblAlinmasiGerekenKalori.Location = new System.Drawing.Point(325, 142);
+            this.lblAlinmasiGerekenKalori.Name = "lblAlinmasiGerekenKalori";
+            this.lblAlinmasiGerekenKalori.Size = new System.Drawing.Size(254, 25);
+            this.lblAlinmasiGerekenKalori.TabIndex = 5;
+            this.lblAlinmasiGerekenKalori.Text = "Alınması Gereken Kalori: ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(84, 104);
+            this.label6.Location = new System.Drawing.Point(94, 130);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 20);
+            this.label6.Size = new System.Drawing.Size(70, 25);
             this.label6.TabIndex = 4;
             this.label6.Text = "label6";
             // 
@@ -242,9 +280,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(311, 44);
+            this.label4.Location = new System.Drawing.Point(350, 55);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 20);
+            this.label4.Size = new System.Drawing.Size(183, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Daily Needs Food";
             // 
@@ -252,34 +290,36 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(26, 44);
+            this.label3.Location = new System.Drawing.Point(29, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 20);
+            this.label3.Size = new System.Drawing.Size(191, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Daily Needs Water";
             // 
             // progressBar2
             // 
-            this.progressBar2.Location = new System.Drawing.Point(315, 78);
+            this.progressBar2.Location = new System.Drawing.Point(354, 98);
+            this.progressBar2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(198, 23);
+            this.progressBar2.Size = new System.Drawing.Size(223, 29);
             this.progressBar2.TabIndex = 0;
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(30, 78);
+            this.progressBar1.Location = new System.Drawing.Point(34, 98);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(199, 23);
+            this.progressBar1.Size = new System.Drawing.Size(224, 29);
             this.progressBar1.TabIndex = 0;
             // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(643, 3);
+            this.pictureBox8.Location = new System.Drawing.Point(723, 4);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox8.Size = new System.Drawing.Size(34, 38);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 36;
             this.pictureBox8.TabStop = false;
@@ -289,9 +329,10 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(607, 3);
+            this.pictureBox9.Location = new System.Drawing.Point(683, 4);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox9.Size = new System.Drawing.Size(34, 38);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 35;
             this.pictureBox9.TabStop = false;
@@ -299,13 +340,15 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.BurlyWood;
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.blogToolStripMenuItem,
             this.raporlarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(691, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(777, 36);
             this.menuStrip1.TabIndex = 39;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -314,13 +357,13 @@
             this.blogToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sağlıklıYaşamTüyolarıToolStripMenuItem});
             this.blogToolStripMenuItem.Name = "blogToolStripMenuItem";
-            this.blogToolStripMenuItem.Size = new System.Drawing.Size(54, 24);
+            this.blogToolStripMenuItem.Size = new System.Drawing.Size(64, 32);
             this.blogToolStripMenuItem.Text = "Blog";
             // 
             // sağlıklıYaşamTüyolarıToolStripMenuItem
             // 
             this.sağlıklıYaşamTüyolarıToolStripMenuItem.Name = "sağlıklıYaşamTüyolarıToolStripMenuItem";
-            this.sağlıklıYaşamTüyolarıToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.sağlıklıYaşamTüyolarıToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.sağlıklıYaşamTüyolarıToolStripMenuItem.Text = "Sağlıklı Yaşam Tüyoları";
             // 
             // raporlarToolStripMenuItem
@@ -331,48 +374,42 @@
             this.yemekÇeşitliliğiRaporuToolStripMenuItem,
             this.adminRaporuToolStripMenuItem});
             this.raporlarToolStripMenuItem.Name = "raporlarToolStripMenuItem";
-            this.raporlarToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
+            this.raporlarToolStripMenuItem.Size = new System.Drawing.Size(95, 32);
             this.raporlarToolStripMenuItem.Text = "Raporlar";
             // 
             // günSonuRaporuToolStripMenuItem
             // 
             this.günSonuRaporuToolStripMenuItem.Name = "günSonuRaporuToolStripMenuItem";
-            this.günSonuRaporuToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
+            this.günSonuRaporuToolStripMenuItem.Size = new System.Drawing.Size(302, 34);
             this.günSonuRaporuToolStripMenuItem.Text = "Gün Sonu Raporu";
             // 
             // kıyasRaporuToolStripMenuItem
             // 
             this.kıyasRaporuToolStripMenuItem.Name = "kıyasRaporuToolStripMenuItem";
-            this.kıyasRaporuToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
+            this.kıyasRaporuToolStripMenuItem.Size = new System.Drawing.Size(302, 34);
             this.kıyasRaporuToolStripMenuItem.Text = "Kıyas Raporu";
             // 
             // yemekÇeşitliliğiRaporuToolStripMenuItem
             // 
             this.yemekÇeşitliliğiRaporuToolStripMenuItem.Name = "yemekÇeşitliliğiRaporuToolStripMenuItem";
-            this.yemekÇeşitliliğiRaporuToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
+            this.yemekÇeşitliliğiRaporuToolStripMenuItem.Size = new System.Drawing.Size(302, 34);
             this.yemekÇeşitliliğiRaporuToolStripMenuItem.Text = "Yemek Çeşitliliği Raporu";
             // 
             // adminRaporuToolStripMenuItem
             // 
             this.adminRaporuToolStripMenuItem.Name = "adminRaporuToolStripMenuItem";
-            this.adminRaporuToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
+            this.adminRaporuToolStripMenuItem.Size = new System.Drawing.Size(302, 34);
             this.adminRaporuToolStripMenuItem.Text = "Admin Raporu";
             this.adminRaporuToolStripMenuItem.Click += new System.EventHandler(this.adminRaporuToolStripMenuItem_Click);
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(57, 41);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(176, 22);
-            this.dateTimePicker1.TabIndex = 38;
-            // 
             // frmHomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 537);
+            this.ClientSize = new System.Drawing.Size(777, 707);
             this.Controls.Add(this.gradientPanel1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmHomePage";
             this.Text = "frmHomePage";
             this.Load += new System.EventHandler(this.frmHomePage_Load);
@@ -419,12 +456,14 @@
         private System.Windows.Forms.PictureBox pbWaterMinus;
         private System.Windows.Forms.PictureBox pbWaterPlus;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblAlinmasiGerekenKalori;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label LblAlinanKalori;
+        private System.Windows.Forms.Label lblVki;
     }
 }

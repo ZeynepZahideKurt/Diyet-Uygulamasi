@@ -44,7 +44,7 @@ namespace Diyet
                     user.Kilo = Convert.ToDouble(txtWeight.Text);
                     user.Height = Convert.ToInt32(txtHeight.Text);
                     user.Gender = cbGender.SelectedItem.ToString();
-
+                    user.Age = Convert.ToDouble(txtAge.Text);
                     bool result = userService.Insert(user);
                     MessageBox.Show(result ? "Kullanıcı eklendi" : "Kullanıcı eklenemedi");
                     Login frmlog = new Login();

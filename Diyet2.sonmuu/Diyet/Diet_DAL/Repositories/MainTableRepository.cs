@@ -117,5 +117,19 @@ namespace Diet_DAL.Repositories
 
             return list;
         }
+        public double CalculateTotalCalTurnList(DateTime d1, int userid)
+        {
+            var list = dbContext.MainTables.Where(a => a.Meal.CreateTime == d1 && a.User.ID == userid).Select(a => new
+            {
+                a.TotalCalorie,
+                
+            }).ToList();
+            double toplam = 0;
+            foreach (var item in list)
+            {
+                toplam += item.TotalCalorie;
+            }
+            return toplam;
+        }
     }
 }

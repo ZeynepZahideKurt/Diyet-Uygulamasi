@@ -21,24 +21,27 @@ namespace Diyet
         {
             InitializeComponent();
             motivationNoteServices = new MotivationNoteServices();
-            mainTableServices= new MainTableServices();
+            mainTableServices = new MainTableServices();
             user = _user;
         }
 
         private void frmHomePage_Load(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            string fname=user.FirstName.ToString();
-            string lname=user.LastName.ToString();
+            string fname = user.FirstName.ToString();
+            string lname = user.LastName.ToString();
             lblWelcome.Text = "Merhaba " + fname + " " + lname + "\n" + "YummyLose'a Hoşgeldiniz";
             int randoMoti = rnd.Next(1, 3); //Burada 3 yerine; motivation note kadar olmalı
             label5.Text = motivationNoteServices.GetMotivationById(randoMoti).Text;
-            string dt1 = dateTimePicker1.Value.ToString().Substring(0,10);
-          
-            if (CalculateTotalCal(user.ID, Convert.ToDateTime(dt1)).ToString() != null)
-            {
-                label7.Text = CalculateTotalCal(user.ID, Convert.ToDateTime(dt1)).ToString();
-            }
+
+            string dt1 = dateTimePicker1.Value.ToString().Substring(0, 10);
+
+            double toplam = mainTableServices.CalculateTotalCalTurnList(Convert.ToDateTime(dt1), user.ID);
+
+            lblVki.Text += VkiCalculate(user).ToString();
+            LblAlinanKalori.Text += toplam.ToString();
+            lblAlinmasiGerekenKalori.Text += CaloriesNeeded(user).ToString();
+
 
         }
 
@@ -81,11 +84,46 @@ namespace Diyet
             frm.ShowDialog();
             this.Show();
         }
-        public double CalculateTotalCal(int userid,DateTime d1)
+        /*public double CalculateTotalCal(int userid,DateTime d1)
         {
             double totalCal  = mainTableServices.CalculateTotalCal(d1, userid).Nutrient.Calories * mainTableServices.CalculateTotalCal(d1, userid).Amt;
 
             return totalCal;
         }
+        public double CalculateTotalCal2(int userid, DateTime d1)
+        {
+            double totalCal = mainTableServices.CalculateTotalCal(d1, userid).Nutrient.Calories * mainTableServices.CalculateTotalCal(d1, userid).Amt;
+
+            return totalCal;
+        }*/
+
+        public double CaloriesNeeded(User user)
+        {
+            double cal;
+            if (user.Gender.ToLower() == "kadın")
+            {
+                cal = 655.1 + (9.56 * user.Kilo) + (1.85 * user.Height) - (4.67 * user.Age);
+            }
+            else
+            {
+                cal = 66.5 + (13.75 * user.Kilo) + (5 * user.Height) - (6.77 * user.Age);
+            }
+            double bki = VkiCalculate(user);
+
+            if (bki < 19)
+                return cal + 200;
+            else if (bki > 25)
+                return cal - 200;
+            else
+                return cal;
+        }
+        public double VkiCalculate(User user)
+        {
+            double vki;
+            vki = (user.Kilo / (user.Height * user.Height)) * 10000;
+            vki = Math.Round(vki, 1);
+            return vki;
+        }
+
     }
 }
