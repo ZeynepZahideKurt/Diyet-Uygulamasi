@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdminMotivationNotes));
             this.gradientPanel2 = new Diyet.GradientPanel();
             this.pbExit = new System.Windows.Forms.PictureBox();
-            this.pbBack = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -41,7 +40,6 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.gradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +50,6 @@
             this.gradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.gradientPanel2.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.gradientPanel2.Controls.Add(this.pbExit);
-            this.gradientPanel2.Controls.Add(this.pbBack);
             this.gradientPanel2.Controls.Add(this.groupBox2);
             this.gradientPanel2.Controls.Add(this.groupBox1);
             this.gradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -75,18 +72,7 @@
             this.pbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbExit.TabIndex = 39;
             this.pbExit.TabStop = false;
-            // 
-            // pbBack
-            // 
-            this.pbBack.BackColor = System.Drawing.Color.Transparent;
-            this.pbBack.Image = ((System.Drawing.Image)(resources.GetObject("pbBack.Image")));
-            this.pbBack.Location = new System.Drawing.Point(12, 11);
-            this.pbBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbBack.Name = "pbBack";
-            this.pbBack.Size = new System.Drawing.Size(30, 30);
-            this.pbBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbBack.TabIndex = 40;
-            this.pbBack.TabStop = false;
+            this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
             // 
             // groupBox2
             // 
@@ -185,11 +171,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmAdminMotivationNotes";
-            this.Text = "frmAdminMotivationNotes";
+            this.Text = "Motivasyon Notu Değiştirme";
             this.Load += new System.EventHandler(this.frmAdminMotivationNotes_Load);
             this.gradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBack)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -200,7 +185,6 @@
 
         private GradientPanel gradientPanel2;
         private System.Windows.Forms.PictureBox pbExit;
-        private System.Windows.Forms.PictureBox pbBack;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;

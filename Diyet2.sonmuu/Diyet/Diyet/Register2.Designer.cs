@@ -234,7 +234,7 @@
             this.Controls.Add(this.gradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Register2";
-            this.Text = "Register2";
+            this.Text = "Kayıt2";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Register2_FormClosed);
             this.Load += new System.EventHandler(this.Register2_Load);
             this.gradientPanel1.ResumeLayout(false);

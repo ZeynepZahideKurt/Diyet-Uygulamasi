@@ -61,6 +61,20 @@ namespace Diyet
             }
         }
 
-       
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            DialogResult dg = new DialogResult();
+            dg = MessageBox.Show("Çıkış yapmak istediğinize emin misiniz?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dg == DialogResult.Yes)
+            {
+                this.Hide();
+                Login frmlog = new Login();
+                frmlog.Show();
+            }
+            else
+            {
+                MessageBox.Show("Haydi kalori eklemeye devam edelim!");
+            }
+        }
     }
 }

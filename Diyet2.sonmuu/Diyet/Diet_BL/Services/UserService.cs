@@ -66,5 +66,9 @@ namespace Diet_BL.Services
         {
             return userRepository.GetListUsersByID(userid);
         }
+        public bool UpdatePasswordByUserId(User user)
+        {
+            return userRepository.UpdatePasswordByUserId(user);
+        }
     }
 }

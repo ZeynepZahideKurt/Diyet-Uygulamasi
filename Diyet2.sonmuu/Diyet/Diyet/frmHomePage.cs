@@ -177,7 +177,7 @@ namespace Diyet
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            PasswordChange pc = new PasswordChange();
+            PasswordChange pc = new PasswordChange(user);
             this.Hide();
             pc.ShowDialog();
             this.Show();

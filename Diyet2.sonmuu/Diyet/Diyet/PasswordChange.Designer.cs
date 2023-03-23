@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PasswordChange));
             this.gradientPanel2 = new Diyet.GradientPanel();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnApprove = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtPasswordAgain = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.gradientPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // gradientPanel2
@@ -44,9 +45,8 @@
             this.gradientPanel2.Angle = 60F;
             this.gradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.gradientPanel2.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
-            this.gradientPanel2.Controls.Add(this.progressBar1);
+            this.gradientPanel2.Controls.Add(this.pictureBox8);
             this.gradientPanel2.Controls.Add(this.btnApprove);
-            this.gradientPanel2.Controls.Add(this.label2);
             this.gradientPanel2.Controls.Add(this.label1);
             this.gradientPanel2.Controls.Add(this.label5);
             this.gradientPanel2.Controls.Add(this.txtPasswordAgain);
@@ -55,39 +55,21 @@
             this.gradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.gradientPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.gradientPanel2.Name = "gradientPanel2";
-            this.gradientPanel2.Size = new System.Drawing.Size(498, 298);
+            this.gradientPanel2.Size = new System.Drawing.Size(498, 244);
             this.gradientPanel2.TabIndex = 4;
             this.gradientPanel2.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(239)))), ((int)(((byte)(217)))));
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(165, 156);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(258, 26);
-            this.progressBar1.TabIndex = 53;
             // 
             // btnApprove
             // 
             this.btnApprove.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnApprove.Location = new System.Drawing.Point(175, 208);
+            this.btnApprove.Location = new System.Drawing.Point(178, 157);
             this.btnApprove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnApprove.Name = "btnApprove";
             this.btnApprove.Size = new System.Drawing.Size(233, 53);
             this.btnApprove.TabIndex = 52;
             this.btnApprove.Text = "Onayla";
             this.btnApprove.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(64, 162);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 22);
-            this.label2.TabIndex = 49;
-            this.label2.Text = "Zorluk:";
+            this.btnApprove.Click += new System.EventHandler(this.btnApprove_Click);
             // 
             // label1
             // 
@@ -119,6 +101,7 @@
             this.txtPasswordAgain.Name = "txtPasswordAgain";
             this.txtPasswordAgain.Size = new System.Drawing.Size(258, 26);
             this.txtPasswordAgain.TabIndex = 47;
+            this.txtPasswordAgain.UseSystemPasswordChar = true;
             // 
             // txtPassword
             // 
@@ -128,6 +111,20 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(258, 26);
             this.txtPassword.TabIndex = 48;
+            this.txtPassword.UseSystemPasswordChar = true;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(456, 11);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 53;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // PasswordChange
             // 
@@ -135,14 +132,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(498, 298);
+            this.ClientSize = new System.Drawing.Size(498, 244);
             this.Controls.Add(this.gradientPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PasswordChange";
             this.Text = "PasswordChange";
+            this.Load += new System.EventHandler(this.PasswordChange_Load);
             this.gradientPanel2.ResumeLayout(false);
             this.gradientPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -150,12 +149,11 @@
         #endregion
 
         private GradientPanel gradientPanel2;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button btnApprove;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtPasswordAgain;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

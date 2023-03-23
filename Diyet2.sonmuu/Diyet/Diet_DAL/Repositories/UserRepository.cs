@@ -48,55 +48,62 @@ namespace Diet_DAL.Repositories
         {
             return dbContext.Users.Where(a => a.ID == userId).FirstOrDefault();
         }
+
+        public bool UpdatePasswordByUserId(User user)
+        {
+            User updateuser = dbContext.Users.Where(a => a.ID == user.ID).FirstOrDefault();
+            updateuser.Password = user.Password;
+            return dbContext.SaveChanges() > 0;
+        }
         #region MyRegion
-       /* AppDbContext dbContext;
+        /* AppDbContext dbContext;
 
 
-        public UserToMealRepository()
-        {
-            dbContext = new AppDbContext();
-        }
+         public UserToMealRepository()
+         {
+             dbContext = new AppDbContext();
+         }
 
 
-        public List<UserToMeal> GetAllUserToMeal()
-        {
-            return dbContext.UserToMeals.ToList();
-        }
-        public UserToMeal GetUserToMealsById(int userTomealID)
-        {
-            return dbContext.UserToMeals.Where(a => a.ID == userTomealID).FirstOrDefault();
-        }
+         public List<UserToMeal> GetAllUserToMeal()
+         {
+             return dbContext.UserToMeals.ToList();
+         }
+         public UserToMeal GetUserToMealsById(int userTomealID)
+         {
+             return dbContext.UserToMeals.Where(a => a.ID == userTomealID).FirstOrDefault();
+         }
 
-        public List<UserToMeal> GetUserToMealsByUserId(User user)
-        {
-            var list = dbContext.UserToMeals.Where(a => a.UserID == user.ID).ToList();
-            return list;
-        }
+         public List<UserToMeal> GetUserToMealsByUserId(User user)
+         {
+             var list = dbContext.UserToMeals.Where(a => a.UserID == user.ID).ToList();
+             return list;
+         }
 
-        public List<UserToMeal> GetUserToMealsByUserId(Meal meal)
-        {
-            var list = dbContext.UserToMeals.Where(a => a.MealID == meal.ID).ToList();
-            return list;
-        }
+         public List<UserToMeal> GetUserToMealsByUserId(Meal meal)
+         {
+             var list = dbContext.UserToMeals.Where(a => a.MealID == meal.ID).ToList();
+             return list;
+         }
 
-        public bool Insert(UserToMeal userToMeal)
-        {
-            dbContext.UserToMeals.Add(userToMeal);
-            return dbContext.SaveChanges() > 0;
-        }
+         public bool Insert(UserToMeal userToMeal)
+         {
+             dbContext.UserToMeals.Add(userToMeal);
+             return dbContext.SaveChanges() > 0;
+         }
 
-        public bool Update(UserToMeal userToMeal)
-        {
-            UserToMeal updateuserToMeal = dbContext.UserToMeals.Where(a => a.ID == userToMeal.ID).FirstOrDefault();
-            return dbContext.SaveChanges() > 0;
-        }
+         public bool Update(UserToMeal userToMeal)
+         {
+             UserToMeal updateuserToMeal = dbContext.UserToMeals.Where(a => a.ID == userToMeal.ID).FirstOrDefault();
+             return dbContext.SaveChanges() > 0;
+         }
 
-        public bool Delete(UserToMeal userToMeal)
-        {
-            UserToMeal deleteuserToMeal = dbContext.UserToMeals.Where(a => a.ID == userToMeal.ID).FirstOrDefault();
-            dbContext.UserToMeals.Remove(deleteuserToMeal);
-            return dbContext.SaveChanges() > 0;
-        }*/
+         public bool Delete(UserToMeal userToMeal)
+         {
+             UserToMeal deleteuserToMeal = dbContext.UserToMeals.Where(a => a.ID == userToMeal.ID).FirstOrDefault();
+             dbContext.UserToMeals.Remove(deleteuserToMeal);
+             return dbContext.SaveChanges() > 0;
+         }*/
         #endregion
     }
 }
