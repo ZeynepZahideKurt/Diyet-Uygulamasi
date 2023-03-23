@@ -47,18 +47,7 @@ namespace Diyet
         }
         private void listBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            int notId = (int)listBox1.SelectedValue;
-            try
-            {
-                richTextBox1.Clear();
-                Note note = noteServices.GetNoteById(notId);
-                richTextBox1.Text = note.Text;
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
+            
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
@@ -74,6 +63,22 @@ namespace Diyet
             else
             {
                 MessageBox.Show("Haydi kalori eklemeye devam edelim!");
+            }
+        }
+
+        private void listBox1_MouseClick_1(object sender, MouseEventArgs e)
+        {
+            int notId = (int)listBox1.SelectedValue;
+            try
+            {
+                richTextBox1.Clear();
+                Note note = noteServices.GetNoteById(notId);
+                richTextBox1.Text = note.Text;
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
             }
         }
     }

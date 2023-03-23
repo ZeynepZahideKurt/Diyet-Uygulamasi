@@ -31,11 +31,10 @@ namespace Diyet
             string fname = user.FirstName.ToString();
             string lname = user.LastName.ToString();
             lblWelcome.Text = "Merhaba " + fname + " " + lname + "\n" + "YummyLose'a Hoşgeldiniz";
-            int randoMoti = rnd.Next(1, 3); //Burada 3 yerine; motivation note kadar olmalı
+            int randoMoti = rnd.Next(1, motivationNoteServices.GetList().Count()+1); //Burada 3 yerine; motivation note kadar olmalı
             label5.Text = motivationNoteServices.GetMotivationById(randoMoti).Text;
-
+            dt1 = dateTimePicker1.Value.ToString().Substring(0, 10);
             CalculateCal();
-
             lblVki.Text += VkiCalculate(user).ToString();
             lblAlinmasiGerekenKalori.Text += CaloriesNeeded(user).ToString();
 
@@ -193,6 +192,14 @@ namespace Diyet
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             CalculateCal();
+        }
+
+        private void sağlıklıYaşamTüyolarıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHealthyTipforUser fhu=new frmHealthyTipforUser();
+            this.Hide();
+            fhu.ShowDialog();
+            this.Show();
         }
     }
 }

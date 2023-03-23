@@ -22,6 +22,7 @@ namespace Diyet
         {
             InitializeComponent();
             nutrientServices = new NutrientServices();
+            mainTableServices= new MainTableServices();
             user = _user;
             addedDay = _addedDay;
         }

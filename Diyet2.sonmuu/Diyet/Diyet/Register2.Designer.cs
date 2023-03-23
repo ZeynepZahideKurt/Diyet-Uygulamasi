@@ -32,7 +32,6 @@
             this.gradientPanel1 = new Diyet.GradientPanel();
             this.txtHeight = new System.Windows.Forms.TextBox();
             this.pbExit = new System.Windows.Forms.PictureBox();
-            this.pbBack = new System.Windows.Forms.PictureBox();
             this.pbProfile = new System.Windows.Forms.PictureBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.cbGender = new System.Windows.Forms.ComboBox();
@@ -46,7 +45,6 @@
             this.txtWeight = new System.Windows.Forms.TextBox();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +55,6 @@
             this.gradientPanel1.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.gradientPanel1.Controls.Add(this.txtHeight);
             this.gradientPanel1.Controls.Add(this.pbExit);
-            this.gradientPanel1.Controls.Add(this.pbBack);
             this.gradientPanel1.Controls.Add(this.pbProfile);
             this.gradientPanel1.Controls.Add(this.btnSave);
             this.gradientPanel1.Controls.Add(this.cbGender);
@@ -96,18 +93,6 @@
             this.pbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbExit.TabIndex = 56;
             this.pbExit.TabStop = false;
-            // 
-            // pbBack
-            // 
-            this.pbBack.BackColor = System.Drawing.Color.Transparent;
-            this.pbBack.Image = ((System.Drawing.Image)(resources.GetObject("pbBack.Image")));
-            this.pbBack.Location = new System.Drawing.Point(12, 11);
-            this.pbBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbBack.Name = "pbBack";
-            this.pbBack.Size = new System.Drawing.Size(30, 30);
-            this.pbBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbBack.TabIndex = 57;
-            this.pbBack.TabStop = false;
             // 
             // pbProfile
             // 
@@ -240,7 +225,6 @@
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
             this.ResumeLayout(false);
 
@@ -250,7 +234,6 @@
 
         private GradientPanel gradientPanel1;
         private System.Windows.Forms.PictureBox pbExit;
-        private System.Windows.Forms.PictureBox pbBack;
         private System.Windows.Forms.PictureBox pbProfile;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox cbGender;

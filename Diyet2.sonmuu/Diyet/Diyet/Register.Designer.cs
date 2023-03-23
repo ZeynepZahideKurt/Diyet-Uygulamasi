@@ -28,12 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.gradientPanel1 = new Diyet.GradientPanel();
-            this.pbExit = new System.Windows.Forms.PictureBox();
-            this.pbBack = new System.Windows.Forms.PictureBox();
             this.btnNext = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,8 +43,6 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.gradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             this.SuspendLayout();
             // 
             // label12
@@ -75,8 +70,6 @@
             this.gradientPanel1.Angle = 60F;
             this.gradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.gradientPanel1.BottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
-            this.gradientPanel1.Controls.Add(this.pbExit);
-            this.gradientPanel1.Controls.Add(this.pbBack);
             this.gradientPanel1.Controls.Add(this.btnNext);
             this.gradientPanel1.Controls.Add(this.label4);
             this.gradientPanel1.Controls.Add(this.label6);
@@ -94,30 +87,6 @@
             this.gradientPanel1.Size = new System.Drawing.Size(522, 388);
             this.gradientPanel1.TabIndex = 24;
             this.gradientPanel1.TopColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(239)))), ((int)(((byte)(217)))));
-            // 
-            // pbExit
-            // 
-            this.pbExit.BackColor = System.Drawing.Color.Transparent;
-            this.pbExit.Image = ((System.Drawing.Image)(resources.GetObject("pbExit.Image")));
-            this.pbExit.Location = new System.Drawing.Point(740, 11);
-            this.pbExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbExit.Name = "pbExit";
-            this.pbExit.Size = new System.Drawing.Size(30, 30);
-            this.pbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbExit.TabIndex = 53;
-            this.pbExit.TabStop = false;
-            // 
-            // pbBack
-            // 
-            this.pbBack.BackColor = System.Drawing.Color.Transparent;
-            this.pbBack.Image = ((System.Drawing.Image)(resources.GetObject("pbBack.Image")));
-            this.pbBack.Location = new System.Drawing.Point(12, 11);
-            this.pbBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbBack.Name = "pbBack";
-            this.pbBack.Size = new System.Drawing.Size(30, 30);
-            this.pbBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbBack.TabIndex = 54;
-            this.pbBack.TabStop = false;
             // 
             // btnNext
             // 
@@ -249,8 +218,6 @@
             this.Load += new System.EventHandler(this.Register_Load);
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,8 +227,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private GradientPanel gradientPanel1;
-        private System.Windows.Forms.PictureBox pbExit;
-        private System.Windows.Forms.PictureBox pbBack;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;

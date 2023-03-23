@@ -111,9 +111,9 @@
             this.lblVki.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblVki.Location = new System.Drawing.Point(306, 173);
             this.lblVki.Name = "lblVki";
-            this.lblVki.Size = new System.Drawing.Size(195, 18);
+            this.lblVki.Size = new System.Drawing.Size(201, 23);
             this.lblVki.TabIndex = 5;
-            this.lblVki.Text = "Bazal Metabolizma Hızı: ";
+            this.lblVki.Text = "Beden Kitle İndeksi :";
             // 
             // dateTimePicker1
             // 
@@ -337,7 +337,7 @@
             this.raporlarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(690, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(863, 38);
             this.menuStrip1.TabIndex = 39;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -346,7 +346,7 @@
             this.blogToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sağlıklıYaşamTüyolarıToolStripMenuItem});
             this.blogToolStripMenuItem.Name = "blogToolStripMenuItem";
-            this.blogToolStripMenuItem.Size = new System.Drawing.Size(54, 24);
+            this.blogToolStripMenuItem.Size = new System.Drawing.Size(54, 34);
             this.blogToolStripMenuItem.Text = "Blog";
             // 
             // sağlıklıYaşamTüyolarıToolStripMenuItem
@@ -354,6 +354,7 @@
             this.sağlıklıYaşamTüyolarıToolStripMenuItem.Name = "sağlıklıYaşamTüyolarıToolStripMenuItem";
             this.sağlıklıYaşamTüyolarıToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
             this.sağlıklıYaşamTüyolarıToolStripMenuItem.Text = "Sağlıklı Yaşam Tüyoları";
+            this.sağlıklıYaşamTüyolarıToolStripMenuItem.Click += new System.EventHandler(this.sağlıklıYaşamTüyolarıToolStripMenuItem_Click);
             // 
             // raporlarToolStripMenuItem
             // 
@@ -363,7 +364,7 @@
             this.yemekÇeşitliliğiRaporuToolStripMenuItem,
             this.adminRaporuToolStripMenuItem});
             this.raporlarToolStripMenuItem.Name = "raporlarToolStripMenuItem";
-            this.raporlarToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
+            this.raporlarToolStripMenuItem.Size = new System.Drawing.Size(80, 34);
             this.raporlarToolStripMenuItem.Text = "Raporlar";
             // 
             // günSonuRaporuToolStripMenuItem

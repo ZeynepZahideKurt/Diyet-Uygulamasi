@@ -21,15 +21,31 @@ namespace Diyet
             InitializeComponent();
             healthyTipServices = new HealthyTipServices();
         }
-
+        Random rnd;
         private void frmHealthyTipforUser_Load(object sender, EventArgs e)
         {
 
-            List<HealthyTip> Nutrients = healthyTipServices.GetList();
-            Random rnd = new Random();
-            int randomIndex = rnd.Next(0, Nutrients.Count + 1);
-            HealthyTip randomTip = Nutrients[randomIndex];
-            label1.Text = randomTip.Text;
+            List<HealthyTip> healtytips = healthyTipServices.GetList();
+            rnd = new Random();
+            int randomIndex = rnd.Next(0, healtytips.Count + 1);
+            int randomIndex2 = rnd.Next(0, healtytips.Count + 1);
+            HealthyTip randomTip = healtytips[randomIndex];
+            HealthyTip randomTip2 = healtytips[randomIndex2];
+           
+            if (randomIndex == randomIndex2)
+            {
+                randomIndex2= randomIndex2+1;
+                label2.Text = randomTip2.Text;
+                label1.Text = randomTip.Text;
+            }
+            else
+            {
+                label1.Text = randomTip.Text;
+                label2.Text = randomTip2.Text;
+
+            }
+          
+
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)

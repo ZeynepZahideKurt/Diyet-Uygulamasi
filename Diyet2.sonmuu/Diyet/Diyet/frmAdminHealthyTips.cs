@@ -50,22 +50,22 @@ namespace Diyet
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            healtyTipId = (int)listBox1.SelectedValue;
-            if (listBox1.SelectedIndex == -1)
-            {
-                MessageBox.Show("Seçili eleman yok");
-            }
-            else
-            {
-                result = adminHealthyTipsService.Update(new HealthyTip()
-                {
-                    ID = healtyTipId,
-                    Text = richTextBox1.Text
-                });
-                MessageBox.Show(result ? "Güncelleme başarılı" : "Güncelleme başarız!");
-                richTextBox1.Clear();
-                FillInfos();
-            }
+            //healtyTipId = (int)listBox1.SelectedValue;
+            //if (listBox1.SelectedIndex == -1)
+            //{
+            //    MessageBox.Show("Seçili eleman yok");
+            //}
+            //else
+            //{
+            //    result = adminHealthyTipsService.Update(new HealthyTip()
+            //    {
+            //        ID = healtyTipId,
+            //        Text = richTextBox1.Text
+            //    });
+            //    MessageBox.Show(result ? "Güncelleme başarılı" : "Güncelleme başarız!");
+            //    richTextBox1.Clear();
+            //    FillInfos();
+            //}
         }
 
         private void button4_Click(object sender, EventArgs e)

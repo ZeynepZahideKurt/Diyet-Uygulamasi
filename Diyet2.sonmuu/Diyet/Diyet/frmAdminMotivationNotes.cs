@@ -77,23 +77,23 @@ namespace Diyet
             //    FillNotes();
 
 
-            motivationNoteId = (int)listBox1.SelectedValue;
-            if (listBox1.SelectedIndex == -1)
-            {
-                MessageBox.Show("Seçili eleman yok");
-            }
-            else
-            {
-                result = AdminmotivationNoteService.Update(new MotivationNote()
-                {
-                    ID = motivationNoteId,
-                    Text = richTextBox1.Text
-                });
-                MessageBox.Show(result ? "Güncelleme başarılı" : "Güncelleme başarız!");
-                richTextBox1.Clear();
+            //motivationNoteId = (int)listBox1.SelectedValue;
+            //if (listBox1.SelectedIndex == -1)
+            //{
+            //    MessageBox.Show("Seçili eleman yok");
+            //}
+            //else
+            //{
+            //    result = AdminmotivationNoteService.Update(new MotivationNote()
+            //    {
+            //        ID = motivationNoteId,
+            //        Text = richTextBox1.Text
+            //    });
+            //    MessageBox.Show(result ? "Güncelleme başarılı" : "Güncelleme başarız!");
+            //    richTextBox1.Clear();
 
-            }
-            FillNotes();
+            //}
+            //FillNotes();
         }
         
 

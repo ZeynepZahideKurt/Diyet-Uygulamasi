@@ -45,7 +45,6 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.listBoxFoods = new System.Windows.Forms.ListBox();
             this.txtBoxSearch = new System.Windows.Forms.TextBox();
@@ -76,7 +75,6 @@
             this.gradientPanel1.Controls.Add(this.pictureBox4);
             this.gradientPanel1.Controls.Add(this.pictureBox3);
             this.gradientPanel1.Controls.Add(this.dataGridView1);
-            this.gradientPanel1.Controls.Add(this.button3);
             this.gradientPanel1.Controls.Add(this.button1);
             this.gradientPanel1.Controls.Add(this.listBoxFoods);
             this.gradientPanel1.Controls.Add(this.txtBoxSearch);
@@ -236,16 +234,6 @@
             this.Column5.Name = "Column5";
             this.Column5.Width = 125;
             // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(1055, 430);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 31);
-            this.button3.TabIndex = 29;
-            this.button3.Text = "Kaldır";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -362,7 +350,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox listBoxFoods;
         private System.Windows.Forms.TextBox txtBoxSearch;

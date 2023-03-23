@@ -72,43 +72,7 @@ namespace Diyet
         int userID;
         private void button1_Click(object sender, EventArgs e)
         {
-            userID = (int)comboBox1.SelectedValue;
-            bool result;
-            bool datetimeControl = DateTimeControl();
-            try
-            {
-                if (datetimeControl == true)
-                {
-                    if (comboBox1.SelectedIndex != -1)
-                    {
-                        result = noteServices.Insert(new Note()
-                        {
-                            Head = textBox1.Text,
-                            Text = richTextBox1.Text,
-                            UserID = userID,
-                        });
-                        MessageBox.Show(result ? "Ekleme başarılı" : "Ekleme başarız!");
-                        richTextBox1.Clear();
-                        textBox1.Clear();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Bir note eklemeden önce kullanıcı seçmelisiniz");
-                        return;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Başlangıç bitiş tarihinden büyük olamaz. Lütfen tarihlerinizi kontrol ediniz");
-                    return;
-                }
-
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
+            
         }
       
         private void GrafikOlustur(int userid)
@@ -161,6 +125,47 @@ namespace Diyet
             else
             {
                 MessageBox.Show("Haydi kalori eklemeye devam edelim!");
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            userID = (int)comboBox1.SelectedValue;
+            bool result;
+            bool datetimeControl = DateTimeControl();
+            try
+            {
+                if (datetimeControl == true)
+                {
+                    if (comboBox1.SelectedIndex != -1)
+                    {
+                        result = noteServices.Insert(new Note()
+                        {
+                            Head = textBox1.Text,
+                            Text = richTextBox1.Text,
+                            UserID = userID,
+                        });
+                        MessageBox.Show(result ? "Ekleme başarılı" : "Ekleme başarız!");
+                        richTextBox1.Clear();
+                        textBox1.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Bir note eklemeden önce kullanıcı seçmelisiniz");
+                        return;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Başlangıç bitiş tarihinden büyük olamaz. Lütfen tarihlerinizi kontrol ediniz");
+                    return;
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
             }
         }
     }
