@@ -24,7 +24,10 @@ namespace Diet_BL.Services
         {
             if (nutrientId < 0) throw new Exception("Parametre degeri uygun degildir");
         }
-
+        public Nutrient GetNutrientByName(string name)
+        {
+            return nutrientRepository.GetNutrientByName(name);
+        }
         public Nutrient GetByNutrientId(int nutrientId)
         {
             Nutrient Nutrients = new Nutrient();

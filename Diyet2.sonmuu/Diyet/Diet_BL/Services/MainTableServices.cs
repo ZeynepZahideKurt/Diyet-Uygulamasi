@@ -21,6 +21,10 @@ namespace Diet_BL.Services
         {
             mainTableRepository = new MainTableRepository();
         }
+        public double GetWater(DateTime d1, int userid)
+        {
+            return mainTableRepository.GetWater(d1, userid);
+        }
         public bool Insert(MainTable mainTable)
         {
             return mainTableRepository.Insert(mainTable);

@@ -1,5 +1,7 @@
 ﻿using Diet_BL.Services;
+using Diet_DAL.Repositories;
 using Diet_Model.Entity;
+using Diet_Model.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,30 +19,80 @@ namespace Diyet
         User user;
         MotivationNoteServices motivationNoteServices;
         MainTableServices mainTableServices;
+        NutrientServices nutrientServices;
+        MealServices mealServices;
+
         public frmHomePage(User _user)
         {
             InitializeComponent();
             motivationNoteServices = new MotivationNoteServices();
             mainTableServices = new MainTableServices();
+            nutrientServices = new NutrientServices();
+            mealServices = new MealServices();
+
             user = _user;
         }
         string dt1;
+
+        
         private void frmHomePage_Load(object sender, EventArgs e)
         {
             Random rnd = new Random();
             string fname = user.FirstName.ToString();
             string lname = user.LastName.ToString();
             lblWelcome.Text = "Merhaba " + fname + " " + lname + "\n" + "YummyLose'a Hoşgeldiniz";
-            int randoMoti = rnd.Next(1, motivationNoteServices.GetList().Count()+1); //Burada 3 yerine; motivation note kadar olmalı
+            int randoMoti = rnd.Next(1, 3); //Burada 3 yerine; motivation note kadar olmalı
             label5.Text = motivationNoteServices.GetMotivationById(randoMoti).Text;
-            dt1 = dateTimePicker1.Value.ToString().Substring(0, 10);
+
             CalculateCal();
+
             lblVki.Text += VkiCalculate(user).ToString();
             lblAlinmasiGerekenKalori.Text += CaloriesNeeded(user).ToString();
 
+            circularProgressBarFill(Convert.ToInt32(CalculateWater()));
+            circularProgressBar2Fill(Convert.ToInt32(CalculateCal()));
+
+            //label3.Text+= Convert.ToInt32(CalculateWater());
+
+            /*circularProgressBar1.Value =Convert.ToInt32(CalculateWater());
+            circularProgressBar1.Minimum = 0;
+            circularProgressBar1.Maximum = 4000;*/
+            circularProgressBar1.Minimum = 0;
+            circularProgressBar1.Maximum = 100;
+
+
+            circularProgressBar2.Minimum = 0;
+            circularProgressBar2.Maximum = 100;
+
+
+        }
+        public void circularProgressBarFill(int i)
+        {
+            int oran = i / 40;
+
+            if (i >= 4000)
+                oran = 100;
+            else if (oran <= 0)
+                oran = 0;
+
+            circularProgressBar1.Value = oran;
 
         }
 
+        public void circularProgressBar2Fill(int i)
+        {
+            int alinanCal = Convert.ToInt32(CalculateCal());
+            int maxCal = Convert.ToInt32(CaloriesNeeded(user));
+            int oran = (100 * alinanCal) / maxCal;
+
+            if (i >= Convert.ToInt32(CaloriesNeeded(user)))
+                oran = 100;
+            else if (oran <= 0)
+                oran = 0;
+
+            circularProgressBar2.Value = oran;
+
+        }
         private void pbNutrient_Click(object sender, EventArgs e)
         {
             frmAddNutrient frm = new frmAddNutrient(user);
@@ -51,6 +103,7 @@ namespace Diyet
 
         private void adminRaporuToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             if (LblAlinanKalori.Text.EndsWith("0") == false)
             {
                 FrmAdminReports frmnot = new FrmAdminReports(user);
@@ -181,17 +234,20 @@ namespace Diyet
             pc.ShowDialog();
             this.Show();
         }
-        public void CalculateCal()
+        public double CalculateCal()
         {
             string dt1 = dateTimePicker1.Value.ToString().Substring(0, 10);
 
             double toplam = mainTableServices.CalculateTotalCalTurnList(Convert.ToDateTime(dt1), user.ID);
 
             LblAlinanKalori.Text = "Alınan Kalori: " + toplam.ToString();
+            return toplam;
         }
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             CalculateCal();
+            circularProgressBarFill(Convert.ToInt32(CalculateWater()));
+            circularProgressBar2Fill(Convert.ToInt32(CalculateCal()));
         }
 
         private void sağlıklıYaşamTüyolarıToolStripMenuItem_Click(object sender, EventArgs e)
@@ -209,5 +265,46 @@ namespace Diyet
             frm.ShowDialog();
             this.Show();
         }
+
+        private void pbWaterPlus_Click(object sender, EventArgs e)
+        {
+            string dt1 = dateTimePicker1.Value.ToString().Substring(0, 10);
+            Meal me = new Meal();
+            me.MealName = (MealName)0;
+            me.CreateTime = dateTimePicker1.Value;
+            mealServices.Insert(me);
+
+            MainTable mainTable = new MainTable
+            {
+                UserID = user.ID,
+                MealID = me.ID,
+                NutrientID = nutrientServices.GetNutrientByName("su").ID,
+                Amt = 200,
+                TotalCalorie = 0,
+            };
+            bool result = mainTableServices.Insert(mainTable);
+
+            //var amountWater = 200;
+            //circularProgressBar1.Value += amountWater;
+
+            //circularProgressBar1.Update();
+            circularProgressBarFill(Convert.ToInt32(CalculateWater()));
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            frmAddNutrient frm = new frmAddNutrient(user);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        public double CalculateWater()
+        {
+            string dt1 = dateTimePicker1.Value.ToString().Substring(0, 10); double toplam = mainTableServices.GetWater(Convert.ToDateTime(dt1), user.ID);
+
+            return toplam;
+        }
+
     }
 }

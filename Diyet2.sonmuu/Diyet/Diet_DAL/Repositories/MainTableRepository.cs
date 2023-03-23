@@ -29,7 +29,19 @@ namespace Diet_DAL.Repositories
             dbContext.MainTables.Add(mainTable);
             return dbContext.SaveChanges() > 0;
         }
-
+        public double GetWater(DateTime d1, int userid)
+        {
+            var list = dbContext.MainTables.Where(a => a.Meal.CreateTime == d1 && a.User.ID == userid && a.Nutrient.NutrientName.ToLower() == "su").Select(a => new
+            {
+                a.Amt,
+            }).ToList();
+            double toplam = 0;
+            foreach (var item in list)
+            {
+                toplam += item.Amt;
+            }
+            return toplam;
+        }
         public List<MainTable> GetListMainTablesByID(int mainTableid)
         {
             return dbContext.MainTables.Where(a => a.ID == mainTableid).ToList();

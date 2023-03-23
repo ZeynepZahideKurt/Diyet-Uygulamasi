@@ -19,6 +19,10 @@ namespace Diet_DAL.Repositories
             dbContext= new AppDbContext();
         }
 
+        public Nutrient GetNutrientByName(string name)
+        {
+            return dbContext.Nutrients.Where(a => a.NutrientName.ToLower() == name).FirstOrDefault();
+        }
         public List<Nutrient> Search(string name)
         {
             var result = (from d in dbContext.Nutrients where d.NutrientName.Contains(name) select d).ToList();
