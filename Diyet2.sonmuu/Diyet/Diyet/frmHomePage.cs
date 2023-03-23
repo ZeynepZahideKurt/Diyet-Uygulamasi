@@ -43,6 +43,7 @@ namespace Diyet
             lblWelcome.Text = "Merhaba " + fname + " " + lname + "\n" + "YummyLose'a Hoşgeldiniz";
             int randoMoti = rnd.Next(1, 3); //Burada 3 yerine; motivation note kadar olmalı
             label5.Text = motivationNoteServices.GetMotivationById(randoMoti).Text;
+            dt1 = dateTimePicker1.Value.ToString().Substring(0, 10);
 
             CalculateCal();
 
@@ -306,5 +307,12 @@ namespace Diyet
             return toplam;
         }
 
+        private void circularProgressBar2_Click(object sender, EventArgs e)
+        {
+            frmAddNutrient frm = new frmAddNutrient(user);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
     }
 }

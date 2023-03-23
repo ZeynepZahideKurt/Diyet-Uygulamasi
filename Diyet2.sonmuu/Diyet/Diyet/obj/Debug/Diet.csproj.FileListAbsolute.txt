@@ -413,3 +413,6 @@ C:\Users\ASUS\Desktop\Github\Github\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diet.csp
 C:\Users\ASUS\Desktop\Github\Github\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diet.csproj.CopyComplete
 C:\Users\ASUS\Desktop\Github\Github\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.exe
 C:\Users\ASUS\Desktop\Github\Github\Diyet2.sonmuu\Diyet\Diyet\obj\Debug\Diyet.pdb
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\CircularProgressBar.dll
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\WinFormAnimation.dll
+D:\C#\DiyetUygulaması\Github\Diyet2.sonmuu\Diyet\Diyet\bin\Debug\CircularProgressBar.xml
