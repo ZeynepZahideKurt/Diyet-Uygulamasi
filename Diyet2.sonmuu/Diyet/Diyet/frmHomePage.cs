@@ -201,5 +201,13 @@ namespace Diyet
             fhu.ShowDialog();
             this.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            frmAddNutrient frm = new frmAddNutrient(user);
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
     }
 }

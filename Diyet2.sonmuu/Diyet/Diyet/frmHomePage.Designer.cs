@@ -37,16 +37,9 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pbNutrient = new System.Windows.Forms.PictureBox();
-            this.pbWater = new System.Windows.Forms.PictureBox();
-            this.pbWaterMinus = new System.Windows.Forms.PictureBox();
-            this.pbWaterPlus = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LblAlinanKalori = new System.Windows.Forms.Label();
             this.lblAlinmasiGerekenKalori = new System.Windows.Forms.Label();
@@ -60,12 +53,10 @@
             this.kıyasRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yemekÇeşitliliğiRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminRaporuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
+            this.circularProgressBar2 = new CircularProgressBar.CircularProgressBar();
             this.gradientPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNutrient)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWater)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWaterMinus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWaterPlus)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -111,7 +102,7 @@
             this.lblVki.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblVki.Location = new System.Drawing.Point(306, 173);
             this.lblVki.Name = "lblVki";
-            this.lblVki.Size = new System.Drawing.Size(201, 23);
+            this.lblVki.Size = new System.Drawing.Size(161, 18);
             this.lblVki.TabIndex = 5;
             this.lblVki.Text = "Beden Kitle İndeksi :";
             // 
@@ -137,14 +128,12 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.circularProgressBar2);
+            this.groupBox2.Controls.Add(this.circularProgressBar1);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.pbNutrient);
-            this.groupBox2.Controls.Add(this.pbWater);
-            this.groupBox2.Controls.Add(this.pbWaterMinus);
-            this.groupBox2.Controls.Add(this.pbWaterPlus);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox2.Location = new System.Drawing.Point(28, 385);
+            this.groupBox2.Location = new System.Drawing.Point(28, 368);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(624, 178);
             this.groupBox2.TabIndex = 41;
@@ -155,71 +144,28 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(374, 124);
+            this.label2.Location = new System.Drawing.Point(391, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "BESİN EKLE";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(84, 124);
+            this.label1.Location = new System.Drawing.Point(98, 144);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 22);
             this.label1.TabIndex = 3;
             this.label1.Text = "SU EKLE";
             // 
-            // pbNutrient
-            // 
-            this.pbNutrient.Image = ((System.Drawing.Image)(resources.GetObject("pbNutrient.Image")));
-            this.pbNutrient.Location = new System.Drawing.Point(387, 40);
-            this.pbNutrient.Name = "pbNutrient";
-            this.pbNutrient.Size = new System.Drawing.Size(83, 81);
-            this.pbNutrient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbNutrient.TabIndex = 2;
-            this.pbNutrient.TabStop = false;
-            this.pbNutrient.Click += new System.EventHandler(this.pbNutrient_Click_1);
-            // 
-            // pbWater
-            // 
-            this.pbWater.Image = ((System.Drawing.Image)(resources.GetObject("pbWater.Image")));
-            this.pbWater.Location = new System.Drawing.Point(103, 57);
-            this.pbWater.Name = "pbWater";
-            this.pbWater.Size = new System.Drawing.Size(50, 50);
-            this.pbWater.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbWater.TabIndex = 2;
-            this.pbWater.TabStop = false;
-            // 
-            // pbWaterMinus
-            // 
-            this.pbWaterMinus.Image = ((System.Drawing.Image)(resources.GetObject("pbWaterMinus.Image")));
-            this.pbWaterMinus.Location = new System.Drawing.Point(174, 83);
-            this.pbWaterMinus.Name = "pbWaterMinus";
-            this.pbWaterMinus.Size = new System.Drawing.Size(24, 24);
-            this.pbWaterMinus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbWaterMinus.TabIndex = 2;
-            this.pbWaterMinus.TabStop = false;
-            // 
-            // pbWaterPlus
-            // 
-            this.pbWaterPlus.Image = ((System.Drawing.Image)(resources.GetObject("pbWaterPlus.Image")));
-            this.pbWaterPlus.Location = new System.Drawing.Point(60, 83);
-            this.pbWaterPlus.Name = "pbWaterPlus";
-            this.pbWaterPlus.Size = new System.Drawing.Size(24, 24);
-            this.pbWaterPlus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbWaterPlus.TabIndex = 2;
-            this.pbWaterPlus.TabStop = false;
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.progressBar2);
-            this.groupBox1.Controls.Add(this.progressBar1);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
@@ -230,20 +176,11 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "HEDEFLER";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(31, 95);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 20);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "label6";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(277, 34);
+            this.label4.Location = new System.Drawing.Point(283, 47);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(167, 20);
             this.label4.TabIndex = 3;
@@ -253,25 +190,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(25, 34);
+            this.label3.Location = new System.Drawing.Point(6, 47);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(199, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Günlük Gerekli Su Miktarı";
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.Location = new System.Drawing.Point(281, 57);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(338, 23);
-            this.progressBar2.TabIndex = 0;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(29, 57);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(199, 23);
-            this.progressBar1.TabIndex = 0;
             // 
             // panel1
             // 
@@ -337,7 +260,7 @@
             this.raporlarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(863, 38);
+            this.menuStrip1.Size = new System.Drawing.Size(690, 28);
             this.menuStrip1.TabIndex = 39;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -346,7 +269,7 @@
             this.blogToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sağlıklıYaşamTüyolarıToolStripMenuItem});
             this.blogToolStripMenuItem.Name = "blogToolStripMenuItem";
-            this.blogToolStripMenuItem.Size = new System.Drawing.Size(54, 34);
+            this.blogToolStripMenuItem.Size = new System.Drawing.Size(54, 24);
             this.blogToolStripMenuItem.Text = "Blog";
             // 
             // sağlıklıYaşamTüyolarıToolStripMenuItem
@@ -364,7 +287,7 @@
             this.yemekÇeşitliliğiRaporuToolStripMenuItem,
             this.adminRaporuToolStripMenuItem});
             this.raporlarToolStripMenuItem.Name = "raporlarToolStripMenuItem";
-            this.raporlarToolStripMenuItem.Size = new System.Drawing.Size(80, 34);
+            this.raporlarToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.raporlarToolStripMenuItem.Text = "Raporlar";
             // 
             // günSonuRaporuToolStripMenuItem
@@ -395,6 +318,70 @@
             this.adminRaporuToolStripMenuItem.Text = "Admin Raporu";
             this.adminRaporuToolStripMenuItem.Click += new System.EventHandler(this.adminRaporuToolStripMenuItem_Click);
             // 
+            // circularProgressBar1
+            // 
+            this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBar1.AnimationSpeed = 500;
+            this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.circularProgressBar1.InnerMargin = 2;
+            this.circularProgressBar1.InnerWidth = -1;
+            this.circularProgressBar1.Location = new System.Drawing.Point(88, 26);
+            this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
+            this.circularProgressBar1.Name = "circularProgressBar1";
+            this.circularProgressBar1.OuterColor = System.Drawing.Color.Gray;
+            this.circularProgressBar1.OuterMargin = -25;
+            this.circularProgressBar1.OuterWidth = 26;
+            this.circularProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
+            this.circularProgressBar1.ProgressWidth = 25;
+            this.circularProgressBar1.RightToLeftLayout = true;
+            this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.circularProgressBar1.Size = new System.Drawing.Size(103, 105);
+            this.circularProgressBar1.StartAngle = 270;
+            this.circularProgressBar1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBar1.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.circularProgressBar1.SubscriptText = ".23";
+            this.circularProgressBar1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.circularProgressBar1.SuperscriptText = "°C";
+            this.circularProgressBar1.TabIndex = 8;
+            this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.circularProgressBar1.Value = 68;
+            // 
+            // circularProgressBar2
+            // 
+            this.circularProgressBar2.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.circularProgressBar2.AnimationSpeed = 500;
+            this.circularProgressBar2.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBar2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.circularProgressBar2.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.circularProgressBar2.InnerMargin = 2;
+            this.circularProgressBar2.InnerWidth = -1;
+            this.circularProgressBar2.Location = new System.Drawing.Point(395, 26);
+            this.circularProgressBar2.MarqueeAnimationSpeed = 2000;
+            this.circularProgressBar2.Name = "circularProgressBar2";
+            this.circularProgressBar2.OuterColor = System.Drawing.Color.Gray;
+            this.circularProgressBar2.OuterMargin = -25;
+            this.circularProgressBar2.OuterWidth = 26;
+            this.circularProgressBar2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
+            this.circularProgressBar2.ProgressWidth = 25;
+            this.circularProgressBar2.RightToLeftLayout = true;
+            this.circularProgressBar2.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.circularProgressBar2.Size = new System.Drawing.Size(103, 105);
+            this.circularProgressBar2.StartAngle = 270;
+            this.circularProgressBar2.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBar2.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.circularProgressBar2.SubscriptText = ".23";
+            this.circularProgressBar2.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBar2.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.circularProgressBar2.SuperscriptText = "°C";
+            this.circularProgressBar2.TabIndex = 9;
+            this.circularProgressBar2.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.circularProgressBar2.Value = 68;
+            // 
             // frmHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -411,10 +398,6 @@
             this.gradientPanel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNutrient)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWater)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWaterMinus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWaterPlus)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -445,20 +428,15 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pbNutrient;
-        private System.Windows.Forms.PictureBox pbWater;
-        private System.Windows.Forms.PictureBox pbWaterMinus;
-        private System.Windows.Forms.PictureBox pbWaterPlus;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblAlinmasiGerekenKalori;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ProgressBar progressBar2;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label LblAlinanKalori;
         private System.Windows.Forms.Label lblVki;
         private System.Windows.Forms.Panel panel1;
+        private CircularProgressBar.CircularProgressBar circularProgressBar2;
+        private CircularProgressBar.CircularProgressBar circularProgressBar1;
     }
 }
