@@ -1,0 +1,15 @@
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\bin\Debug\Hamburgerci24012023.exe.config
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\bin\Debug\Hamburgerci24012023.exe
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\bin\Debug\Hamburgerci24012023.pdb
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.csproj.AssemblyReference.cache
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.csproj.SuggestedBindingRedirects.cache
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.Form1.resources
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.Form2.resources
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.Form3.resources
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.Form4.resources
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.MyMdi.resources
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.Properties.Resources.resources
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.csproj.GenerateResource.cache
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.csproj.CoreCompileInputs.cache
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.exe
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.pdb

@@ -1,0 +1,13 @@
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\HastaneOtomasyon\bin\Debug\HastaneOtomasyon.exe.config
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\HastaneOtomasyon\bin\Debug\HastaneOtomasyon.exe
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\HastaneOtomasyon\bin\Debug\HastaneOtomasyon.pdb
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\HastaneOtomasyon\obj\Debug\HastaneOtomasyon.csproj.AssemblyReference.cache
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\HastaneOtomasyon\obj\Debug\HastaneOtomasyon.csproj.SuggestedBindingRedirects.cache
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\HastaneOtomasyon\obj\Debug\HastaneOtomasyon.AnaEkran.resources
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\HastaneOtomasyon\obj\Debug\HastaneOtomasyon.PersonelEkle.resources
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\HastaneOtomasyon\obj\Debug\HastaneOtomasyon.Properties.Resources.resources
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\HastaneOtomasyon\obj\Debug\HastaneOtomasyon.csproj.GenerateResource.cache
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\HastaneOtomasyon\obj\Debug\HastaneOtomasyon.csproj.CoreCompileInputs.cache
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\HastaneOtomasyon\obj\Debug\HastaneOtomasyon.exe
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\HastaneOtomasyon\obj\Debug\HastaneOtomasyon.pdb
+D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\HastaneOtomasyon\obj\Debug\HastaneOtomasyon.DetayEkran.resources
