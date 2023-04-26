@@ -13,3 +13,18 @@ D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci2401
 D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.csproj.CoreCompileInputs.cache
 D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.exe
 D:\ARDA D\Arda\YAZILIM\Trainer\Arda\Noramin2WFA\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.pdb
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\bin\Debug\Hamburgerci24012023.exe.config
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\bin\Debug\Hamburgerci24012023.exe
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\bin\Debug\Hamburgerci24012023.pdb
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.Form1.resources
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.Form2.resources
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.Form3.resources
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.Form4.resources
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.MyMdi.resources
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.exe
+C:\Users\ASUS\Desktop\Github\Github\Hamburgerci\WindowsFormsApp1\Hamburgerci24012023\obj\Debug\Hamburgerci24012023.pdb

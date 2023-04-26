@@ -1,12 +1,21 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using HamburgerProject.Entity.Abstract;
+using HamburgerProject.Entity.Concrete;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace HamburgerProject.AppDbContext
 {
-    public class ApplicationDbContext:DbContext
+    public class ApplicationDbContext: IdentityDbContext<AppUser>
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        public ApplicationDbContext(DbContextOptions options) : base(options)
         {
 
         }
+        
+        public DbSet<Extra> Extras { get; set; }
+        public DbSet<Menu> Menus { get; set; }
+        public DbSet<Order> Orders { get; set; }
+
+        
     }
 }

@@ -4,9 +4,7 @@ namespace HamburgerProject.Entity.Concrete
 {
     public class Menu:BaseEntity
     {
-        public override string ToString()
-        {
-            return Name + " Menu";
-        }
+        public AppUser AppUser { get; set; }
+        
     }
 }

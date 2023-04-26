@@ -18,7 +18,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
 {
     opt.Password.RequireUppercase = false;
     opt.Password.RequiredLength = 4;
-}).AddEntityFrameworkStores<ApplicationDbContext>().AddRoles<IdentityRole>();
+}).AddEntityFrameworkStores<ApplicationDbContext>();
 
 //Automapper
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
