@@ -3,38 +3,53 @@ using HamburgerProject.Entity.Concrete;
 using HamburgerProject.Entity.Enums;
 using HamburgerProject.Repositories.Abstract;
 using System.IO.Pipelines;
+using System.Linq.Expressions;
 
 namespace HamburgerProject.Repositories.Concrete
 {
-    public class OrderRepository : GenericRepository<Order>, IOrderRepository,ICalculate
+    public class OrderRepository :  IOrderRepository, ICalculate 
     {
         private readonly ApplicationDbContext db;
 
-        public OrderRepository(ApplicationDbContext db) : base(db) 
+        public OrderRepository(ApplicationDbContext db)
         {
             this.db = db;
         }
+
+        public bool Add(Order entity)
+        {
+            db.Add(entity);
+            return db.SaveChanges() > 0;
+        }
+
         public double Calculate(Order order)
         {
-            double TotalPrice = 0;
-            TotalPrice += order.Menu.Price;
-
-            switch (order.Size)
-            {
-                case Size.Medium:
-                    TotalPrice += TotalPrice * 0.20;
-                    break;
-                case Size.Large:
-                    TotalPrice += TotalPrice * 0.40;
-                    break;
-            }
-            foreach (var item in order.Extras)
-            {
-                TotalPrice += item.Price;
-            }
-            TotalPrice = TotalPrice * order.Price;
-            return TotalPrice;
+            throw new NotImplementedException();
         }
-        
+
+        public bool Delete(Order entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Order> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Order GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Order> GetWhere(Expression<Func<Order, bool>> predicate)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Update(Order entity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

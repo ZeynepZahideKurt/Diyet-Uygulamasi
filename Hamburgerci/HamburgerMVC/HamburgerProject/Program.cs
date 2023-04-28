@@ -14,11 +14,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 
 //Identity
 
-builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
-{
-    opt.Password.RequireUppercase = false;
-    opt.Password.RequiredLength = 4;
-}).AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 
 //Automapper
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
@@ -43,6 +39,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Customer}/{action=Login}/{id?}");
 
 app.Run();
