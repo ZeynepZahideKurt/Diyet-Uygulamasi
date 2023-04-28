@@ -1,5 +1,7 @@
 using HamburgerProject.AppDbContext;
 using HamburgerProject.Entity.Concrete;
+using HamburgerProject.Repositories.Abstract;
+using HamburgerProject.Repositories.Concrete;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
@@ -12,6 +14,9 @@ builder.Services.AddControllersWithViews();
 
 //Context
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Baglanti")));
+builder.Services.AddTransient<IOrderRepository, OrderRepository>();
+//builder.Services.AddTransient<ICalculate, OrderRepository>();
+builder.Services.AddTransient(typeof(IRepository<>), typeof(GenericRepository<>));
 
 //Identity
 
@@ -42,6 +47,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Customer}/{action=Login}/{id?}");
+    pattern: "{controller=Admin}/{action=Index}/{id?}");
 
 app.Run();

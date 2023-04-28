@@ -17,9 +17,9 @@ namespace HamburgerProject.Entity.Concrete
             Menus = new List<Menu>();
            
         }
-        public Size Size { get; set; }
-        public int Piece { get; set; }
-        public decimal TotalPrice { get; set; }
+        
+        //public int Piece { get; set; }
+        public double TotalPrice { get; set; }
         public DateTime CreatedTime { get; set; }=DateTime.Now;
 
         

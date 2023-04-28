@@ -5,6 +5,6 @@ namespace HamburgerProject.Repositories.Abstract
 {
     public interface ICalculate
     {
-        double Calculate(Order order);
+        void Calculate(Order order);
     }
 }

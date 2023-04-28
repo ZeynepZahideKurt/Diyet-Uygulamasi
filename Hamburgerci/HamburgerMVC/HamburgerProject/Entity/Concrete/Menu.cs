@@ -2,13 +2,14 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
+using HamburgerProject.Entity.Enums;
 
 namespace HamburgerProject.Entity.Concrete
 {
     public class Menu:BaseEntity
     {
         public string Name { get; set; }
-
+        public Size Size { get; set; }
         public double Price { get; set; }
 
         //public int OrderId { get; set; }

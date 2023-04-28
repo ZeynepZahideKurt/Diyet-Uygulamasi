@@ -2,7 +2,7 @@
 
 namespace HamburgerProject.Repositories.Abstract
 {
-    public interface IOrderRepository: IRepository<Order>
+    public interface IOrderRepository
     {
     }
 }
