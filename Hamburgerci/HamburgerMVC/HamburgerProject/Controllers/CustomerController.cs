@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using HamburgerProject.Entity.Concrete;
 using HamburgerProject.Models;
+using HamburgerProject.Repositories.Abstract;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,11 +11,18 @@ namespace HamburgerProject.Controllers
     {
         private readonly UserManager<AppUser> userManager;
         private readonly IMapper mapper;
+        private readonly IOrderRepository orderRepository;
+        private IRepository<Menu> menuGenericRepository;
+        private readonly IRepository<Extra> extraGenericRepository;
 
-        public CustomerController(UserManager<AppUser> userManager, IMapper mapper)
+        public CustomerController(UserManager<AppUser> userManager, IRepository<Menu> menuGenericRepository, IRepository<Extra> extraGenericRepository, IMapper mapper, IOrderRepository orderRepository)
         {
             this.userManager = userManager;
             this.mapper = mapper;
+            this.orderRepository = orderRepository;
+            this.menuGenericRepository = menuGenericRepository;
+            this.extraGenericRepository = extraGenericRepository;
+            
         }
         
         public IActionResult Login()
@@ -25,6 +33,8 @@ namespace HamburgerProject.Controllers
         {
             return View();
         }
+
+       
         [HttpPost]
         public async Task<IActionResult> Register(UserSignUpVM userSignUpVM)
         {
@@ -48,8 +58,20 @@ namespace HamburgerProject.Controllers
             }
             return View(userSignUpVM);
         }
+        public IActionResult Index()
+        {
+            var orderlist=orderRepository.GetAllMenuAndExtras();
+
+            return View(orderlist);
+        }
         public IActionResult CustomerHome()
         {
+            return View();
+        }
+
+        public IActionResult OrderAdd() 
+        {
+            
             return View();
         }
     }

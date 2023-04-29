@@ -11,8 +11,11 @@ namespace HamburgerProject.Entity.Concrete
         public double Price { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; }
-        
 
+        public Extra()
+        {
+            Orders = new List<Order>();
+        }
         public class ExtraConfiguration : IEntityTypeConfiguration<Extra>
         {
             public void Configure(EntityTypeBuilder<Extra> builder)

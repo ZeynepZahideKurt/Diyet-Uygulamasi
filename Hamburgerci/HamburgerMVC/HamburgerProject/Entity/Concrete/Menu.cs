@@ -16,7 +16,10 @@ namespace HamburgerProject.Entity.Concrete
         //public virtual Order Order { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; }
-
+        public Menu()
+        {
+            Orders = new List<Order>();
+        }
         public class MenuConfiguration : IEntityTypeConfiguration<Menu>
         {
             public void Configure(EntityTypeBuilder<Menu> builder)

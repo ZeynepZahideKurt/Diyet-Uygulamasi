@@ -1,0 +1,120 @@
+﻿@{
+    ViewData["Title"] = "Listele";
+}
+@model Order
+
+
+<div class="row">
+
+    <div class="col">
+
+        <table class="table table-bordered">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+
+                        Id
+
+                    </th>
+
+                    <th>
+
+                        Menu
+
+                    </th>
+
+                    <th>
+
+                        Extras
+
+                    </th>
+
+                    <th>
+
+                        Total Price
+
+                    </th>
+                    <th>
+
+                        Order Creating Time
+
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                 <tr>
+
+                            <td>
+
+                        @Model.Id
+
+                            </td>
+
+                            <td>
+                        @foreach (Menu item in Model.Menus)
+
+                        {
+                            var MenuName = @item.Name;
+                            
+                            var MenuPrice = @item.Price;
+                            <p>
+                                Menu Name: @MenuName
+                                <hr/>
+                                Menu Price: @MenuPrice
+                            </p>
+                        }
+                        
+
+                            </td>
+
+                            <td>
+
+                        @foreach (Extra item in Model.Extras)
+
+                        {
+                            var ExtraName = @item.Name;
+
+                            var ExtraPrice = @item.Price;
+                                <p>
+                                        Menu Name: @ExtraName
+                                    <hr/>
+                                        Menu Price: @ExtraPrice
+                                </p>
+                        }
+                            </td>
+
+                            <td>
+
+                                @Model.TotalPrice
+                            </td>
+
+                             <td>
+
+                                @Model.CreatedTime.ToString("dd/MM/yyyyy")
+                            </td>
+
+                            <td>
+
+                                <a class="btn btn-primary" asp-action="OrderUpdate" asp-route-id="@Model.Id">Update </a>
+
+                                <a class="btn btn-secondary" asp-action="OrderDelete" asp-route-id="@Model.Id" onclick="return confirm('Bu dersi silmek istediğinize emin misiniz?')">Delete </a>
+
+                            </td>
+
+                        </tr>
+            </tbody>
+
+
+
+        </table>
+        <div> <a class="btn btn-primary" asp-action="OrderCreate">Add </a></div>
+    </div>
+
+   

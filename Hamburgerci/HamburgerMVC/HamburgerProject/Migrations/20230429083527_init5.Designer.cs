@@ -4,6 +4,7 @@ using HamburgerProject.AppDbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HamburgerProject.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230429083527_init5")]
+    partial class init5
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -70,14 +72,14 @@ namespace HamburgerProject.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "87f97d4d-ff25-413b-836a-e878134c3e4e",
+                            ConcurrencyStamp = "00dd029f-5873-4eeb-b26f-d982b7d9d927",
                             Name = "Admin",
                             NormalizedName = "ADMİN"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "a3e1ec79-8160-4038-8aa5-b9c58cf36a52",
+                            ConcurrencyStamp = "88bccbe3-d983-4883-9a70-bc4ffbcc4f4f",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -155,12 +157,12 @@ namespace HamburgerProject.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6b34e167-409b-4ad5-8243-d7ad9033dfc8",
+                            ConcurrencyStamp = "38ba81e4-d731-43f7-a70b-670886b7b1a9",
                             Email = "admin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEAaYCxqrerWiMqxTmIPu3Mii1tS4/3PDF2x+3cas67iupsn1K9X0GN0ABLIzeHF3kA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMAsAPRLlUHx47l+wCDTuNoG1SIPEE1paw98EhAbCR9JGgZOkI3v9IgjX67hyjIlBg==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "Admin"

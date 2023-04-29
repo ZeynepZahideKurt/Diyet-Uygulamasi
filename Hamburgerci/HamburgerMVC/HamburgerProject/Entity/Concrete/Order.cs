@@ -27,8 +27,8 @@ namespace HamburgerProject.Entity.Concrete
         //public int MenuId { get; set; }
         //public virtual Menu Menu { get; set; }
 
-        public virtual ICollection<Extra> Extras { get; set; }
-        public virtual ICollection<Menu> Menus { get; set; }
+        public virtual ICollection<Extra>? Extras { get; set; }
+        public virtual ICollection<Menu>? Menus { get; set; }
 
         public class OrderConfiguration : IEntityTypeConfiguration<Order>
         {
