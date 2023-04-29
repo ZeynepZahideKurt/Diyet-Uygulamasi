@@ -2,8 +2,9 @@
 
 namespace HamburgerProject.Repositories.Abstract
 {
-    public interface IOrderRepository
+    public interface IOrderRepository: IRepository<Order>, ICalculate
     {
         List<Order> GetAllMenuAndExtras();
+      
     }
 }

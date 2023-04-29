@@ -50,7 +50,6 @@ namespace HamburgerProject.AppDbContext
                 }
             );
 
-
             //Seeding the relation between our user and role to AspNetUserRoles table
             builder.Entity<IdentityUserRole<int>>().HasData(
                 new IdentityUserRole<int>

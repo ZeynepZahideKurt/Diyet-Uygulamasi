@@ -2,6 +2,7 @@
 using HamburgerProject.Entity.Concrete;
 using HamburgerProject.Models;
 using HamburgerProject.Models.Admin;
+using HamburgerProject.Models.Customer;
 
 namespace HamburgerProject.Mapping
 {
@@ -14,6 +15,7 @@ namespace HamburgerProject.Mapping
             CreateMap<ExtraCreateVM, Extra>().ReverseMap(); //UserVM'i appusera eklenir
             CreateMap<MenuUpdateVM, Menu>().ReverseMap(); //UserVM'i appusera eklenir
             CreateMap<ExtraUpdateVM, Extra>().ReverseMap(); //UserVM'i appusera eklenir
+            CreateMap<AddOrderVM, Order>().ReverseMap(); //UserVM'i appusera eklenir
         }
     }
 }

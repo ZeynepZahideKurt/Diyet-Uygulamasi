@@ -15,7 +15,7 @@ namespace HamburgerProject.Entity.Concrete
         //public int OrderId { get; set; }
         //public virtual Order Order { get; set; }
 
-        public virtual ICollection<Order> Orders { get; set; }
+        public virtual ICollection<Order>? Orders { get; set; }
         public Menu()
         {
             Orders = new List<Order>();

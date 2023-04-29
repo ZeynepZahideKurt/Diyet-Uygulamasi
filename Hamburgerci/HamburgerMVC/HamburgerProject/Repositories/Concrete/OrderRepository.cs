@@ -8,38 +8,44 @@ using System.Linq.Expressions;
 
 namespace HamburgerProject.Repositories.Concrete
 {
-    public class OrderRepository : GenericRepository<Order>, IOrderRepository, ICalculate 
+    public class OrderRepository : GenericRepository<Order>, IOrderRepository
     {
         private readonly ApplicationDbContext db;
 
         public OrderRepository(ApplicationDbContext applicationDb) : base(applicationDb)
         {
-            this.db = db;
+            this.db = applicationDb;
         }
 
        
         public void Calculate(Order order)
         {
             double TotalPrice = 0;
-            foreach (var item in order.Menus)
+            if (order.Menus != null)
             {
-                switch (item.Size)
+                foreach (var item in order.Menus)
                 {
-                    case Size.Small:
-                        TotalPrice = item.Price; 
-                        break;
-                    case Size.Medium:
-                        TotalPrice += item.Price * 0.20;
-                        break;
-                    case Size.Large:
-                        TotalPrice += item.Price * 0.40;
-                        break;
+                    switch (item.Size)
+                    {
+                        case Size.Small:
+                            TotalPrice = item.Price;
+                            break;
+                        case Size.Medium:
+                            TotalPrice += item.Price * 0.20;
+                            break;
+                        case Size.Large:
+                            TotalPrice += item.Price * 0.40;
+                            break;
+                    }
                 }
             }
-            
-            foreach (var item in order.Extras)
+
+            if (order.Extras != null)
             {
-                TotalPrice += item.Price;
+                foreach (var item in order.Extras)
+                {
+                    TotalPrice += item.Price;
+                }
             }
             //TotalPrice = TotalPrice * order.Piece;
             order.TotalPrice = TotalPrice;

@@ -17,12 +17,12 @@ namespace HamburgerProject.Entity.Concrete
             Menus = new List<Menu>();
            
         }
-        
+
         //public int Piece { get; set; }
         public double TotalPrice { get; set; }
         public DateTime CreatedTime { get; set; }=DateTime.Now;
 
-        
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public AppUser AppUser { get; set; }
         //public int MenuId { get; set; }
         //public virtual Menu Menu { get; set; }
