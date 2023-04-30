@@ -12,6 +12,8 @@ namespace HamburgerProject.Entity.Concrete
 
         public virtual ICollection<Order>? Orders { get; set; }
 
+        public int Quantity { get; set; }
+
         public Extra()
         {
             Orders = new List<Order>();
