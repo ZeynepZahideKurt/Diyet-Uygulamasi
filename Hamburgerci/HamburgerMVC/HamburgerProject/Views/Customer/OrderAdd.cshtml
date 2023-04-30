@@ -75,4 +75,12 @@
            
         </form>
     </div>
+    <div class="col-md-4">
+        @if(Model.CustomerExtras != null && Model.CustomerMenus != null)
+        {
+            <partial name="_OrderListPartialView"></partial>
+        }
+            
+    </div>
+
 </div>
