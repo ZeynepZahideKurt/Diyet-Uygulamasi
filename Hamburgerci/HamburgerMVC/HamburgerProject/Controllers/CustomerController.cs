@@ -34,9 +34,9 @@ namespace HamburgerProject.Controllers
             this.orderRepository = orderRepository;
             this.menuGenericRepository = menuGenericRepository;
             this.extraGenericRepository = extraGenericRepository;
-            
+
         }
-        
+
         public IActionResult Login()
         {
             return View();
@@ -46,7 +46,7 @@ namespace HamburgerProject.Controllers
             return View();
         }
 
-       
+
         [HttpPost]
         public async Task<IActionResult> Register(UserSignUpVM userSignUpVM)
         {
@@ -72,7 +72,7 @@ namespace HamburgerProject.Controllers
         }
         public IActionResult Index()
         {
-            var orderlist=orderRepository.GetAllMenuAndExtras();
+            var orderlist = orderRepository.GetAllMenuAndExtras();
 
             return View(orderlist);
         }
@@ -80,8 +80,8 @@ namespace HamburgerProject.Controllers
         {
             return View();
         }
-       
-        public async Task<IActionResult> OrderAdd() 
+
+        public async Task<IActionResult> OrderAdd()
         {
 
             var menuList = menuGenericRepository.GetAll().ToList();
@@ -102,12 +102,12 @@ namespace HamburgerProject.Controllers
             }
 
             return View();
-            
+
         }
         [HttpPost]
         public async Task<IActionResult> OrderAdd(AddOrderVM orderList)
         {
-            
+
 
             if (!ModelState.IsValid)
             {
@@ -123,8 +123,8 @@ namespace HamburgerProject.Controllers
             order.CreatedTime = orderList.CreateTime;
             orderRepository.Calculate(order);
 
-            orderList.AdminMenus= menuGenericRepository.GetAll().ToList();
-            orderList.AdminExtras= extraGenericRepository.GetAll().ToList();
+            orderList.AdminMenus = menuGenericRepository.GetAll().ToList();
+            orderList.AdminExtras = extraGenericRepository.GetAll().ToList();
 
             orderList.CustomerMenus.Add(menu);
             orderList.CustomerExtras.Add(extra);
@@ -149,5 +149,35 @@ namespace HamburgerProject.Controllers
             return View(orderList);
 
         }
-    }
+        [HttpGet]
+        public async Task<IActionResult> OrderList(AddOrderVM orderList)
+        {
+            AddOrderVM deneme = new AddOrderVM();
+
+            Order order = orderRepository.GetById(orderList.OrderId);
+            var menu = menuGenericRepository.GetById(orderList.MenuId);
+            var extra = extraGenericRepository.GetById(orderList.ExtraId);
+            var user = await userManager.FindByIdAsync(orderList.UserId.ToString());
+
+            deneme.CustomerMenus.Add(menu);
+            deneme.UserId = user.Id;
+            deneme.CustomerExtras.Add(extra);
+
+            order.CreatedTime = orderList.CreateTime;
+            orderRepository.Calculate(order);
+
+            bool result = orderRepository.Update(order);
+
+            if (result)
+            {
+                TempData["Bildiri"] = "İşlem Başarılı";
+                return View(deneme);
+            }
+
+
+            ViewBag.Bildiri = "İşlem Başarılı olamadı";
+            return View();
+
+        }
+    }  
 }
