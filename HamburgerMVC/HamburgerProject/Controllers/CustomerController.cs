@@ -26,6 +26,7 @@ namespace HamburgerProject.Controllers
         private readonly IOrderRepository orderRepository;
         private IRepository<Menu> menuGenericRepository;
         private readonly IRepository<Extra> extraGenericRepository;
+        public static List<FillToChartVM> basketList;
 
         public CustomerController(UserManager<AppUser> userManager, IRepository<Menu> menuGenericRepository, IRepository<Extra> extraGenericRepository, IMapper mapper, IOrderRepository orderRepository)
         {
@@ -34,6 +35,7 @@ namespace HamburgerProject.Controllers
             this.orderRepository = orderRepository;
             this.menuGenericRepository = menuGenericRepository;
             this.extraGenericRepository = extraGenericRepository;
+            basketList = new List<FillToChartVM>();
             
         }
         
@@ -94,9 +96,10 @@ namespace HamburgerProject.Controllers
             fillToChartVM.Extras = extraList;
             return View(fillToChartVM);
         }
-        public async Task<IActionResult> AddMenuToOrder(int id)
+        public async Task<IActionResult> AddMenuToBasket(int id)
         {
-            Menu menu=menuGenericRepository.GetById(id);
+           Menu menu=menuGenericRepository.GetById(id);
+           
             
             return View();
         }
