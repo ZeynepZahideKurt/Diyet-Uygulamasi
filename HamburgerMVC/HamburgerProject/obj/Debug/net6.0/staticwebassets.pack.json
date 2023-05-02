@@ -1,0 +1,541 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HamburgerProject.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HamburgerProject.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\CusHamburger\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\CusHamburger\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\CusHamburger\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\CusHamburger\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\CusHamburger\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\CusHamburger\\responsive.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\CusHamburger\\style.css",
+      "PackagePath": "staticwebassets\\css\\CusHamburger\\style.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\CusHamburger\\style.css.map",
+      "PackagePath": "staticwebassets\\css\\CusHamburger\\style.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\CusHamburger\\style.scss",
+      "PackagePath": "staticwebassets\\css\\CusHamburger\\style.scss"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\bootsnav.css",
+      "PackagePath": "staticwebassets\\css\\bootsnav.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\color.css",
+      "PackagePath": "staticwebassets\\css\\color.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\css\\flaticon.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\fonts\\CusHamburger\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\CusHamburger\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\fonts\\CusHomefont\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\fonts\\CusHomefont\\Flaticon.eot"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\fonts\\CusHomefont\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\fonts\\CusHomefont\\Flaticon.svg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\fonts\\CusHomefont\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\CusHomefont\\Flaticon.ttf"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\fonts\\CusHomefont\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\fonts\\CusHomefont\\Flaticon.woff"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\fonts\\icomoon.eot",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.eot"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\fonts\\icomoon.svg",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.svg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\fonts\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.ttf"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\fonts\\icomoon.woff",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.woff"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\about-img.png",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\about-img.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\client1.jpg",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\client1.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\client2.jpg",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\client2.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\f1.png",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\f1.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\f10.png",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\f10.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\f2.png",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\f2.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\f3.png",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\f3.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\f4.png",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\f4.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\f5.png",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\f5.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\f6.png",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\f6.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\f7.png",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\f7.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\f8.png",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\f8.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\f9.png",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\f9.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\favicon.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\hero-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\hero-bg.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\o1.jpg",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\o1.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\o2.jpg",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\o2.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\Cushamburger\\pexels-engin-akyurt-1435901.jpg",
+      "PackagePath": "staticwebassets\\images\\Cushamburger\\pexels-engin-akyurt-1435901.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\chicken.png",
+      "PackagePath": "staticwebassets\\images\\chicken.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\classic_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\classic_bg.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\drinks_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\drinks_bg.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\feature_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\feature_bg.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\footer_logo.png",
+      "PackagePath": "staticwebassets\\images\\footer_logo.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\header_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\header_bg.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\large_slider_img.jpg",
+      "PackagePath": "staticwebassets\\images\\large_slider_img.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\lock_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\lock_bg.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\menu_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\menu_bg.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\pexels-dana-tentis-750073.jpg",
+      "PackagePath": "staticwebassets\\images\\pexels-dana-tentis-750073.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\sides_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\sides_bg.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\sign_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\sign_bg.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\small_slider_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\small_slider_bg.jpg"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\images\\stamp.png",
+      "PackagePath": "staticwebassets\\images\\stamp.png"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\js\\CusHamburger\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\CusHamburger\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\js\\CusHamburger\\custom.js",
+      "PackagePath": "staticwebassets\\js\\CusHamburger\\custom.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\js\\CusHamburger\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\js\\CusHamburger\\jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\js\\bootsnav.js",
+      "PackagePath": "staticwebassets\\js\\bootsnav.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\js\\gmaps.min.js",
+      "PackagePath": "staticwebassets\\js\\gmaps.min.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\js\\homepagejs\\bootsnav.js",
+      "PackagePath": "staticwebassets\\js\\homepagejs\\bootsnav.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\js\\homepagejs\\gmaps.min.js",
+      "PackagePath": "staticwebassets\\js\\homepagejs\\gmaps.min.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\js\\homepagejs\\main.js",
+      "PackagePath": "staticwebassets\\js\\homepagejs\\main.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\C#\\BilgeAdam\\Hamburgerci\\HamburgerMVC\\HamburgerProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.HamburgerProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.HamburgerProject.props",
+      "PackagePath": "build\\HamburgerProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.HamburgerProject.props",
+      "PackagePath": "buildMultiTargeting\\HamburgerProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.HamburgerProject.props",
+      "PackagePath": "buildTransitive\\HamburgerProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
