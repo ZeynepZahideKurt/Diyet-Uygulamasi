@@ -9,61 +9,73 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HamburgerProject
 build_property.RootNamespace = HamburgerProject
-build_property.ProjectDir = C:\Users\ASUS\Desktop\Github\Github\Hamburger-Yeni\HamburgerProject\HamburgerProject\
+build_property.ProjectDir = D:\C#\DiyetUygulaması\Github\Hamburger-Yeni\HamburgerProject\HamburgerProject\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ASUS\Desktop\Github\Github\Hamburger-Yeni\HamburgerProject\HamburgerProject
+build_property.MSBuildProjectDirectory = D:\C#\DiyetUygulaması\Github\Hamburger-Yeni\HamburgerProject\HamburgerProject
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ASUS/Desktop/Github/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Admin/Index.cshtml]
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/Github/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Admin/ProductCreate.cshtml]
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Admin/ProductCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/Github/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Admin/ProductUpdate.cshtml]
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Admin/ProductUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/Github/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Home/Index.cshtml]
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Customer/CustomerHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3VzdG9tZXJIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/Github/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Home/Privacy.cshtml]
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/Github/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Shared/Error.cshtml]
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Login/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/Github/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Shared/_AdminHomeLayout.cshtml]
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Shared/_AdminHomeLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkhvbWVMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/Github/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Shared/_CustomerNewHomeLayout.cshtml]
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Shared/_CustomerNewHomeLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DdXN0b21lck5ld0hvbWVMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/Github/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Shared/_LoginLayout.cshtml]
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Shared/_LoginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/Github/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/Github/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/_ViewImports.cshtml]
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/Github/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/_ViewStart.cshtml]
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/Github/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Shared/_Layout.cshtml]
+[D:/C\#/DiyetUygulaması/Github/Hamburger-Yeni/HamburgerProject/HamburgerProject/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-wa8q0il17d

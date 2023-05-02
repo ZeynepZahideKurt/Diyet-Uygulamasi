@@ -32,8 +32,6 @@ namespace HamburgerProject.Controllers
 
         }
 
-
-
         public IActionResult ProductCreate()
         {
             ProductCreateVM productCreateVM = new ProductCreateVM();

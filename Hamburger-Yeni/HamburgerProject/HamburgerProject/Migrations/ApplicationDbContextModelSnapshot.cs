@@ -55,14 +55,14 @@ namespace HamburgerProject.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "ddb76499-d23d-4ac3-9495-1f277d2ead77",
+                            ConcurrencyStamp = "0bf00f87-a665-43a9-a969-4a523531c694",
                             Name = "Admin",
-                            NormalizedName = "ADMIN"
+                            NormalizedName = "ADMİN"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "083a54f6-aaec-4a32-9244-01bb7f04b018",
+                            ConcurrencyStamp = "739d0e47-a37a-4409-9217-5b4f0e3512ea",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -140,12 +140,12 @@ namespace HamburgerProject.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "fdf26d80-510d-498f-a98d-42a575f1a839",
+                            ConcurrencyStamp = "27b517a2-898e-4f1e-bae1-543cf7ae5bd5",
                             Email = "admin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEIf0y+W/jH2IHQ1ita+l2xhJXrHdTw/tJx067DBBv2WsRbqDxga3gbRMT9TP8G85vA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKHR4m+dWHnIbBkCSW4UQsy75xaAucLIgw5AP5cYCobBmnd3Ns8L2xNDoGhKgdy1SQ==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "Admin"
@@ -154,12 +154,12 @@ namespace HamburgerProject.Migrations
                         {
                             Id = 2,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c4849866-da84-4d26-812b-8e9279d2b4e8",
+                            ConcurrencyStamp = "bbf8aad3-d0cf-43c8-a865-7c8b3c60e71a",
                             Email = "benuser@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "USER",
-                            PasswordHash = "AQAAAAEAACcQAAAAEMxdkyDeytXsWj0IODA+GLTPcUGb6dIT3AecK6fE4QKz1u2A2cv0J/3vvejxDMM6kA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEBt3WHt/fUzzEUveo2oomZI9Zef1be5n5M7mT+9LsJTdq7LZTwreA0h0Vv669Zu8FA==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "User"
