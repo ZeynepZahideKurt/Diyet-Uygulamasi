@@ -8,17 +8,19 @@ using System.Collections.Generic;
 
 namespace HamburgerProject.Controllers
 {
-    [Authorize(Roles ="Admin")]
+    
     public class AdminController : Controller
     {
         private readonly IRepository<Product> productGenericRepository;
         
         private readonly IMapper mapper;
+        private readonly IRepository<Category> categoryGenericRepository;
 
-        public AdminController(IRepository<Product> productGenericRepository, IMapper mapper)
+        public AdminController(IRepository<Product> productGenericRepository, IMapper mapper, IRepository<Category> categoryGenericRepository)
         {
             this.productGenericRepository = productGenericRepository;
             this.mapper = mapper;
+            this.categoryGenericRepository = categoryGenericRepository;
         }
         public IActionResult Index()
         {
@@ -34,7 +36,9 @@ namespace HamburgerProject.Controllers
 
         public IActionResult ProductCreate()
         {
-            return View();
+            ProductCreateVM productCreateVM = new ProductCreateVM();
+            productCreateVM.Categories = categoryGenericRepository.GetAll().ToList();
+            return View(productCreateVM);
         }
 
         [HttpPost]
@@ -62,10 +66,11 @@ namespace HamburgerProject.Controllers
         {
             Product product = productGenericRepository.GetById(id);
             ProductUpdateVM productUpdateVM = mapper.Map<ProductUpdateVM>(product);
+            productUpdateVM.Categories = categoryGenericRepository.GetAll().ToList();
             return View(productUpdateVM);
         }
         [HttpPost]
-        public IActionResult MenuUpdate(ProductUpdateVM productUpdateVM)
+        public IActionResult ProductUpdate(ProductUpdateVM productUpdateVM)
         {
             try
             {

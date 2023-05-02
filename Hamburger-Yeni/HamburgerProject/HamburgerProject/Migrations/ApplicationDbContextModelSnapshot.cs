@@ -55,14 +55,14 @@ namespace HamburgerProject.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "723f96c5-b2b3-4fdc-97be-8c3dea079f8a",
+                            ConcurrencyStamp = "ddb76499-d23d-4ac3-9495-1f277d2ead77",
                             Name = "Admin",
-                            NormalizedName = "ADMİN"
+                            NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "047d3917-692c-489d-8a3a-71269af1213c",
+                            ConcurrencyStamp = "083a54f6-aaec-4a32-9244-01bb7f04b018",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -140,12 +140,12 @@ namespace HamburgerProject.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "99f6a6e1-49ca-4d19-952d-045f380cdca1",
+                            ConcurrencyStamp = "fdf26d80-510d-498f-a98d-42a575f1a839",
                             Email = "admin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEMjo8+lOalfPc6B4iKxm4DzMf3SZKKtkiePphxHPoUwRBJFwv0at+rMCPYmGZrlrJw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIf0y+W/jH2IHQ1ita+l2xhJXrHdTw/tJx067DBBv2WsRbqDxga3gbRMT9TP8G85vA==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "Admin"
@@ -154,12 +154,12 @@ namespace HamburgerProject.Migrations
                         {
                             Id = 2,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "46b278b1-c909-4925-bd6b-d41cf0140365",
+                            ConcurrencyStamp = "c4849866-da84-4d26-812b-8e9279d2b4e8",
                             Email = "benuser@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "USER",
-                            PasswordHash = "AQAAAAEAACcQAAAAEMvn10Z8PNRz0aKyLU51HdHJjQHuuIPxJoGZNvyvGOpjTjKOxPUv6LGtRshNqAcSOQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMxdkyDeytXsWj0IODA+GLTPcUGb6dIT3AecK6fE4QKz1u2A2cv0J/3vvejxDMM6kA==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "User"
@@ -244,10 +244,6 @@ namespace HamburgerProject.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -255,10 +251,10 @@ namespace HamburgerProject.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
-                    b.Property<int>("Quantity")
+                    b.Property<int?>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<int>("Size")
+                    b.Property<int?>("Size")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
